@@ -1,0 +1,1 @@
+define({numchunks:1,prefix:'Glossary_Chunk',terms:[{t:'Function',c:0},{t:'Project',c:0},{t:'Residual',c:0},{t:'Residuum',c:0},{t:'RMSE',c:0},{t:'Root Mean Square Error',c:0},{t:'Roughness',c:0},{t:'Scalar',c:0},{t:'System Constant',c:0},{t:'Tolerance',c:0}]});

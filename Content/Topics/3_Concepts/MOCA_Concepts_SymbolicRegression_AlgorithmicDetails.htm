@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Product" content="ASCMO-MOCA" />
+        <meta name="Version" content="V5.14" />
+        <meta name="Revision" content="R01 EN | 04.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="Help" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" /><title>Algorithmic Details of Symbolic Regression</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" defer="defer" src="../../Resources/Scripts/Scroll-Button.js">
+        </script>
+        <script type="text/javascript" src="../../Resources/Scripts/Cookies.js"> </script>
+        <script>/* <![CDATA[ */
+
+			document.title = "ASCMO-MOCA - "  + document.title;
+
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../Resources/Manual/LandingPage_MOCA.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Algorithmic Details of Symbolic Regression</h1>
+                                        <p>
+                                            <img src="../../Resources/Graphics/SymbolicRegression_AlgorithmicDetails.png" class="wide" />
+                                        </p>
+                                        <p>To carry out symbolic regression, <span class="mc-variable ASCMOVar.prod_moca_short variable">ASCMO-MOCA</span> uses a modified version of genetic programming. The algorithm is specifically suited to fulfill the required task. The major algorithmic steps are described below and in the image.</p>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Function Set</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>A set of functional expressions is defined which are used during the course of the algorithm. In <span class="mc-variable ASCMOVar.prod_moca_short variable">ASCMO-MOCA</span> this step is covered by choosing the function/operation types you want to use by clicking on the elements in the "Selected Alphabet" area.</p>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Population</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>After the function set is defined, a population/set of models is created on a stochastic basis. Starting with this step the models are represented as graphs. The creation process is constrained w.r.t. the population size and the graphs' dimensions. During the course of the algorithm the population evolves from the evolution operations. Each iteration-step in the main loop of the algorithm corresponds to one generation.</p>
+                                                <table class="TableStyle-note" style="width: 100%;mc-table-style: url('../../Resources/TableStyles/note.css');" cellspacing="0" data-mc-conditions="media.OnlyHelpOutput">
+                                                    <col class="TableStyle-note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-note-Head-Header1">
+                                                            <th class="TableStyle-note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note"><span class="autonumber"><span>Note</span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-note-Body-Body1">
+                                                            <td class="TableStyle-note-BodyA-Column1-Body1">
+                                                                <p class="note">See also each field tooltip for more information. You can also open them in an extra window by clicking on it.<br />To see all fields, select <span class="gui">Show Advanced Options</span> checkbox.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p>Corresponding Configuration Parameters (<span class="gui">Optimization Configuration</span> &amp; <span class="gui">Initial Configuration</span>) in the "Symbolic Regression" window</p>
+                                                <ul>
+                                                    <li class="list"><span class="gui">Random Seed</span>: Integer used as the seed for the random number generation, which effects all stochastic steps within the algorithm. Modify this value to improve the performance in critical cases.</li>
+                                                    <li class="list"><![CDATA[	]]><span class="gui">Population Size</span>: Number of models contained in each population. For hard problems population sizes of several thousands have performed well.</li>
+                                                    <li class="list"><span class="gui">Population Creation Method</span> (<span class="gui">Initial Configuration</span>): The initial population is created with one of the three different methods. For unknown problems the half-and-half methods is a good choice.<ul><li class="list2"><span class="gui">half and half</span>: One half of the population is created with full method and the other half of the population is created with the grow method. The used maximum depth value is determined from a uniform distribution within <span class="gui">Population Init Depth Min</span> and <span class="gui">Population Init Depth Max</span>, for each graph individually.</li><li class="list2"><span class="gui">full</span>: Each graph is created such that it has a depth of <span class="gui">Population Init Depth Max</span> in all branches.</li><li class="list2"><span class="gui">grow</span>: Each graph is created such that at least one branch has a depth of <span class="gui">Population Init Depth Max</span>.</li></ul></li>
+                                                    <li class="list"><span class="gui">Population Init Depth Min</span>:  Minimum initial depth.</li>
+                                                    <li class="list"><span class="gui">Population Init Depth Max</span>:  Maximum initial depth. Graphs with a depth of ten are already huge and very complex. Numbers around four are more appropriate.</li>
+                                                    <li class="list"><span class="gui">Max Program Complexity</span> (<span class="gui">Optimization Configuration</span>): No graphs are created (initially and during evolution) having a larger complexity. A graphs' complexity is an integer given by the sum of complexities of all nodes the graph is made of. Node complexities are defined <span class="mc-variable ASCMOVar.prod_moca_short variable">ASCMO-MOCA</span> internally based on experience. Using this option offers you to fasten the algorithm's execution if you have a clear expectation and experience on the complexity for your symbolic regression problem.</li>
+                                                    <li class="list">
+                                                        <p class="list"><span class="gui">Max Program Depth</span>: No graphs are created (initially and during evolution) having a larger depth.</p>
+                                                    </li>
+                                                    <li class="list">
+                                                        <p class="list"><span class="gui">Max Program Size</span>: No graphs are created (initially and during evolution) having a larger size (number of nodes).</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Datasets</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>Naturally, symbolic regression requires one or several datasets to be carried out.</p>
+                                            </div>
+                                        </div>
+                                        <div class="no_break">
+                                            <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Optimization</span></a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>For each graph an individual and local optimization is performed. The goal of this optimization is to minimize the value obtained by using the method given by the Fitness Method.</p>
+                                                    <p>Corresponding Configuration Parameters (<span class="gui">Optimization Configuration</span>)</p>
+                                                    <ul>
+                                                        <li class="list"><span class="gui">Optimizer Method</span> <ul><li class="list2"><span class="gui">Levenberg-Marquardt</span> method (LM)</li><li class="list2"><span class="gui">Trust-region-reflective</span> method</li><li class="list2"><span class="gui">Dogbox</span> algorithm </li></ul></li>
+                                                        <li class="list"><span class="gui">Optimizer Iterations</span>: Maximum number of iterations the local optimization should be carried out.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Termination criteria fulfilled Request</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>The algorithm stops if one of the following criteria holds:</p>
+                                                <ul>
+                                                    <li class="list">It holds for one of the models in the population that the value obtained by using the method given by the Fitness Method is smaller than the termination threshold.</li>
+                                                    <li class="list">The maximum number of generations is reached.</li>
+                                                </ul>
+                                                <p>Corresponding Configuration Parameters (<span class="gui">Optimization Configuration</span>)</p>
+                                                <ul>
+                                                    <li class="list"><span class="gui">Termination Threshold</span>: Threshold used for termination. The threshold is a positive double.</li>
+                                                    <li class="list"><span class="gui">Number of Generations</span>: Maximum number of generations.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Fitness</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>For each model in the population it's fitness is computed. To do so the raw-fitness is computed as the sum of two parts:</p>
+                                                <ol>
+                                                    <li class="howto_num" value="1">The value obtained by using the method given by the fitness method, the cost-function.</li>
+                                                    <li class="howto_num" value="2">A scalar value penalizing the complexity of the graph.</li>
+                                                </ol>
+                                                <p>The actual fitness itself is obtained from normalizing the raw-fitness to values within [0,1].</p>
+                                                <p>Corresponding Configuration Parameters (<span class="gui">Optimization Configuration</span>)</p>
+                                                <ul>
+                                                    <li class="list"><span class="gui">Fitness Method</span>: Various cost-function types are available.<ul><li class="list2"><span class="gui">rmse</span> Root mean squared error.</li><li class="list2"><span class="gui">mse</span> Mean squared error.</li><li class="list2"><span class="gui">abs</span> Normalized absolute difference (mean of L^1-norm).</li></ul></li>
+                                                    <li class="list"><span class="gui">Parsimony Coefficient</span>: Factor to weight the impact of the complexity penalty. For unknown problems, a value of 1 is a reasonable starting point. For smaller values of the Parsimony Coefficient the formula gets more complex.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Program Selection</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>The structural optimization of the graphs starts with selecting graphs from the population. The selection is done on the basis of the fitness obtained in the previous step, with the methods described below.</p>
+                                                <p>Corresponding Configuration Parameters (<span class="gui">Optimization Configuration</span>)</p>
+                                                <ul>
+                                                    <li class="list"><span class="gui">Program Selection Method</span>:<ul><li class="list2"><span class="gui">tournament</span>: From the given population <span class="gui">Tournament Size</span> graphs are randomly drawn from the population and the one with the best fitness is selected.<br />&gt; <span class="gui">Tournament Size</span>: Number of programs to select from tournament. Choosing the minimum of 2 individuals will lead to highly volatile progress of the algorithm. If the number converges to <span class="gui">Population Size</span>, a dominance of the fittest programs is enforced. Choosing about 10% of the Population Size is a good starting point.</li><li class="list2"><span class="gui">fitness-based</span>: A probability distribution is derived from the fitness of all graphs in the current population. This distribution is sampled to select graphs. The fitter a graph is, the more likely it will be selected.<br /></li><li class="list2"><span class="gui">greedy overselection</span>:The population is divided into a high-fitness group and a low-fitness group. For both groups fitness-based selection is used. If the high-fitness group is used it is determined with <span class="gui">Probability Top</span>. Otherwise the low-fitness group is chosen.<br />&gt; <span class="gui">Fraction Top</span>: The fraction of the population defines the size of the high-fitness group. The group is filled with the graphs having the highest fitness.<br />&gt; <span class="gui">Probability Top</span>: Probability with which the high-fitness group is used for fitness-based selection.</li><li class="list2"><span class="gui">multi tournament</span>: Similar to tournament. With a selectable probability, however, fitness/complexity is taken as a criterion instead of just fitness. This option states the a multi-criterial optimization possibilities, only given for a gradient-free technique like genetic programming.<br />&gt; <span class="gui">Tournament Size</span>: Number of programs to select from tournament. Choosing the minimum of 2 individuals will lead to highly volatile progress of the algorithm. If the number converges to <span class="gui">Population Size</span>, a dominance of the fittest programs is enforced. Choosing about 10% of the Population Size is a good starting point.<br />&gt; <span class="gui">Probability Fitness</span>: Probability to use fitness/complexity instead of fitness.</li></ul></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Evolution</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>The evolution step comprises the graph-modification operations of reproduction, expansion, mutation, and crossover. It is the actual structural optimization step and relies on the graph selected in the previous step. The probabilities for the different techniques determine how likely they are to be applied to this graph.</p>
+                                                <p>Corresponding Configuration Parameters (<span class="gui">Evolution Probabilities</span>)</p>
+                                                <p>For the four options, each probability defines how likely the according option is carried out. The sum of the probabilities has to equal 100.</p>
+                                                <ul>
+                                                    <li class="list"><span class="gui">Crossover</span> Probability: Setting it in the range of 80 - 90 is a meaningful choice.</li>
+                                                    <li class="list"><span class="gui">Reproduction</span> Probability: This operation ensures that graphs with a good fitness are likely to be taken-over unchanged to the next generation.</li>
+                                                    <li class="list"><span class="gui">Expansion</span> Probability</li>
+                                                    <li class="list"><span class="gui">Mutation</span> Probability</li>
+                                                </ul>
+                                                <p class="pgloss_term">Reproduction</p>
+                                                <p>Reproduction of a graph simply means to take it over as-is in the population of the next generation.</p>
+                                                <p class="pgloss_term">Expansion</p>
+                                                <p>The expansion of a graph is carried out by:</p>
+                                                <ol>
+                                                    <li value="1">randomly selection a terminal node of the graph,</li>
+                                                    <li value="2">creating a new random graph with depth two,</li>
+                                                    <li value="3">replacing the terminal node by the new graph.</li>
+                                                </ol>
+                                                <p>If the expanded graph has a better fitness than the original one, it is taken over to the next generation. Else, the original graph is taken over as-is.</p>
+                                                <p class="pgloss_term">Mutation</p>
+                                                <p>A mutation of a graph is be carried out with three different operations, each of them being applied to a randomly selected node of the graph.</p>
+                                                <ul>
+                                                    <li class="list">New Tree: The selected node and all sub-nodes are replaced by a newly created graph with a maximum depth of three.</li>
+                                                    <li class="list">Hoist: The selected node of the graph is removed, keeping the consistency of the graph. This method helps to prevent bloat of the graphs.</li>
+                                                    <li class="list">Point: The selected node is replaced by a random node with the same number of inputs.</li>
+                                                </ul>
+                                                <p>How likely which method is applied is determined by the individual probability. The sum of all three probabilities has to equal 100.</p>
+                                                <p>Corresponding Configuration Parameters (<span class="gui">Mutuation Probabilities</span>)</p>
+                                                <ul>
+                                                    <li class="list"><span class="gui">New Tree</span>: Probability to carry out the new tree operation.</li>
+                                                    <li class="list"><span class="gui">Hoist</span>: Probability to carry out the hoist mutation operation.</li>
+                                                    <li class="list"><span class="gui">Point</span>: Probability to carry out the point mutation operation.</li>
+                                                </ul>
+                                                <p class="pgloss_term">Crossover</p>
+                                                <p>The crossover operation essentially is about recombining two graphs to find an even more fitter one. The operation is carried out by the following steps:</p>
+                                                <ol>
+                                                    <li class="howto_num" value="1">
+                                                        <p class="howto">The graph selected in the previous step is defined as the target graph.</p>
+                                                    </li>
+                                                    <li class="howto_num" value="2">
+                                                        <p class="howto">A second graph is selected – exactly as described in Program Selection – and defined to be the source graph.</p>
+                                                    </li>
+                                                    <li class="howto_num" value="3">
+                                                        <p class="howto">In both graphs one node with all its sub-nodes is selected randomly as branches to-be-exchanged.</p>
+                                                    </li>
+                                                    <li class="howto_num" value="4">
+                                                        <p class="howto">The branch in the target graph is replaced by the branch of the source graph.</p>
+                                                    </li>
+                                                </ol>
+                                                <p>The resulting graph is taken over to the population of the next generation.</p>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="8" width="16" alt="Closed" data-mc-alt2="Open" /><span class="link">Reached Population Size Request</span></a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>The evolution operations are applied until the population of the next generation has <span class="gui">Population Size</span> number of members.</p>
+                                            </div>
+                                        </div>
+                                        <p>&#160;</p>
+                                    </div>
+                                    <p style="font-size: 6pt;margin-top: 0;margin-bottom: 0;">&#160;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
