@@ -62,6 +62,24 @@
 
     <h2>Andere Versionen:</h2>
     <ul id="version-links"></ul> <!-- Hier werden die Links eingefügt -->
+
+    <script>
+        // Funktion zum Erstellen der Links
+        function createVersionLinks() {
+            const versionLinks = document.getElementById('version-links');
+            versions.forEach(v => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = v.path;
+                a.textContent = v.version;
+                li.appendChild(a);
+                versionLinks.appendChild(li);
+            });
+        }
+
+        // Links generieren
+        createVersionLinks();
+    </script>
 		<div class="foundation-wrap off-canvas-wrapper">
             <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
                 <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
