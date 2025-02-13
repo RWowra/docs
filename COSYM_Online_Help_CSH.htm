@@ -3,23 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weiterleitung zur neuesten Version</title>
-    <!--<script>
-        // Array mit den verfügbaren Versionen
-        const versions = ['V1', 'V2'];
-
-        // Funktion zur Weiterleitung zur neuesten Version
-        function redirectToLatestVersion() {
-            // Sortiere die Versionen und wähle die neueste aus
-            const latestVersion = versions.sort().pop(); // Die letzte Version ist die neueste
-            window.location.href = `${latestVersion}/COSYM_Online_Help_CSH.htm`;
-        }
-
-        // Führe die Weiterleitung aus
-        redirectToLatestVersion();
-    </script>-->
-		  
-  <style>
+    <title>Hauptseite</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
         }
@@ -27,27 +12,21 @@
             margin-top: 20px;
         }
     </style>
-		  <script src="../js/versions.js" defer></script> <!-- Einbinden der versions.js -->
-
+    <script src="js/versions.js" defer></script> <!-- Einbinden der versions.js -->
 </head>
 <body>
-	<!--<iframe id="version-frame" src="V2/COSYM_Online_Help_CSH.htm" style="width: 100%; height: 85vh"></iframe> <!-- Standardmäßig die neueste Version laden -->
+    <h1>Willkommen auf der Hauptseite!</h1>
+    <p>Hier ist der Inhalt der neuesten Version.</p>
 
-    <!--<script>
-        // Funktion zum Laden der ausgewählten Version in das iframe
-        function loadVersion(version) {
-            document.getElementById('version-frame').src = `${version}/COSYM_Online_Help_CSH.htm`;
-        }
-    </script><h2>Wähle eine Version:</h2>
-        <ul>
-            <li><a href="#" onclick="loadVersion('V1')">Version 1</a></li>
-            <li><a href="#" onclick="loadVersion('V2')">Version 2</a></li>
-        </ul>
-    </nav>
-	{% include _includes/version-links.htm %} -->
-<h1> Welcome</h1>
-	<ul id="version-links"></ul> <!-- Hier werden die Links eingefügt -->
-	<script>
+    <h2>Neueste Version:</h2>
+    <ul>
+        <li><a href="V2/COSYM_Online_Help_CSH.htm">Version 2.0</a></li>
+    </ul>
+
+    <h2>Andere Versionen:</h2>
+    <ul id="version-links"></ul> <!-- Hier werden die Links eingefügt -->
+
+    <script>
         // Funktion zum Erstellen der Links
         function createVersionLinks() {
             const versionLinks = document.getElementById('version-links');
@@ -64,8 +43,5 @@
         // Links generieren
         createVersionLinks();
     </script>
-
-    
-	
 </body>
 </html>
