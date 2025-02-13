@@ -1,92 +1,71 @@
 <!DOCTYPE html>
-<html data-mc-runtime-file-type="CSH">
-    <!-- saved from url=(0016)http://localhost -->
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="utf-8" /><title></title>
-        <script src="Resources/Scripts/jquery.min.js">
-        </script>
-        <script src="Resources/Scripts/MadCapAll.js" defer="defer">
-        </script>
-        <script>
-        //<![CDATA[
-        $(Init);
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weiterleitung zur neuesten Version</title>
+    <!--<script>
+        // Array mit den verfügbaren Versionen
+        const versions = ['V1', 'V2'];
 
-        function Init()
-        {
-            var cshid = null;
-            var skinName = null;
-            var searchQuery = null;
-            var firstPick = null;
-
-            if (document.location.hash.length > 0)
-            {
-                var hash = document.location.hash.substring(1);
-                var parts = hash.split("|");
-
-                cshid = parts[0];
-
-                if (parts.length == 2)
-                    skinName = parts[1];
-            }
-
-            if (document.location.search.length > 0)
-            {
-                var search = document.location.search.substring(1);
-                var parts = search.split("|");
-
-                searchQuery = parts[0];
-
-                if (parts.length == 2)
-                    firstPick = parts[1];
-            }
-
-            var url = new MadCap.Utilities.Url(document.location.href);
-            var urlName = url.Name.substring(0, url.Name.length - "_CSH".length);
-            url = url.ToFolder().AddFile(urlName + "." + url.Extension);
-            var path = url.PlainPath;
-
-            var isFirst = true;
-
-            if (!MadCap.String.IsNullOrEmpty(cshid))
-            {
-                if (isFirst)
-                    path += "#";
-
-                isFirst = false;
-
-                path += "cshid=" + cshid;
-            }
-
-            if (!MadCap.String.IsNullOrEmpty(skinName)) {
-                if (isFirst)
-                    path += "#";
-                else
-                    path += "&";
-
-                isFirst = false;
-
-                path += "skinName=" + skinName;
-            }
-
-            if (!MadCap.String.IsNullOrEmpty(searchQuery))
-            {
-                if (isFirst)
-                    path += "#";
-                else
-                    path += "&";
-
-                path += "searchQuery=" + searchQuery;
-
-                if (!MadCap.String.IsNullOrEmpty(firstPick))
-                    path += "&firstPick=true";
-            }
-
-            document.location.replace(MadCap.Utilities.Url.EnsureUrlSafety(path));
+        // Funktion zur Weiterleitung zur neuesten Version
+        function redirectToLatestVersion() {
+            // Sortiere die Versionen und wähle die neueste aus
+            const latestVersion = versions.sort().pop(); // Die letzte Version ist die neueste
+            window.location.href = `${latestVersion}/COSYM_Online_Help_CSH.htm`;
         }
-        //]]></script>
-    </head>
-    <body>
-    </body>
+
+        // Führe die Weiterleitung aus
+        redirectToLatestVersion();
+    </script>-->
+		  
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #version-links {
+            margin-top: 20px;
+        }
+    </style>
+		  <script src="../js/versions.js" defer></script> <!-- Einbinden der versions.js -->
+
+</head>
+<body>
+	<!--<iframe id="version-frame" src="V2/COSYM_Online_Help_CSH.htm" style="width: 100%; height: 85vh"></iframe> <!-- Standardmäßig die neueste Version laden -->
+
+    <!--<script>
+        // Funktion zum Laden der ausgewählten Version in das iframe
+        function loadVersion(version) {
+            document.getElementById('version-frame').src = `${version}/COSYM_Online_Help_CSH.htm`;
+        }
+    </script><h2>Wähle eine Version:</h2>
+        <ul>
+            <li><a href="#" onclick="loadVersion('V1')">Version 1</a></li>
+            <li><a href="#" onclick="loadVersion('V2')">Version 2</a></li>
+        </ul>
+    </nav>
+	{% include _includes/version-links.htm %} -->
+<h1> Welcome</h1>
+	<ul id="version-links"></ul> <!-- Hier werden die Links eingefügt -->
+	<script>
+        // Funktion zum Erstellen der Links
+        function createVersionLinks() {
+            const versionLinks = document.getElementById('version-links');
+            versions.forEach(v => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = v.path;
+                a.textContent = v.version;
+                li.appendChild(a);
+                versionLinks.appendChild(li);
+            });
+        }
+
+        // Links generieren
+        createVersionLinks();
+    </script>
+
+    
+	
+</body>
 </html>

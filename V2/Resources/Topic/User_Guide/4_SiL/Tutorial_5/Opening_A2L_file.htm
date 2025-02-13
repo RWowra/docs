@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5_Side" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="COSYM_Online_Help.xml" data-mc-path-to-help-system="../../../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="About COSYM|SiL Overview|[%=System.LinkedTitle%]|Calibrating Simulation Variables in ETAS INCA|Simulation Steps for Calibrating Simulation Variables in ETAS INCA">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="shortcut icon" href="../../../../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../../../../Skins/Favicons/favicon.ico" />
+        <link href="../../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Working with INCA</title>
+        <link href="../../../../Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <meta name="Product" content="COSYM" />
+        <meta name="Version" content="V3.4.1" />
+        <meta name="Revision" content="R01 EN - 05.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="User Guide" />
+        <script src="../../../../Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../../../Help.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1>Working with INCA</h1>
+                                    <p class="paragraph">Open the exported A2L file in COSYM into INCA&#160;to calibrate the values.</p>
+                                    <p class="how_to_title">To open the exported A2L file in COSYM</p>
+                                    <ul>
+                                        <li class="howto_num">Create a <span class="code">Root</span> folder by right-clicking on the white background area of the Database Object.</li>
+                                        <li class="howto_result">A context menu is displayed.</li>
+                                        <li class="howto_num" value="2">Click <span class="gui">Add</span> → <span class="gui">Add Top Folder</span>.</li>
+                                        <li class="howto_result">A <span class="code">Root</span> folder is created.</li>
+                                        <li class="howto_num" value="3">Right-Click on <span class="code">Root</span> folder and click <span class="bold">Add</span> → <span class="bold">ECU-Project (A2L)</span>.</li>
+                                        <li class="howto_result">An explorer is displayed to select the A2L file.</li>
+                                        <li class="howto_num" value="4">Select the exported A2L file in COSYM and click <span class="bold">Open</span>.</li>
+                                        <li class="howto_result">An explorer is displayed to select the <span class="code">*.hex</span> file. </li>
+                                        <li class="howto_num" value="5">Click <span class="bold">Cancel</span> to ignore this step.</li>
+                                    </ul>
+                                    <p class="how_to_title">To create the Workspace</p>
+                                    <ul>
+                                        <li class="howto_num" value="1">Right-click on the opened A2L file and click <span class="bold">Add</span> → <span class="bold">Workspace</span>.</li>
+                                        <li class="howto_result">A workspace is created. Each workspace can contain multiple devices.</li>
+                                    </ul>
+                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/XCP_tut7.png"><img class="MCPopupThumbnail img imgwide" data-mc-width="1920" data-mc-height="976" src="../../../../Images/XCP_tut7_thumb_0_150.png" style="mc-thumbnail: popup;mc-thumbnail-max-height: 150px;" tabindex="" /></a>
+                                    </p>
+                                    <p class="figure_title" data-mc-autonum="Fig. 64: "><span class="autonumber"><span class="bold">Fig. 64: </span></span>A workspace created in INCA</p>
+                                    <p class="how_to_title">To add a device</p>
+                                    <ul data-mc-continue="true">
+                                        <li class="howto_num" value="1">Click <img src="../../../../Images/XCP_tut8.png" style="width: 16px;height: 16px;" />.</li>
+                                        <li class="howto_result">A window is opened to add a device.</li>
+                                        <li class="howto_num" value="2">Select the A2L file. </li>
+                                        <li class="howto_result">When you select the A2L file, the INCA&#160;understands this selected A2L file which contains the XCP device.</li>
+                                        <li class="howto_num" value="3">Click <span class="bold">OK</span>.</li>
+                                    </ul>
+                                    <p class="howto_num"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/XCP_tut9.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1523" data-mc-height="809" src="../../../../Images/XCP_tut9_thumb_0_150.png" tabindex="" /></a>
+                                    </p>
+                                    <p class="figure_title" data-mc-autonum="Fig. 65: "><span class="autonumber"><span class="bold">Fig. 65: </span></span>Adding devices</p>
+                                    <p class="howto_num">In the Ethernet system, it contains XCP and XCPSimTime. XCP contains the real time data and XCPSimTime contains the simulation time data. </p>
+                                    <ul>
+                                        <li class="howto_num" value="4">Select <span class="bold">XCPSimTime</span> and click <span class="bold">OK</span>.</li>
+                                        <li class="howto_result">The hardware is added to the workspace.</li>
+                                    </ul>
+                                    <p class="how_to_title">To configure the hardware</p>
+                                    <ul data-mc-continue="true">
+                                        <li class="howto_num" value="1">Select the <span class="bold">XCPSimTime</span> hardware and click <img src="../../../../Images/XCP_tut11.png" />.</li>
+                                    </ul>
+                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/XCP_tut10.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1157" data-mc-height="938" src="../../../../Images/XCP_tut10_thumb_0_150.png" tabindex="" /></a>
+                                    </p>
+                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/XCP_tut12.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1917" data-mc-height="1028" src="../../../../Images/XCP_tut12_thumb_0_150.png" tabindex="" /></a>
+                                    </p>
+                                    <p class="figure_title" data-mc-autonum="Fig. 66: "><span class="autonumber"><span class="bold">Fig. 66: </span></span>Hardware configuration</p>
+                                    <p class="how_to_title">To initialize the hardware</p>
+                                    <p class="paragraph">Initialization can be done when the models are downloaded in ETAS EE.</p>
+                                    <ul>
+                                        <li class="howto_num" value="1">Click <img src="../../../../Images/XCP_tut13.png" class="Icon" /> on the INCA&#160;toolbar. </li>
+                                        <li class="howto_result">INCA&#160;connects to the system simulation.</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="howto_num" value="2">Select the "Action" <span class="bold">Upload</span> and click <span class="bold">Do it</span>.</li>
+                                        <li class="howto_result">Gives a warning message that it is not a real ECU. Click <span class="bold">Yes</span> to continue.</li>
+                                        <li class="howto_num" value="3">Select the location to upload. If the location is not specified, it will be saved in the Empty Dataitem_1.</li>
+                                        <li class="howto_num">Close the window.</li>
+                                    </ul>
+                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/XCP_tut14.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="710" data-mc-height="833" src="../../../../Images/XCP_tut14_thumb_0_150.png" tabindex="" /></a>
+                                    </p>
+                                    <p class="figure_title" data-mc-autonum="Fig. 67: "><span class="autonumber"><span class="bold">Fig. 67: </span></span>Connecting to system simulation</p>
+                                    <p class="how_to_title">To select the variables</p>
+                                    <p class="paragraph">Initialization can be done when the models are downloaded in ETAS EE.</p>
+                                    <ul>
+                                        <li class="howto_num" value="1">Click <img src="../../../../Images/XCP_tut15.png" /> (<span class="bold">Experiment Environment</span>) on the INCA&#160;toolbar. </li>
+                                        <li class="howto_num">Click <img src="../../../../Images/XCP_tut17.png" class="Icon" />(Variable Selection).</li>
+                                        <li class="howto_result">"Variable Selection" window is displayed which displays all the variables in a model.</li>
+                                    </ul>
+                                    <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/XCP_tut21.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1124" data-mc-height="1032" src="../../../../Images/XCP_tut21_thumb_0_150.png" tabindex="" /></a>
+                                    </p>
+                                    <p class="figure_title" data-mc-autonum="Fig. 68: "><span class="autonumber"><span class="bold">Fig. 68: </span></span>Selected measurement variables</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
