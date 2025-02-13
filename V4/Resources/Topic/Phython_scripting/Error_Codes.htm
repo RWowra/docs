@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" class="_Skins_HTML5_Side" lang="en" xml:lang="en" data-mc-search-type="Stem" data-mc-help-system-file-name="COSYM_Online_Help.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Python Bindings|[%=System.LinkedTitle%]">
+    <!-- saved from url=(0016)http://localhost -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+        <link rel="shortcut icon" href="../../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../../Skins/Favicons/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" /><title>Error Reporting</title>
+        <link href="../../TableStyles/table2.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <meta name="Product" content="COSYM" />
+        <meta name="Version" content="V3.4.1" />
+        <meta name="Revision" content="R01 EN - 05.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="User Guide" />
+        <script src="../../Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" role="banner" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Help.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div id="mc-main-content" role="main" data-mc-content-body="True">
+                                    <h1>Error Reporting</h1>
+                                    <p>The ATS API return mechanism is standardized in COSYM and new API is introduced to know the error description. </p>
+                                    <h2>Return Codes and its Descriptions</h2>
+                                    <ul>
+                                        <li>For the successful execution, it returns the value <span class="code">SIL_SUCCESS</span></li>
+                                        <li>All the error return values must start from 0x80000000</li>
+                                        <li>To simplify, the errors are sub categorized based on the API functionalities.</li>
+                                        <li>Use the API <span class="code">GetErrorDescription</span> to get the error description.</li>
+                                    </ul>
+                                    <table style="mc-table-style: url('../../TableStyles/table2.css');margin-left: 0;margin-right: auto;" class="TableStyle-table2" cellspacing="2">
+                                        <col class="TableStyle-table2-Column-Column1" style="width: 121px;" />
+                                        <col class="TableStyle-table2-Column-Column1" style="width: 595px;" />
+                                        <col class="TableStyle-table2-Column-Column1" style="width: 225px;" />
+                                        <col class="TableStyle-table2-Column-Column1" style="width: 268px;" />
+                                        <thead>
+                                            <tr class="TableStyle-table2-Head-Header1">
+                                                <th class="TableStyle-table2-HeadE-Column1-Header1">
+                                                    <p class="table_default">Error Codes</p>
+                                                </th>
+                                                <th class="TableStyle-table2-HeadE-Column1-Header1">
+                                                    <p class="table_default">Values</p>
+                                                </th>
+                                                <th class="TableStyle-table2-HeadE-Column1-Header1">
+                                                    <p class="table_default">Converted<br />Decimal values</p>
+                                                </th>
+                                                <th class="TableStyle-table2-HeadD-Column1-Header1">
+                                                    <p class="table_default">Description</p>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Result codes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_SUCCESS</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x00000000</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Success</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x80000000</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147483648</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Error</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Error Type</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_TYPE_LICENSE</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x00001000</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_TYPE_INTERNAL</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x00002000</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_TYPE_SIMULATION</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x00003000</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_TYPE_IPC</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x00004000</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_TYPE_PARAM</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">0x00005000</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">&#160;</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_TYPE_BROKER</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">0x00006000</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">&#160;</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_TYPE_DDS</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">0x00007000</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">&#160;</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_TYPE_SIGGEN</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">0x00008000</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">&#160;</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_TYPE_PROBE</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">0x00009000</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">&#160;</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_TYPE_BREAKPOINT </p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">0x000A00</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">&#160;</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">&#160;</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Specific Errors related to license</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_LICENSE_NOTLOADED</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_LICENSE | 0x00000001</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147487745</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">License Error. Reason: License Not Loaded.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_LICENSE_SIL</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_LICENSE | 0x00000002</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147487746</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">License Error. Reason: SIL License Issue.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_LICENSE_VNET</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_LICENSE | 0x00000004</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147487748</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">License Error. Reason: vNet License Issue.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_INVALID_LICENSE</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_LICENSE | 0x00000005</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147487749</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">License Error. Reason: Invalid License.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Internal Errors</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_NOT_IMPLEMENTED</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000001</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491841</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: Function is not implemented.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_INVALID_STATE</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000002</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491842</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: State is not valid.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_NULL_OBJECT</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000003</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491843</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: Object is empty.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_NULL_ESSE_CONTROL_MASTER</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000004</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491844</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: Esse Control Master Object is empty.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_NULL_ESSE_SUMILATION_CONTROL</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000005</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491845</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: Esse Simulation Control Object is empty.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_NULL_LICENSE_MANAGER</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000006</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491846</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: License Manager Object is empty.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_UNKNOWN</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000007</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491847</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: Unknown.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_INITIALISE_FAILED</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_INTERNAL | 0x00000008</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147491848</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Internal Error. Reason: Initialization failed.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Simulation info codes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_STATE_STARTING</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 8</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495944</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">State Error. Reason: Not a correct state.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_STATE_PAUSING</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 12</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495954</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">State Error. Reason: Not a correct state.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_STATE_STOPPING</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 10</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495952</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">State Error. Reason: Not a correct state.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Simulation Error Codes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_INIT</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 0x00000001</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495937</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Simulation Error. Reason: Initialization failed.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_START</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 0x00000002</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495938</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Simulation Error. Reason: Filed to start.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_PAUSE</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 0x00000003</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495939</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Simulation Error. Reason: Failed to pause.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_STOP</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 0x00000004</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495940</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Simulation Error. Reason: Failed to stop.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_UNKNOWN</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 0x00000005</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495941</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Simulation Error. Reason: Unknown.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">&#160;SIL_ERR_INVALID_END_TIME</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIMULATION | 0x00000006</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147495942</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">&#160;Simulation Error. Reason: Negative(except -1) and Zero values are invalid .</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Network related error codes</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_CORBA</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_IPC | 0x00000001</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147500033</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Network Error. Reason: CORBA failed.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_NETWORK</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_IPC | 0x00000002</p>
+                                                </td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147500034</td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">Network Error. Reason: Other Network error.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Specific Errors related to Parameterization</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_FAILED_TOWRITE_PARAM</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PARAM | 0x00000001</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147504129</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Parameterization Error. Reason: Failed to write.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_FAILED_TOREAD_PARAM</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PARAM | 0x00000002</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147504130</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Parameterization Error. Reason: Failed to read</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_FAILED_WRONG_NETWORK_STATE</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PARAM | 0x00000003</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147504131</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Parameterization Error. Reason: Network state should be Paused or Stopped.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_FAILED_INVALID_VARIABLE_PATH</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PARAM | 0x00000004</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147504132</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Parameterization Error. Reason: Couldn't find the variable path.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="list">SIL_ERR_FAILED_INVALID_FUNCTION_SEQUENCE</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="list">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PARAM | 0x00000005</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="list">2147504133</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="list">Parameterization Error. Reason: <br />Invalid function sequence. Signal generator is enabled for the unconnected inport and write API is used to edit the value of the inport.</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_ERR_FAILED_INPORT_IS_CONNECTED</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PARAM | 0x00000006;</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyE-Column1-Body1">
+                                                    <p class="table_default">2147504134</p>
+                                                </td>
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p class="table_default">write API cannot be used for connected port</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Specific Errors related to Broker</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_FAILED_ORB</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000001</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508225</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: Unknown.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_NOT_INITIALIZED_ORB</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000002</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508226</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: ORB not Initialized.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_TIMEOUT_ORB</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000003</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508227</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: ORB timeout Occurred.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_COMMUNICATION_FAILED_ORB</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000004</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508228</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: ORB Communication Failed.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_CHANNEL_REMOVED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000005</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508229</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: Channel is Removed.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_ALREADY_INITIALIZED_CHANNEL</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000006</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508230</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: Channel Already Initialized.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_NOT_INITIALIZED_CHANNEL</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000007</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508231</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: Channel Not Initialized.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_CHANNEL_INITIALIZATION_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BROKER | 0x00000008</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147508232</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Data Broker Error. Reason: Failed to Initialize Channel.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Specific Errors related to DDS</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_DDS_SERVER_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_DDS | 0x00000001</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147512321</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">DDS Error. Reason: Connection to DDS Server Failed.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Specific Errors related to Signal Generator</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INSTANCE_CREATION_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000001</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516417</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Create Signal Generator Instance.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_TASK_TABLE_NOT_SPECIFIED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000002</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516418</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Task Table Not Specified.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_OBJECT_NOT_FOUND</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000003</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516419</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Object Not Found.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INCONSISTENCY</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000004</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516420</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Inconsistency Occurred.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_DELETE_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000005</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516421</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Delete Signal Generator Instance.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INSTANCE_START_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000006</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516422</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Start Signal Generator Instance.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INSTANCE_STOP_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000007</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516423</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Stop Signal Generator Instance.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INSTANCE_RESET_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000008</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516424</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Reset Signal Generator Instance.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_CHANNEL_CREATE_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000009</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516425</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Create Channel.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_CHANNEL_DELETE_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000010</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516432</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Delete Channel.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_TIME_SLICE_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000011</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516433</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Time Slice Failed.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_TIME_SLICE_NOT_FOUND</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000012</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516434</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Time Slice Not Found.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_TIME_SLICE_DELETE_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000013</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516435</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Failed to Delete Time Slice.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_CHANNEL_NOT_FOUND</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000014</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516436</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Channel Not Found.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_SIG_INTERVAL_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000015</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516437</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Signal Interval Failed.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INTERVAL_NOT_FOUND</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000016</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516438</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Interval Not Found.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_UNKNOWN_SIGGEN</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000017</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516439</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Unknown</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_LINK_SIGGEN</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_SIGGEN | 0x00000018</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147516440</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Signal Generator Error. Reason: Link Not Found.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="4" class="TableStyle-table2-BodyD-Column1-Body1">
+                                                    <p>//Specific Errors related to Probe Config Server</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_PROBE_SERVER_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PROBE | 0x00000001</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147520513</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Probe Config Error. Reason: Connection to Probe Config Server Failed.</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_UNKNOWN_PROBE</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_PROBE | 0x00000002</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147520514</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Probe Config Error. Reason: Unknown</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td class="TableStyle-table2-BodyD-Column1-Body1" colspan="4">
+                                                    <p class="table_default">//Specific Errors related to Breakpoint</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_BREAKPOINT_CREATION_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BREAKPOINT | 0x00000001</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147524609</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Breakpoint creation failed</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_BREAKPOINT_DELETION_FAILED</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BREAKPOINT | 0x00000002</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147524610</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Breakpoint deletion failed</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INVALID_BREAKPOINT_ID</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BREAKPOINT | 0x00000003</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147524611</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Invalid breakpoint Id</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_INVALID_SIMULATION_STATE</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BREAKPOINT | 0x00000004</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147524612</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Invalid Simulation state for Breakpoint Creation</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_ERR_BREAKPOINT_UNKNOWN_ERROR</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BREAKPOINT | 0x00000005</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyE-Column1-Body1">2147524613</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyD-Column1-Body1">Breakpoint Unknown Error</td>
+                                            </tr>
+                                            <tr class="TableStyle-table2-Body-Body1">
+                                                <td colspan="1" class="TableStyle-table2-BodyB-Column1-Body1">SIL_ERR_BREAKPOINT_WATCHER_CONFIG_INVALID</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyB-Column1-Body1">SIL_RESULT_ERROR | SIL_RESULT_TYPE_BREAKPOINT | 0x00000006</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyB-Column1-Body1">2147524614</td>
+                                                <td colspan="1" class="TableStyle-table2-BodyA-Column1-Body1">Breakpoint creation failed : watcher configuration does not exist</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
