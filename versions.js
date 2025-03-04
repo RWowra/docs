@@ -3,7 +3,7 @@ const versions = [
     { version: 'V2', path: '../V2/Data Operator v1.2/Data Operator_V1.2_User Guide_EN.htm' },
     { version: 'V3', path: '../V3/Data Operator v1.3/Data Operator_V1.3_User Guide_EN.htm' },
     { version: 'V4', path: '../V4/Data Operator v1.4/Data Operator_V1.4_User Guide_EN.htm' },
-    { version: 'Latest version', path: '../Current/Data Operator_V1.5_User Guide_EN.htm' }
+    { version: 'Latest version', path: '../Current/Data Operator v1.5/Data Operator_V1.5_User Guide_EN.htm' }
 ];
 
 // Funktion zur Ermittlung der aktuellen Version basierend auf der URL
