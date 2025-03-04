@@ -9,24 +9,19 @@ const versions = [
 function getCurrentVersion() {
     const currentPath = window.location.pathname;
 
-    // Falls der ursprüngliche Dateiname in der URL enthalten ist
+    // Prüfe zuerst nach der ursprünglichen Datei (direkte Treffer)
     for (const version of versions) {
         if (currentPath.includes(version.path.replace("..", "/docs"))) {
             return version.version;
         }
     }
 
-    // Falls die URL umgeleitet wurde, nach allgemeinem Muster suchen
-    if (currentPath.includes("/docs/Current/Content/Topics/")) {
-        return "Latest version";
-    } else if (currentPath.includes("/docs/V1/")) {
-        return "V1";
-    } else if (currentPath.includes("/docs/V2/")) {
-        return "V2";
-    } else if (currentPath.includes("/docs/V3/")) {
-        return "V3";
-    } else if (currentPath.includes("/docs/V4/")) {
-        return "V4";
+    // Falls umgeleitet wurde, prüfe nach allgemeinem Muster und bestimme Version aus `versions`
+    for (const version of versions) {
+        const versionFolder = version.path.replace("../", "/docs/").split("/")[1]; // Holt "V1", "V2", etc.
+        if (currentPath.includes(`/docs/${versionFolder}/`)) {
+            return version.version; // Gibt z. B. "V1" zurück
+        }
     }
 
     return "Unknown version"; // Falls nichts passt
