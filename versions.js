@@ -1,9 +1,9 @@
 const versions = [
-    { version: 'V1', path: '../V1/Data Operator v1.1/Data Operator_V1.1_User Guide_EN.htm' },
-    { version: 'V2', path: '../V2/Data Operator v1.2/Data Operator_V1.2_User Guide_EN.htm' },
-    { version: 'V3', path: '../V3/Data Operator v1.3/Data Operator_V1.3_User Guide_EN.htm' },
-    { version: 'V4', path: '../V4/Data Operator v1.4/Data Operator_V1.4_User Guide_EN.htm' },
-    { version: 'Latest version', path: '../Current/Data Operator v1.5/Data Operator_V1.5_User Guide_EN.htm' }
+    { version: 'V1', path: '../V1/DataOperatorV1.1/DataOperator_V1.1_EN.htm' },
+    { version: 'V2', path: '../V2/DataOperatorV1.2/DataOperator_V1.2_EN.htm' },
+    { version: 'V3', path: '../V3/DataOperatorV1.3/DataOperator_V1.3_EN.htm' },
+    { version: 'V4', path: '../V4/DataOperatorV1.4/DataOperator_V1.4_EN.htm' },
+    { version: 'Latest version', path: '../Current/DataOperatorV1.5/DataOperator_V1.5_EN.htm' }
 ];
 
 // Funktion zur Ermittlung der aktuellen Version basierend auf der URL
