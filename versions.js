@@ -6,15 +6,30 @@ const versions = [
     { version: 'Latest version', path: '../Current/DataOperator_V1.5_EN.htm' }
 ];
 
-// Funktion zur Ermittlung der aktuellen Version basierend auf der URL
 function getCurrentVersion() {
-    const currentPath = window.location.pathname; // Aktueller Pfad der URL
+    const currentPath = window.location.pathname;
+
+    // Falls der ursprüngliche Dateiname in der URL enthalten ist
     for (const version of versions) {
-        if (currentPath.includes(version.path)) {
-            return version.version; // Gibt die Version zurück, die im aktuellen Pfad enthalten ist
+        if (currentPath.includes(version.path.replace("..", "/docs"))) {
+            return version.version;
         }
     }
-    return 'Unknown version'; // Fallback, falls keine Version gefunden wird
+
+    // Falls die URL umgeleitet wurde, nach allgemeinem Muster suchen
+    if (currentPath.includes("/docs/Current/Content/Topics/")) {
+        return "Latest version";
+    } else if (currentPath.includes("/docs/V1/")) {
+        return "V1";
+    } else if (currentPath.includes("/docs/V2/")) {
+        return "V2";
+    } else if (currentPath.includes("/docs/V3/")) {
+        return "V3";
+    } else if (currentPath.includes("/docs/V4/")) {
+        return "V4";
+    }
+
+    return "Unknown version"; // Falls nichts passt
 }
 
 const versionDropdown = document.getElementById('versionDropdown');
