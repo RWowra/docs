@@ -5,11 +5,12 @@ const versions = [
     { version: 'V4', path: '../V4/DataOperator_V1.4_EN.htm' },
     { version: 'Latest version', path: '../Current/DataOperator_V1.5_EN.htm' }
 ];
+
 function getCurrentVersion() {
     const currentPath = window.location.pathname;
     console.log("DEBUG: Current Path =", currentPath);
 
-    // Prüfe, ob eine bekannte Version im Pfad enthalten ist
+    // Prüfe zuerst nach der ursprünglichen Datei (direkte Treffer)
     for (const version of versions) {
         const normalizedPath = version.path.replace("..", "/docs");
         console.log("Checking against:", normalizedPath);
@@ -19,14 +20,14 @@ function getCurrentVersion() {
         }
     }
 
-    // Falls umgeleitet wurde, prüfe nach der Projektstruktur
+    // Falls umgeleitet wurde, prüfe nach allgemeinem Muster
     for (const version of versions) {
         const versionFolder = version.path.replace("../", "").split("/")[0]; // Holt "V1", "V2", "Current"
         const folderMatch = `/docs/${versionFolder}/`;
         console.log("Checking folder match:", folderMatch);
         if (currentPath.includes(folderMatch)) {
             console.log("MATCH FOUND:", version.version);
-            return extractVersionFromPath(currentPath, versionFolder);
+            return formatLatestVersion(version.version);
         }
     }
 
@@ -34,22 +35,18 @@ function getCurrentVersion() {
     return "Unknown version";
 }
 
-// **Universelle Methode, um eine Version aus der URL zu extrahieren**
-function extractVersionFromPath(path, versionFolder) {
-    console.log("Extracting version from:", path);
-
-    // Falls der Versionen-Ordner z. B. `/V1/` ist, nutze diesen direkt
-    if (versionFolder.match(/^V\d+$/)) {
-        return versionFolder; // Gibt einfach "V1", "V2", etc. zurück
+// **Funktion, um "Latest version (V1.5)" anzuzeigen**
+function formatLatestVersion(version) {
+    if (version === "Latest version") {
+        const latest = versions.find(v => v.version.includes("Latest"));
+        if (latest) {
+            const match = latest.path.match(/DataOperator_(V\d+\.\d+)_EN\.htm/);
+            if (match) {
+                return `Latest version (${match[1]})`; // Z. B. "Latest version (V1.5)"
+            }
+        }
     }
-
-    // Falls es sich um `Current` handelt, nach einer Versionsnummer in der Datei suchen
-    const fileMatch = path.match(/(?:\/|_)(V\d+\.\d+)(?:_EN)?\.htm/);
-    if (fileMatch) {
-        return fileMatch[1]; // Gibt z. B. "V1.5" zurück
-    }
-
-    return "Latest version"; // Standard-Fallback
+    return version;
 }
 
 
