@@ -35,19 +35,19 @@ function getCurrentVersion() {
     return "Unknown version";
 }
 
-// **Funktion, um "Latest version (V1.5)" anzuzeigen**
 function formatLatestVersion(version) {
     if (version === "Latest version") {
         const latest = versions.find(v => v.version.includes("Latest"));
         if (latest) {
-            const match = latest.path.match(/DataOperator_(V\d+\.\d+)_EN\.htm/);
+            const match = latest.path.match(/V\d+\.\d+/); // Holt die Versionsnummer aus dem Dateinamen
             if (match) {
-                return `Latest version (${match[1]})`; // Z. B. "Latest version (V1.5)"
+                return `Latest version (${match[0]})`; // Ausgabe: "Latest version (V1.5)"
             }
         }
     }
     return version;
 }
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
