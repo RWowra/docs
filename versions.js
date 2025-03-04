@@ -18,7 +18,7 @@ function getCurrentVersion() {
 
     // Falls umgeleitet wurde, prüfe nach allgemeinem Muster und bestimme Version aus `versions`
     for (const version of versions) {
-        const versionFolder = version.path.replace("../", "/docs/").split("/")[1]; // Holt "V1", "V2", etc.
+        const versionFolder = version.path.replace("../", "").split("/")[0]; // Holt "V1", "V2", etc.
         if (currentPath.includes(`/docs/${versionFolder}/`)) {
             return version.version; // Gibt z. B. "V1" zurück
         }
@@ -27,19 +27,27 @@ function getCurrentVersion() {
     return "Unknown version"; // Falls nichts passt
 }
 
-const versionDropdown = document.getElementById('versionDropdown');
-const currentVersion = document.getElementById('currentVersion');
+document.addEventListener("DOMContentLoaded", function () {
+    const versionDropdown = document.getElementById("versionDropdown");
+    const currentVersion = document.getElementById("currentVersion");
 
-// Setze die aktuelle Version im Dropdown
-currentVersion.textContent = getCurrentVersion();
+    if (currentVersion) {
+        currentVersion.textContent = getCurrentVersion(); // Setze die aktuelle Version im Footer
+    }
 
-// Dropdown-Optionen hinzufügen
-versions.forEach(version => {
-    const link = document.createElement('a');
-    link.href = version.path;
-    link.textContent = version.version;
-    link.onclick = function() {
-        currentVersion.textContent = version.version; // Aktuelle Version aktualisieren
-    };
-    versionDropdown.appendChild(link);
+    if (versionDropdown) {
+        versions.forEach(version => {
+            const link = document.createElement("a");
+            link.href = version.path.replace("..", "/docs"); // Korrigierter Pfad für GitHub Pages
+            link.textContent = version.version;
+
+            link.onclick = function () {
+                if (currentVersion) {
+                    currentVersion.textContent = version.version; // Aktualisieren der Version im Footer
+                }
+            };
+
+            versionDropdown.appendChild(link);
+        });
+    }
 });
