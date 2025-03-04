@@ -8,24 +8,33 @@ const versions = [
 
 function getCurrentVersion() {
     const currentPath = window.location.pathname;
+    console.log("DEBUG: Current Path =", currentPath);
 
-    // Prüfe zuerst nach der ursprünglichen Datei (direkte Treffer)
+    // Prüfe zuerst, ob die Hauptdatei direkt in der URL ist
     for (const version of versions) {
-        if (currentPath.includes(version.path.replace("..", "/docs"))) {
+        const normalizedPath = version.path.replace("..", "/docs"); // Korrigiere den Pfad
+        console.log("Checking against:", normalizedPath);
+        if (currentPath.includes(normalizedPath)) {
+            console.log("MATCH FOUND:", version.version);
             return version.version;
         }
     }
 
-    // Falls umgeleitet wurde, prüfe nach allgemeinem Muster und bestimme Version aus `versions`
+    // Falls die Seite umgeleitet wurde, prüfe anhand des Ordners (V1, V2, Current, etc.)
     for (const version of versions) {
-        const versionFolder = version.path.replace("../", "").split("/")[0]; // Holt "V1", "V2", etc.
-        if (currentPath.includes(`/docs/${versionFolder}/`)) {
-            return version.version; // Gibt z. B. "V1" zurück
+        const versionFolder = version.path.replace("../", "").split("/")[0]; // Holt "V1", "V2", "Current"
+        const folderMatch = `/docs/${versionFolder}/Content/Topics/`;
+        console.log("Checking folder match:", folderMatch);
+        if (currentPath.includes(folderMatch)) {
+            console.log("MATCH FOUND:", version.version);
+            return version.version;
         }
     }
 
-    return "Unknown version"; // Falls nichts passt
+    console.log("No match found, returning 'Unknown version'");
+    return "Unknown version";
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const versionDropdown = document.getElementById("versionDropdown");
