@@ -4659,7 +4659,6 @@ MadCap|toggler.example
 	line-height: 44px;
 }
 
-/*Drop-down versioning etas.docs*/
 /* Drop-down versioning etas.docs */
 
 .version-dropdown
@@ -4712,6 +4711,11 @@ MadCap|toggler.example
 .version-dropdown:hover .dropdown-content
 {
 	display: block;
+}
+
+.show-dropdown
+{
+	display: block !important;
 }
 
 /*.version-dropdown {

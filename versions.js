@@ -55,22 +55,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentVersion = document.getElementById("currentVersion");
 
     if (currentVersion) {
-        currentVersion.textContent = getCurrentVersion(); // Setze die aktuelle Version im Footer
+        currentVersion.textContent = getCurrentVersion();
+        
+        // Event-Listener zum Öffnen/Schließen des Dropdowns
+        currentVersion.addEventListener("click", function () {
+            versionDropdown.classList.toggle("show-dropdown");
+        });
     }
 
     if (versionDropdown) {
         versions.forEach(version => {
             const link = document.createElement("a");
-            link.href = version.path.replace("..", "/docs"); // Korrigierter Pfad für GitHub Pages
+            link.href = version.path.replace("..", "/docs");
             link.textContent = version.version;
 
             link.onclick = function () {
                 if (currentVersion) {
-                    currentVersion.textContent = version.version; // Aktualisieren der Version im Footer
+                    currentVersion.textContent = version.version;
                 }
             };
 
             versionDropdown.appendChild(link);
         });
     }
+
+    // Schließen des Dropdowns, wenn außerhalb geklickt wird
+    document.addEventListener("click", function (event) {
+        if (!currentVersion.contains(event.target) && !versionDropdown.contains(event.target)) {
+            versionDropdown.classList.remove("show-dropdown");
+        }
+    });
 });
+
+
