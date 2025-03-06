@@ -4693,7 +4693,8 @@ MadCap|toggler.example
 	background-color: #ffffff;
 	min-width: 160px;
 	border-radius: 8px;
-	border: 1px solid #eeeff0 z-index;
+	border: 1px solid #eeeff0;
+	z-index: 1000;
 }
 
 .dropdown-content a
