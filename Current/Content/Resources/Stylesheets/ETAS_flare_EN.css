@@ -711,7 +711,7 @@ a:hover
 
 .dropdown-content a:hover
 {
-	color: #4568A9;
+	color: #4568A9 !important;
 	/* Hover-Farbe anpassen */
 }
 
