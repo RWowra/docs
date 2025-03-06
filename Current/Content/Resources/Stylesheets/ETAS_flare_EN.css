@@ -711,8 +711,8 @@ a:hover
 
 .dropdown-content a:hover
 {
-	color: #4568A9 !important;
-	/* Hover-Farbe anpassen */
+	background-color: #e8ecf4;
+	color: #5a646e;
 }
 
 a:hover
@@ -4692,23 +4692,28 @@ MadCap|toggler.example
 	left: 0;
 	background-color: #ffffff;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
+	border-radius: 8px;
+	border: 1px solid #eeeff0 z-index;
 }
 
 .dropdown-content a
 {
 	color: #5a646e;
 	/* Linkfarbe anpassen */
-	padding: 12px 16px;
+	padding: 8px 16px;
 	text-decoration: none;
 	display: block;
-	font-family: "Manrope";
+	font-family: "Manrope SemiBold";
 	/* Schriftart anpassen */
 	font-size: 14px;
 	/* Schriftgröße anpassen */
 	line-height: 22px;
 	/* Zeilenhöhe anpassen */
+}
+
+.dropdown-content a.active
+{
+	color: #164293;
 }
 
 .current-version:hover

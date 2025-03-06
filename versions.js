@@ -73,6 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (currentVersion) {
                     currentVersion.textContent = version.version;
                 }
+
+                // Entferne die "active"-Klasse von allen Links
+                document.querySelectorAll(".dropdown-content a").forEach(el => el.classList.remove("active"));
+
+                // Füge die "active"-Klasse zum geklickten Link hinzu
+                this.classList.add("active");
+                // ⬆️ Kein preventDefault(), die Seite wird normal geladen!
             };
 
             versionDropdown.appendChild(link);
@@ -86,5 +93,3 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
-
-
