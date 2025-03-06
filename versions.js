@@ -1,8 +1,8 @@
 const versions = [
-    { version: 'V1', path: '../V1/DataOperator_V1.1_EN.htm' },
-    { version: 'V2', path: '../V2/DataOperator_V1.2_EN.htm' },
-    { version: 'V3', path: '../V3/DataOperator_V1.3_EN.htm' },
-    { version: 'V4', path: '../V4/DataOperator_V1.4_EN.htm' },
+    { version: 'V1', path: '../V1.1/DataOperator_V1.1_EN.htm' },
+    { version: 'V2', path: '../V1.2/DataOperator_V1.2_EN.htm' },
+    { version: 'V3', path: '../V1.3/DataOperator_V1.3_EN.htm' },
+    { version: 'V4', path: '../V1.4/DataOperator_V1.4_EN.htm' },
     { version: 'Latest version', path: '../Current/DataOperator_V1.5_EN.htm' }
 ];
 
@@ -73,13 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (currentVersion) {
                     currentVersion.textContent = version.version;
                 }
-
-                // Entferne die "active"-Klasse von allen Links
-                document.querySelectorAll(".dropdown-content a").forEach(el => el.classList.remove("active"));
-
-                // Füge die "active"-Klasse zum geklickten Link hinzu
-                this.classList.add("active");
-                // ⬆️ Kein preventDefault(), die Seite wird normal geladen!
             };
 
             versionDropdown.appendChild(link);
