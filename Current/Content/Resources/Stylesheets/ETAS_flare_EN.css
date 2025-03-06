@@ -4684,7 +4684,8 @@ MadCap|toggler.example
 
 .dropdown-content
 {
-	display: none;
+	display: block !important;
+	visibility: hidden;
 	position: absolute;
 	background-color: #ffffff;
 	/* Hintergrundfarbe beibehalten */
@@ -4711,6 +4712,7 @@ MadCap|toggler.example
 .version-dropdown:hover .dropdown-content
 {
 	display: block;
+	visibility: visible;
 }
 
 .show-dropdown
