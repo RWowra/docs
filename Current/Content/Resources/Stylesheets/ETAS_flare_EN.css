@@ -4711,11 +4711,6 @@ MadCap|toggler.example
 	/* Zeilenhöhe anpassen */
 }
 
-.version-dropdown:hover .dropdown-content
-{
-	display: none !important;
-}
-
 .current-version:hover
 {
 	color: #4568A9 !important;
