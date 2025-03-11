@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Product" content="ASCMO-MOCA" />
+        <meta name="Version" content="V5.14" />
+        <meta name="Revision" content="R01 EN | 10.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="Help" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" /><title>
+           Model Configurations:&#160;Convolutional Neural Network (CNN)</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/list_note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/table1.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
+        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script>/* <![CDATA[ */
+			document.title = "ASCMO-MOCA - "  + document.title;
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Resources/Manual/LandingPage_MOCA.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div role="main" id="mc-main-content">
+                                        <h1>
+           Model Configurations:&#160;Convolutional Neural Network (CNN)</h1>
+                                        <p>When you select the <span class="gui">Convolutional Neural Network</span> modeling method <span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Configurations</span>, the <span class="gui">Model Configuration</span> area of the <span class="italic">&lt;output&gt;</span> tab contains the following elements. For each output there is a separate tab.</p>
+                                        <p data-mc-target-name="Window"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/ASCMOdyn_Window_ModelConfigurations_CNN.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="622" data-mc-height="1169" src="../Resources/Graphics/ASCMOdyn_Window_ModelConfigurations_CNN_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p>See <a href="ASCMOdyn_Window_ModProp.htm" class="MCXref xref">
+            Model Configurations (ASCMO-DYNAMIC)</a>, for a description of the <span class="gui">Output Properties</span> area and the button row on the bottom of the window.</p>
+                                        <p class="gui_title">Training Labels</p>
+                                        <div data-mc-conditions="SnippetConditions.Snippet3">
+                                            <p class="gloss_des">Assign the labels you want to train the model on. If you use multiple labels, all data associated with at least one of the labels is used.</p>
+                                            <p class="gloss_des">Assign a label by double-clicking the field and typing the name. Select the dataset from the list of suggestions.</p>
+                                            <p class="gloss_des">Use the <span class="gui">x</span> on the label or <span class="gui">Del</span> to remove the label.</p>
+                                        </div>
+                                        <p class="gui_title">Validation Labels</p>
+                                        <div data-mc-conditions="SnippetConditions.Snippet1">
+                                            <p class="gloss_des">Assign the labels of the data you want to use as validation data. If you use multiple labels, all data associated with at least one of the labels is used.</p>
+                                            <p class="gloss_des">Assign a label by double-clicking the field and typing the name. Select the dataset from the list of suggestions.</p>
+                                            <p class="gloss_des">Use the <span class="gui">x</span> on the label or <span class="gui">Del</span> to remove the label.</p>
+                                            <p class="gloss_des">
+                                                <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/list_note.css');" class="TableStyle-list_note" cellspacing="0">
+                                                    <col class="TableStyle-list_note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-list_note-Head-Header1">
+                                                            <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-list_note-Body-Body1">
+                                                            <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                                <p class="note">If the validation labels are not assigned to any data, the model is trained without validation. A message appears in the log window. You can assign labels to data in the <a href="ASCMOdyn_Window_ManageDataSets.htm" class="MCXref xref">
+            Manage Datasets</a> window.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </p>
+                                        </div>
+                                        <h5><a name="&quot;Network"></a>Network Layout</h5>
+                                        <p class="gui_title"><a name="&quot;Cell"></a>Layer Type</p>
+                                        <p class="gloss_des"> <MadCap:conditionalText data-mc-conditions="SnippetConditions.Snippet2">Select between <span class="gui">1D Convolution</span> and <span class="gui">Temporal Convolution</span> cell type.</MadCap:conditionalText> </p>
+                                        <p class="gui_title">Number of Layers</p>
+                                        <p class="gloss_des">Enter the number of layers. <MadCap:conditionalText data-mc-conditions="SnippetConditions.Snippet2">Depending on the number of layers, corresponding input fields are generated for the next 4 options.</MadCap:conditionalText></p>
+                                        <p class="gui_title" data-mc-conditions="SnippetConditions.Snippet2">Number of Filters</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">Specify the number of filters for each layer separately.</p>
+                                        <p class="gui_title" data-mc-conditions="SnippetConditions.Snippet2">Kernel Size</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">Specify the kernel size for each layer separately.</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">
+                                            <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/list_note.css');" class="TableStyle-list_note" cellspacing="0">
+                                                <col class="TableStyle-list_note-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-list_note-Head-Header1">
+                                                        <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                            <p class="note_Header" data-mc-autonum="Note " data-mc-conditions="SnippetConditions.Snippet2"><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-list_note-Body-Body1">
+                                                        <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                            <p class="note" data-mc-conditions="SnippetConditions.Snippet2">The kernel size and dilation rate settings determine the length of the model's receptive field, i.e., how far into the past the model can look to compute the prediction for the current time step. See also, <a href="ASCMOdyn_CNN.htm" class="MCXref xref">Model Prediction with Convolutional Neural Network (CNN)</a>.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </p>
+                                        <p class="gui_title" data-mc-conditions="SnippetConditions.Snippet2">Dilation Rate</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">Specify the dilation rate for each layer. Each temporal convolutional layer uses dilated <span class="gui">Conv1d</span> layers with dilation rate <span class="code_bold">r</span> (i.e., every <span class="code_bold">r<span class="superscript">th</span></span> element of the input is used for convolution). For example, if you want to use the entire input sequence, you can use <span class="code_bold">r=b<span class="superscript">i-1</span></span> for the <span class="code_bold">i<span class="superscript">th</span></span> layer, where b is a natural number <span class="code_bold">≥ 2</span>. The default is <span class="code_bold">r=1</span> for each layer.</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">
+                                            <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/list_note.css');" class="TableStyle-list_note" cellspacing="0">
+                                                <col class="TableStyle-list_note-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-list_note-Head-Header1">
+                                                        <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                            <p class="note_Header" data-mc-autonum="Note " data-mc-conditions="SnippetConditions.Snippet2"><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-list_note-Body-Body1">
+                                                        <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                            <p class="note" data-mc-conditions="SnippetConditions.Snippet2">The kernel sizes and dilation rates settings determine the length of the model's receptive field, i.e., how far into the past the model can look to compute the prediction for the current time step. See also, <a href="ASCMOdyn_CNN.htm" class="MCXref xref">Model Prediction with Convolutional Neural Network (CNN)</a>.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </p>
+                                        <p class="gui_title" data-mc-conditions="SnippetConditions.Snippet2">Leaky ReLU Slope</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">Specify the Leaky ReLU activation function of the CNN&#160;layers. The slope for negative inputs can be set in the interval from <span class="code_bold">0</span> (corresponding to ReLU activation) to <span class="code_bold">1</span> (corresponding to linear activation).</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">
+                                            <img src="../Resources/Graphics/button_info.png" title="bu" class="Icon" /> Opens a plot of the activation function with the current slope values. If different values are entered in the fields, one function is plotted for each different value.</p>
+                                        <div>
+                                            <p class="gui_title"><a name="&quot;Dropout"></a>Dropout</p>
+                                            <p class="gloss_des">Enter a value between 0 and 0.9 as a percentage of  neurons to be randomly deactivated during training. That means the weight of the neurons is set to 0 temporarily. This avoids overfitting. The entered value 0 means not activated, 0.1 means 10% of the neurons are set to 0 temporarily. The typical value range is [0, 0.2].</p>
+                                        </div>
+                                        <p class="gui_title" data-mc-conditions="SnippetConditions.Snippet6">
+            Use Skip Connections</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet6">Activate to add the input of the layer to its output. </p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet6">If the input and output sizes do not match, the input is processed by an additional convolutional layer before being added to the output. Skip connections have been shown to simplify training and improve network performance by allowing the flow of information to skip selected layers.</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet6"><a targets="tabel_skip" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="tabel_skip"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />More information</a>
+                                        </p>
+                                        <table style="width: 100%;mc-table-style: url('../Resources/TableStyles/table1.css');display: none;" class="TableStyle-table1" cellspacing="2" data-mc-target-name="tabel_skip">
+                                            <col class="TableStyle-table1-Column-Column1" />
+                                            <col class="TableStyle-table1-Column-Column1" />
+                                            <tbody>
+                                                <tr class="TableStyle-table1-Body-Body1">
+                                                    <td class="TableStyle-table1-BodyE-Column1-Body1">
+                                                        <img src="../Resources/Graphics/skip_connections.png" class="list" style="height: auto;width: 250px;" />
+                                                    </td>
+                                                    <td class="TableStyle-table1-BodyD-Column1-Body1">
+                                                        <img src="../Resources/Graphics/skip_connections2.png" style="height: auto;width: 250px;" />
+                                                    </td>
+                                                </tr>
+                                                <tr class="TableStyle-table1-Body-Body1">
+                                                    <td class="TableStyle-table1-BodyB-Column1-Body1">
+                                                        <p class="table_default">Skip connection for a block of layers where the number of inputs is equal to the number of outputs.
+The neural network block can consist of only one layer, e.g., one LSTM layer.</p>
+                                                    </td>
+                                                    <td class="TableStyle-table1-BodyA-Column1-Body1">
+                                                        <p class="table_default">Skip connection for a block of layers where the number of inputs differs from the number of outputs.
+The neural network block can consist of only one layer, e.g., one LSTM layer.
+A 1D convolution with linear activation is used to adjust the input to the output dimension of the skipped layer.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet6" />
+                                        <p class="gui_title" data-mc-conditions="SnippetConditions.Snippet2">Receptive Field</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">Displays the number of past time steps considered by the model. The value is displayed dynamically depending on the values for kernel sizes and dilation rates. A value <span class="code_bold">k</span> means that inputs from the interval <span class="code_bold">[t-(k-1),t]</span> (and possibly not all of them) are used to compute the output at time step <span class="code_bold">t</span>.</p>
+                                        <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet2">
+                                            <img src="../Resources/Graphics/button_info.png" title="bu" class="Icon" /> Opens a <a targets="img;image" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="img;image"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />schematic representation</a> of the receptive field generated for the specified kernel size and dilation rate.<img src="../Resources/Graphics/ASCMOdyn_Window_Schematic_Representation.png" class="left" style="display: none;" data-mc-target-name="img" /></p>
+                                        <p class="gui_title">Number of Network Parameters</p>
+                                        <p class="gloss_des">Dynamically shows the number of parameters used by the model training for current settings<MadCap:conditionalText data-mc-conditions="SnippetConditions.Snippet1,SnippetConditions.Snippet3"> (including potential initialization network)</MadCap:conditionalText>.</p>
+                                        <h5>Output Properties</h5>
+                                        <p class="gui_title"><span class="gui">Output Transformation</span>
+                                        </p>
+                                        <p class="gloss_des">Select the transformation type of the output. Using a transformation can improve the model prediction.  Not all transformations are available if the training data has negative or zero values.</p>
+                                        <p class="gloss_des">You can select from the following choices:</p>
+                                        <ul style="margin-top: 2.12pt;">
+                                            <li class="list"><span class="gui">none</span>: no transformation</li>
+                                            <li class="list"><span class="gui">log(y)</span>: logarithm</li>
+                                            <li class="list">
+                                                <p><span class="gui">Bounded</span>: limited to lower and upper bound</p>
+                                                <p data-mc-conditions="SnippetConditions.snippet5">Click <img src="../Resources/Graphics/BUTTON.GIF" class="Icon" /> <span class="gui">Edit</span> to <a targets="output_bounds" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="output_bounds"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />view</a> the automatically selected bounds or to define the lower and upper bounds manually. To define them manually, deactivate the <span class="gui">Automatic</span> checkbox. The bounds must be in the range of the training data.</p>
+                                                <p style="display: none;" data-mc-conditions="SnippetConditions.snippet5" data-mc-target-name="output_bounds">
+                                                    <img src="../Resources/Graphics/output_transformation_bounds.png" class="list" />
+                                                </p>
+                                            </li>
+                                            <li class="list">
+                                                <p><span class="gui">log(y+c)</span>: logarithm plus constant</p>
+                                                <p data-mc-conditions="SnippetConditions.snippet5">
+                                                    <MadCap:conditionalText data-mc-conditions="SnippetConditions.snippet5">Click <img src="../Resources/Graphics/BUTTON.GIF" class="Icon" /> <span class="gui">Edit</span> to <a targets="log_shift" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="log_shift"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />view</a> the automatically selected log shift or to define a manual shift value. To define it manually, deactivate the <span class="gui">Automatic</span> checkbox.</MadCap:conditionalText>
+                                                </p>
+                                                <p style="display: none;" data-mc-conditions="SnippetConditions.snippet5" data-mc-target-name="log_shift">
+                                                    <img src="../Resources/Graphics/output_transformation_log_shift.png" data-mc-conditions="SnippetConditions.snippet5" />
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <h5>Training Properties</h5>
+                                        <p class="gui_title">Continue Training</p>
+                                        <p class="gloss_des">Activate the checkbox to continue with existing model training and iterations, if possible, instead of starting a new training. You can change the training properties and continue. <MadCap:conditionalText data-mc-conditions="SnippetConditions.Snippet1">The network layout must remain the same.</MadCap:conditionalText> For example, train with a complex activation function, then switch to a more efficient one (for the ECU) and continue training seamlessly.<MadCap:conditionalText data-mc-conditions="SnippetConditions.Snippet1"> <span class="gui">Continue Training</span> works best with the <span class="gui">Stochastic Gradient Descent</span> as optimizer (<span class="gui">Manual Detailed Training Settings <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Optimizer</span>), which is automatically selected when <span class="gui">Continue Training</span> is activated.</MadCap:conditionalText></p>
+                                        <p class="gui_title">Number of Multistarts</p>
+                                        <p class="gloss_des">Enter the number of training repetitions with different starting values. A higher value can improve the model quality, but the model training then takes more time. The default value is 3. </p>
+                                        <p class="gui_title">
+                                            <MadCap:conditionalText data-mc-conditions="SnippetConditions.Snippet1">Number of </MadCap:conditionalText>Iterations </p>
+                                        <p class="gloss_des">Enter the number of iterations to be performed during model training. If the model performance does not improve within 10 iterations on the validation data, the training will be aborted.  In deep learning this is often referred to as number of epochs.</p>
+                                        <div>
+                                            <p class="gui_title">Training Loss</p>
+                                            <p class="gloss_des">Select the type of training loss. Training loss is the criterion that is minimized during model training.</p>
+                                            <p class="gloss_des"><span class="code">Absolute</span> equals the RMSE calculation:</p>
+                                            <p class="gloss_des">
+                                                <img src="../Resources/Graphics/Equations/equ_TrainingLossRMSE.png" class="list" />
+                                            </p>
+                                            <p class="gloss_des"><span class="code">Relative</span> puts this in relation to the measured value:</p>
+                                            <p class="gloss_des">
+                                                <img src="../Resources/Graphics/Equations/equ_TrainingLossRelative.png" />
+                                            </p>
+                                            <p class="gloss_des"><span class="code">Transformed</span> behaves like <span class="code">Absolute</span>, but performs the loss calculation in the transformed space, i.e. it depends on the output transformation.</p>
+                                        </div>
+                                        <p class="gui_title">Snippet Length</p>
+                                        <p class="gloss_des">Enter the size of the sequences into which the data is segmented. The underlying optimizer then gets batches with sequences of this fixed length, calculated as the sum of the entered value and the length of the receptive field. The default value for the snippet length is 50.</p>
+                                        <p class="gloss_des">If the length of the current data is about this number of steps or less, it is recommended that you reduce the snippet length, although an optimization with "Snippet Length" = 50 is possible. A smaller value trains faster.</p>
+                                        <div>
+                                            <p class="gui_title">Plot RMSE during Training</p>
+                                            <p class="gloss_des">Activate if you want the RMSE values for training data and validation data to be <a targets="RMSE" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="RMSE"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />displayed during model training</a>.</p>
+                                            <p class="gloss_des" style="display: none;" data-mc-target-name="RMSE">
+                                                <img src="../Resources/Graphics/ASCMOdyn_Window_RNN_RMSE.png" class="list" />
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="gloss_term">Activate Detailed Training Settings</p>
+                                            <p class="gloss_des"> Activate the checkbox to display the <a targets="details" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="details"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" /><span class="gui">Detailed Training Settings</span> section</a>. </p>
+                                            <div style="display: none;" data-mc-target-name="details">
+                                                <p class="gloss_des" data-mc-conditions="SnippetConditions.Snippet1">
+                                                    <img src="../Resources/Graphics/ASCMOdyn_Window_ModProp_RNN3.png" class="list" />
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="list"><a name="&quot;Optimiz"></a><span class="gui">Optimizer</span>
+                                                        </p>
+                                                        <p class="list">Select the optimizer used to train the model. If you activate the <span class="gui">Continue Training</span> checkbox, it is recommended to select <span class="gui">Stochastic Gradient Descent (for continue)</span>.</p>
+                                                    </li>
+                                                </ul>
+                                                <ul>
+                                                    <li>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1"><span class="gui">Data Scaling</span>
+                                                        </p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">Select the scaling variant for the model training.</p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">Before the model training, the training data is scaled internally so that the different input signals are mapped to a similar range. <span class="mc-variable ASCMOVar.prod_dyn_ascmo_short variable">ASCMO-DYNAMIC</span> offers three different scaling types.</p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1"><span class="gui">Normalization</span>: </p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">
+                                                            <img src="../Resources/Graphics/Equations/equ_Normalization.png" class="Icon" />&#160;scaled to an interval of length one contained in [-1, 1].</p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1"><span class="code">Robust Normalization</span>:&#160;</p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">
+                                                            <img src="../Resources/Graphics/Equations/equ_RobustNormalization.png" class="list" />
+                                                        </p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">This scaling method is preferable whenever there are outliers in the data.</p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1"><span class="gui">Standardization</span>: (Z-Score normalization)</p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">
+                                                            <img src="../Resources/Graphics/Equations/equ_Standardization.png" class="list" />
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                                <p>The detailed training settings are adjusted for each iteration. For the first iteration the <span class="gui">Start Value</span> is used, for the last iteration the <span class="gui">Final Value</span>. The values in between are interpolated.</p>
+                                                <ul>
+                                                    <li>
+                                                        <p class="list"><span class="gui">No. of Optimizer Substeps</span>
+                                                        </p>
+                                                        <p class="list">Determines how many sequences of length <span href="#&quot;Lookbac" class="gui">Lookback Length</span> are used for one optimizer update. The default value is 100, which is the batch size used in deep learning. The larger the value, the smaller the batch size and vice versa. If the number is small, the optimizer step is performed less frequently and the training is therefore faster.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1"><span class="gui">Steps Between Training Snippets</span>
+                                                        </p>
+                                                        <p class="list" data-mc-conditions="SnippetConditions.Snippet1">Set the steps between training snippets. The value determines the size of the steps between the start positions of the snippets selected for the model training. So not all possible start positions for training snippets are taken, but every nth position as start position. A larger value results in faster model training. The value 1 results in the best model. Values larger than 1 (e.g. 10) reduce memory consumption, but more iterations may be required.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="list"><span class="gui">Learning Rate</span>
+                                                        </p>
+                                                        <p class="list">Enter the size of the optimizer steps. The default value is 0.01. Valid value range is [0, 1].</p>
+                                                        <p class="list">The larger the learning rate, the faster the training generally will be. However, convergence can be hindered, or even prevented, by large learning rates. </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="gui_title">Highlight Model Deviations</p>
+                                        <p class="gloss_des">
+            If activated the model deviation will be highlighted in red in 
+            <a targets="Highlighting_Plot" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="Highlighting_Plot"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />the plot</a>
+            . 
+            
+        </p>
+                                        <p class="gloss_des">
+                                            <img src="../Resources/Graphics/ASCMOdyn_Window_ModelConfigurations_NARX_HighlightModelDeviationPlot.png" class="list" style="display: none;" data-mc-target-name="Highlighting_Plot" />
+                                        </p>
+                                        <p class="gloss_des">
+            Further settings for the highlighting are displayed:
+        </p>
+                                        <p class="gloss_des" data-mc-target-name="2HighlightModelDeviation_furtherSettings">
+                                            <img src="../Resources/Graphics/ASCMOdyn_Window_ModelConfigurations_NARX_HighlightModelDeviation.png" class="list" />
+                                        </p>
+                                        <p>&#160;</p>
+                                        <p class="gui_title">Anomaly Percentile</p>
+                                        <p class="gloss_des">Enter the percentile of reconstruction errors that are considered normal. If validation datasets are used for model selection, this value is calculated based on validation data, otherwise based on training data. The corresponding value is mapped to 0.5 in the anomaly score.</p>
+                                        <p class="gui_title">Smoothing</p>
+                                        <p class="gloss_des"> Enter the window size value for data points as steps for a median filter. For the prediction of an anomaly, the signals can be smoothed. This can lead to better results.</p>
+                                        <p class="gui_title">Smoothing Window Centered</p>
+                                        <p class="gloss_des">Activate if you want the smoothing window to be centered around the evaluation point, i.e. future points are also taken into account. If deactivated, only past points are used for calculations in the smoothing window.</p>
+                                        <p class="gui_title">Rounding Threshold</p>
+                                        <p class="gloss_des">Enter an anomaly prediction threshold below which the model prediction is automatically set to 0, and 1 otherwise. The threshold is displayed in the Receiver Operating Characteristic (<span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span></span><span class="gui" data-mc-edit-date="2021-04-09T15:35:29.0070795+02:00" data-mc-editor="hhh1lb3" data-mc-comment="Future\r\n„Schwellwert“ definieren, ab der eine Anomalie angenommen wird und dementsprechend angezeigt wird" data-mc-initials="he" data-mc-creator="hhh1lb3" data-mc-create-date="2021-04-09T15:35:06.7631170+02:00"> Anomaly</span><span class="gui"> Detection: Receiver Operating Characteristic</span>).</p>
+                                        <h5>Inputs used in Model Training</h5>
+                                        <p class="gloss_des">This area lists all inputs of the model. You can activate/deactivate the checkbox of an input to include/exclude it in the model training.</p>
+                                        <p class="gloss_des">By default, all inputs are included.</p>
+                                        <p class="see_also" data-mc-autonum="&lt;span style=&quot;font-family: 'Manrope ExtraBold';&quot; class=&quot;mcFormatFamily&quot;&gt;&lt;span style=&quot;color: #164293;&quot; class=&quot;mcFormatColor&quot;&gt;See also &lt;/span&gt;&lt;/span&gt;"><span class="autonumber"><span><span style="font-family: 'Manrope ExtraBold';" class="mcFormatFamily"><span style="color: #164293;" class="mcFormatColor">See also </span></span></span></span>&#160;</p>
+                                        <p class="paragraph"><a href="ASCMOdyn_Window_ModProp.htm" class="MCXref xref">
+            Model Configurations (ASCMO-DYNAMIC)</a>
+                                        </p>
+                                        <p><a href="ASCMOdyn_CNN.htm" class="MCXref xref">Model Prediction with Convolutional Neural Network (CNN)</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div class="footer-content"><span class="copyright">© 2025 ETAS GmbH</span>
+            <div class="footer-links"><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of se / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="”_blank”">Data protection policy</a>
+            </div>
+        </div>
+    </footer>
+</html>

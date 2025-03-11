@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Product" content="ASCMO-MOCA" />
+        <meta name="Version" content="V5.14" />
+        <meta name="Revision" content="R01 EN | 10.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="Help" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" /><title>Driving Cycles Scatter Plot and Driving Cycles Time </title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/list_note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/table21.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
+        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script>/* <![CDATA[ */
+			document.title = "ASCMO-MOCA - "  + document.title;
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Resources/Manual/LandingPage_MOCA.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Driving Cycles Scatter Plot and Driving Cycles Time </h1>
+                                        <p class="noteopen"><span class="gui">Calibration</span> menu <span class="gui"><span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span></span><span class="gui"> Driving Cycles </span><span class="gui"><span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> </span><img src="../Resources/Graphics/BUTTON.GIF" class="Icon" style="width: 14px;height: 8px;" /><span class="gui"> Scatter Plot</span></p>
+                                        <ul>
+                                            <li class="list">
+                                                <p class="list">The <span class="gui">Driving Cycles Scatter Plot</span> window shows scatter plots of the operating point axes and the gradients of the selected driving cycles.</p>
+                                                <p class="list" data-mc-target-name="DCscatterplot"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/Driving_Cycle_ScatterPlot.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="992" data-mc-height="692" src="../Resources/Graphics/Driving_Cycle_ScatterPlot_thumb_0_150.png" tabindex="" /></a>
+                                                </p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"> The <span class="gui">Driving Cycles Time</span> window opens, too, when you open the <span class="gui">Driving Cycles Scatter Plot</span> window.</p>
+                                                <p class="list" data-mc-target-name="DCtimeplot"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/Driving_Cycle_Scatter_Plot_b.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="993" data-mc-height="692" src="../Resources/Graphics/Driving_Cycle_Scatter_Plot_b_thumb_0_150.png" tabindex="" /></a>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p class="paragraph"> Note that you can draw a rectangle like in all scatter plots - either in the <span class="gui">Driving Cycles Scatter Plot</span> or in the <span class="gui">Driving Cycles Time</span> window - to select points.</p>
+                                        <p class="paragraph">Both windows contain the identical menus and toolbars:</p>
+                                        <p class="h5_like"><a targets="file_menu" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="file_menu"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />File</a>
+                                        </p>
+                                        <ul style="display: none;" data-mc-target-name="file_menu">
+                                            <li class="list" data-mc-conditions="SnippetConditions.inSnippet">
+                                                <p class="list"><span class="gui">New</span> </p>
+                                                <table class="TableStyle-list_note" style="mc-table-style: url('../Resources/TableStyles/list_note.css');" cellspacing="0">
+                                                    <col style="width: 100%;" class="TableStyle-list_note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-list_note-Head-Header1">
+                                                            <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-list_note-Body-Body1">
+                                                            <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                                <p class="note">Unavailable in some scatter plot windows.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="list">Opens the <a href="ASCMO_Window_ChooseAxes.htm"><span class="gui">Select Axes</span> window</a> where you can select axes pairs to be plotted in an additional window.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Export All Data</span>
+                                                </p>
+                                                <p class="list">Exports all data points into an Excel (<span class="code">*.xls</span>, <span class="code">*.xlsx</span>), CSV (<span class="code">*.csv</span>), MDF3 (<span class="code">*.dat</span>) or MDF4 (<span class="code">*.mf4</span>) file.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Export Intersection of Selected Data</span>
+                                                </p>
+                                                <p class="list">Exports the data points in the overlap area of all rectangles into an Excel (<span class="code">*.xls</span>, <span class="code">*.xlsx</span>), CSV (<span class="code">*.csv</span>), MDF3 (<span class="code">*.dat</span>) or MDF4 (<span class="code">*.mf4</span>) file. These data points appear as <a targets="example" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="example"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />red dots</a> in the scatter plot. </p>
+                                                <p class="list" style="display: none;" data-mc-target-name="example">
+                                                    <img src="../Resources/Graphics/example_ScatterPlot_export.png" class="list" />
+                                                </p>
+                                                <p class="list">If there is no area where all rectangles overlap, or if the overlap area of all rectangles is empty, there are no data points that can be exported.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Export Union of Selected Data</span>
+                                                </p>
+                                                <p class="list">Exports the data points in all rectangles, i.e. <a targets="example" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="example"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />all colored dots</a> in the scatter plot, into an Excel (<span class="code">*.xls</span>, <span class="code">*.xlsx</span>), CSV (<span class="code">*.csv</span>), MDF3 (<span class="code">*.dat</span>) or MDF4 (<span class="code">*.mf4</span>) file. </p>
+                                                <p class="list">This export function works for overlapping and non-overlapping rectangles. </p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Close</span>
+                                                </p>
+                                                <p class="list">Closes the window.</p>
+                                            </li>
+                                        </ul>
+                                        <p class="h5_like"><a targets="extras_menu" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="extras_menu"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />Extras</a>
+                                        </p>
+                                        <ul style="display: none;" data-mc-target-name="extras_menu">
+                                            <li class="list">
+                                                <p><span class="gui">Remove all Rectangles</span>
+                                                </p>
+                                                <p>Deletes all rectangles in the current window.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p><span class="gui">Delete Points in Intersection</span>
+                                                </p>
+                                                <p>Deletes all measurement points out of the respective rectangle.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p><span class="gui">Delete Points Outside Training Hull</span>
+                                                </p>
+                                                <p>Deletes all measurement points located outside the training hull.</p>
+                                            </li>
+                                        </ul>
+                                        <p class="h5_like"><a targets="view_menu" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="view_menu"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />View</a>
+                                        </p>
+                                        <ul style="display: none;" data-mc-target-name="view_menu">
+                                            <li class="list" data-mc-conditions="SnippetConditions.Snippet2">
+                                                <p class="list"><span class="gui">Select Axes</span>
+                                                </p>
+                                                <p class="list">Opens the <a href="ASCMO_Window_ChooseAxes.htm"><span class="gui">Select Axes</span> window</a> where you can select the axes pairs to be plotted.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Plot Settings</span>
+                                                </p>
+                                                <p class="list">Opens the <a href="misc_Window_EditAxes.htm"><span class="gui">Edit Axes</span> window</a> where you can set the minimal size of the plots in pixel. If you change the size and click <span class="gui">OK</span> or <span class="gui">Apply</span>, each scatter plot smaller than the new values is adapted automatically. </p>
+                                                <table class="TableStyle-list_note" style="mc-table-style: url('../Resources/TableStyles/list_note.css');" cellspacing="0">
+                                                    <col style="width: 100%;" class="TableStyle-list_note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-list_note-Head-Header1">
+                                                            <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-list_note-Body-Body1">
+                                                            <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                                <p class="note">The information in the <span class="gui">Edit Axes</span> window will be saved in <span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span> and used in all scatter plots.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <p class="list"> </p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Prepare Print</span>
+                                                </p>
+                                                <p class="list">Opens the <a targets="fontsize" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="fontsize"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" /><span class="gui">Prepare Print Options</span> window</a> where you can adjust the look of the plot area. The settings are reset when you close the plot window.</p>
+                                                <p class="list" style="display: none;" data-mc-target-name="fontsize">
+                                                    <img src="../Resources/Graphics/Window_ScatterPlot_Fontsize.png" class="list" />
+                                                </p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Save as Bitmap</span>
+                                                </p>
+                                                <p class="list">This allows the content of the window to be saved in a series of graphic formats. </p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Copy to Clipboard</span>
+                                                </p>
+                                                <p class="list">Copies the window content to the clipboard.</p>
+                                            </li>
+                                            <li class="list">
+                                                <p class="list"><span class="gui">Update</span> </p>
+                                                <p class="list">Updates the plots in the window. </p>
+                                            </li>
+                                        </ul>
+                                        <p class="h5_like"><a targets="help_menu" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="help_menu"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />Help</a>
+                                        </p>
+                                        <ul style="display: none;" data-mc-target-name="help_menu">
+                                            <ul>
+                                                <li>
+                                                    <p class="list"><span class="gui">User Guide</span>: Opens the PDF User Guide.</p>
+                                                </li>
+                                                <li>
+                                                    <p class="list"><span class="gui">Online Help</span>: Opens the online help (<span class="gui">F1</span>).</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="gui">Interface Help</span>: Opens the interface help.</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="gui">License</span>:&#160;Opens the <span class="mc-variable etas.Company variable">ETAS</span> License Manager.</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="gui">Support</span>: Displays contact information for various ETAS support channels.</p>
+                                                </li>
+                                                <li>
+                                                    <p><span class="gui">Safety Advice</span>: Opens the ETAS&#160;safety advice.</p>
+                                                </li>
+                                                <li>
+                                                    <p>About: Opens the About window, where you can also get information about OSS used in ASCMO.</p>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                        <p class="h5_like"><a targets="toolbar_menu" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="toolbar_menu"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />Toolbar</a>
+                                        </p>
+                                        <ul style="display: none;" data-mc-target-name="toolbar_menu">
+                                            <p>This table shows a selection of possible toolbar buttons.</p>
+                                            <table style="margin-left: 10mm;mc-table-style: url('../Resources/TableStyles/table21.css');" class="TableStyle-table21" cellspacing="2">
+                                                <col class="TableStyle-table21-Column-Column1" />
+                                                <col class="TableStyle-table21-Column-Column1" />
+                                                <col class="TableStyle-table21-Column-Column1" />
+                                                <tbody>
+                                                    <tr class="TableStyle-table21-Body-Body1">
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default">
+                                                                <img src="../Resources/Graphics/button_ZoomIn.png" class="Icon" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default"><span class="gui">Zoom in</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                            <p class="table_default">By clicking in the plot, the visualization becomes larger.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-table21-Body-Body1">
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default">
+                                                                <img src="../Resources/Graphics/button_ZoomOut.png" class="Icon" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default"><span class="gui">Zoom out</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                            <p class="table_default">By clicking in the plot, the visualization becomes smaller.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-table21-Body-Body1">
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default">
+                                                                <img src="../Resources/Graphics/button_Pan.png" class="Icon" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default"><span class="gui">Pan</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                            <p class="table_default">This allows you to move the plot within the window.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-table21-Body-Body1">
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default">
+                                                                <img src="../Resources/Graphics/button_rectangle.png" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default"><span class="gui">Mouse selection in plot with rectangle</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                            <p class="table_default">Sets the selection tool in the scatter plots to a rectangle.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-table21-Body-Body1">
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default">
+                                                                <img src="../Resources/Graphics/button_lasso.png" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                            <p class="table_default"><span class="gui">Mouse selection in plot with lasso</span>
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                            <p class="table_default">Sets the selection tool in the scatter plots to a lasso.</p>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="TableStyle-table21-Body-Body1" data-mc-conditions="">
+                                                        <td class="TableStyle-table21-BodyB-Column1-Body1">
+                                                            <p class="table_default">
+                                                                <img src="../Resources/Graphics/button_update.png" class="Icon" />
+                                                            </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyB-Column1-Body1">
+                                                            <p class="table_default"><span class="gui">Update</span> </p>
+                                                        </td>
+                                                        <td class="TableStyle-table21-BodyA-Column1-Body1">
+                                                            <p class="table_default">Updates the plots in the window. </p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </ul>
+                                        <p class="see">See also </p>
+                                        <p><a href="ASCMO_Window_DrivingCycleManager.htm" class="Heading MCXref xref xrefHeading">Driving Cycle Manager</a>
+                                        </p>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div class="footer-content"><span class="copyright">© 2025 ETAS GmbH</span>
+            <div class="footer-links"><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of se / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="”_blank”">Data protection policy</a>
+            </div>
+        </div>
+    </footer>
+</html>

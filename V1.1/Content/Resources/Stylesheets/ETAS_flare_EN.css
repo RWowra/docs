@@ -4613,7 +4613,7 @@ MadCap|toggler.example
 	max-width: 1300px;
 	margin: 0 auto;
 	flex-shrink: 0;
-	/*flex-grow: 1;*/
+	flex-grow: 1;
 }
 
 .footer
@@ -4692,7 +4692,7 @@ MadCap|toggler.example
 	left: 0;
 	background-color: #ffffff;
 	min-width: 160px;
-	border-radius: 8px;
+	border-radius: 4px;
 	border: 1px solid #eeeff0;
 	z-index: 1000;
 }
@@ -4732,43 +4732,6 @@ MadCap|toggler.example
 	left: 0 !important;
 	z-index: 1000 !important;
 	/* Höher als andere Elemente */
-}
-
-/*.version-dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.current-version {
-    cursor: pointer;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: var(--White);
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--White);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.version-dropdown:hover .dropdown-content {
-    display: block;
 }
 
 /*Styles the header of the HTML_Side skin*/

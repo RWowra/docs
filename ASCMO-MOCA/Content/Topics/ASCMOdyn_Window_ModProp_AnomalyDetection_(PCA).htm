@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Product" content="ASCMO-MOCA" />
+        <meta name="Version" content="V5.14" />
+        <meta name="Revision" content="R01 EN | 10.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="Help" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" /><title>Model Configurations: Anomaly Detection (PCA)</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/list_note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
+        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script>/* <![CDATA[ */
+			document.title = "ASCMO-MOCA - "  + document.title;
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Resources/Manual/LandingPage_MOCA.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Model Configurations: Anomaly Detection (PCA)</h1>
+                                        <p>When you select the <span class="gui">Anomaly Detection (PCA)</span> modeling method <span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Configurations</span>, the <span class="gui">Model Properties</span> area of the <span class="gui">&lt;output&gt;</span> tab contains the following elements. For each output there is a separate tab.</p>
+                                        <p class="paragraph" style="display: none;" data-mc-target-name="window"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/ASCMOdyn_Window_ModelConfigurations_AnomalyDetection.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="602" data-mc-height="774" src="../Resources/Graphics/ASCMOdyn_Window_ModelConfigurations_AnomalyDetection_thumb_0_150.png" style="width: 600px;" tabindex="" /></a>
+                                        </p>
+                                        <p>See <a href="ASCMOdyn_Window_ModProp.htm" class="MCXref xref">
+            Model Configurations (ASCMO-DYNAMIC)</a>, for a description of the <span class="gui">Output Properties</span> area and the button row on the bottom of the window.</p>
+                                        <p class="gui_title">Training Labels</p>
+                                        <div data-mc-conditions="SnippetConditions.Snippet3">
+                                            <p class="gloss_des">Assign the labels you want to train the model on. If you use multiple labels, all data associated with at least one of the labels is used.</p>
+                                            <p class="gloss_des">Assign a label by double-clicking the field and typing the name. Select the dataset from the list of suggestions.</p>
+                                            <p class="gloss_des">Use the <span class="gui">x</span> on the label or <span class="gui">Del</span> to remove the label.</p>
+                                        </div>
+                                        <p class="gui_title">Validation Labels</p>
+                                        <div data-mc-conditions="SnippetConditions.Snippet1">
+                                            <p class="gloss_des">Assign the labels of the data you want to use as validation data. If you use multiple labels, all data associated with at least one of the labels is used.</p>
+                                            <p class="gloss_des">Assign a label by double-clicking the field and typing the name. Select the dataset from the list of suggestions.</p>
+                                            <p class="gloss_des">Use the <span class="gui">x</span> on the label or <span class="gui">Del</span> to remove the label.</p>
+                                            <p class="gloss_des">
+                                                <table style="caption-side: bottom;mc-table-style: url('../Resources/TableStyles/list_note.css');" class="TableStyle-list_note" cellspacing="0">
+                                                    <col class="TableStyle-list_note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-list_note-Head-Header1">
+                                                            <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-list_note-Body-Body1">
+                                                            <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                                <p class="note">If the validation labels are not assigned to any data, the model is trained without validation. A message appears in the log window. You can assign labels to data in the <a href="ASCMOdyn_Window_ManageDataSets.htm" class="MCXref xref">
+            Manage Datasets</a> window.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </p>
+                                        </div>
+                                        <p class="gui_title">Reduce Dim By</p>
+                                        <p class="gloss_des">Enter the number by which the dimensions are reduced by the principal component analysis. The default value is the number of input channels minus one.</p>
+                                        <p class="gui_title">Anomaly Percentile</p>
+                                        <p class="gloss_des">Enter the percentile of reconstruction errors that are considered normal. If validation datasets are used for model selection, this value is calculated based on validation data, otherwise based on training data. The corresponding value is mapped to 0.5 in the anomaly score.</p>
+                                        <p class="gui_title">Use Signalwise Percentile Values</p>
+                                        <p class="gloss_des">Activate if you want the error threshold to be calculated for each signal separately and the total score to be set to the maximum of the individual scores.</p>
+                                        <p class="gui_title">Smoothing</p>
+                                        <p class="gloss_des"> Enter the window size value for data points as steps for a median filter. For the prediction of an anomaly, the signals can be smoothed. This can lead to better results.</p>
+                                        <p class="gui_title">Smoothing Window Centered</p>
+                                        <p class="gloss_des">Activate if you want the smoothing window to be centered around the evaluation point, i.e. future points are also taken into account. If deactivated, only past points are used for calculations in the smoothing window.</p>
+                                        <p class="gui_title">Round Score</p>
+                                        <p class="gloss_des">Activate if you want the model prediction score to be automatically set to 0 if it is smaller than the threshold, and to 1 otherwise. If deactivated, the score is continuous between [0,1].</p>
+                                        <p class="gui_title">Rounding Threshold</p>
+                                        <p class="gloss_des">Enter an anomaly prediction threshold below which the model prediction is automatically set to 0, and 1 otherwise. The threshold is displayed in the Receiver Operating Characteristic (<span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span></span><span class="gui" data-mc-edit-date="2021-04-09T15:35:29.0070795+02:00" data-mc-editor="hhh1lb3" data-mc-comment="Future\r\n„Schwellwert“ definieren, ab der eine Anomalie angenommen wird und dementsprechend angezeigt wird" data-mc-initials="he" data-mc-creator="hhh1lb3" data-mc-create-date="2021-04-09T15:35:06.7631170+02:00"> Anomaly</span><span class="gui"> Detection: Receiver Operating Characteristic</span>).</p>
+                                        <h5>Inputs used in Model Training</h5>
+                                        <p class="gloss_des">This area lists all inputs of the model. You can activate/deactivate the checkbox of an input to include/exclude it in the model training.</p>
+                                        <p class="gloss_des">By default, all inputs are included.</p>
+                                        <p class="see">See also</p>
+                                        <p><a href="ASCMOdyn_Window_ModProp.htm" class="MCXref xref">
+            Model Configurations (ASCMO-DYNAMIC)</a>
+                                        </p>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div class="footer-content"><span class="copyright">© 2025 ETAS GmbH</span>
+            <div class="footer-links"><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of se / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="”_blank”">Data protection policy</a>
+            </div>
+        </div>
+    </footer>
+</html>

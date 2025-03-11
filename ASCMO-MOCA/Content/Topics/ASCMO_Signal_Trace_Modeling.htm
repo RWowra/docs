@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Product" content="ASCMO-MOCA" />
+        <meta name="Version" content="V5.14" />
+        <meta name="Revision" content="R01 EN | 10.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="Help" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" /><title> Signal Trace View</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
+        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script>/* <![CDATA[ */
+			document.title = "ASCMO-MOCA - "  + document.title;
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Resources/Manual/LandingPage_MOCA.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div role="main" id="mc-main-content">
+                                        <h1> Signal Trace View</h1>
+                                        <p class="noteopen"><span class="gui">Extras</span> menu <span class="gui"><span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span><span class="gui"> Signal Trace Modeling </span></span><span class="gui"><span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span><span class="gui"> Open Viewer</span></span></p>
+                                        <p class="paragraph">The <span class="gui">Signal Trace Modeling</span> feature allows the modeling of signal traces such as cylinder pressure curves. By connection to the <span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span> model the effects of different combinations of input parameters to the signal trace can be visualized and analyzed.</p>
+                                        <p class="paragraph"><a name="Window_SignalTraceView"></a><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/ASCMO_Window_SignalTraceView.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="702" data-mc-height="596" src="../Resources/Graphics/ASCMO_Window_SignalTraceView_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p class="gui_title">Process of the Signal Trace Modeling</p>
+                                        <p class="paragraph">The following steps must be performed to generate a model:</p>
+                                        <ul>
+                                            <li class="list"><a href="ASCMO_Plugins_Signal_Trace_Import.htm#Signal_Trace_Import">Import Training Data and Test Data</a> (<span class="gui">File <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Import Data <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> *</span>)
+</li>
+                                            <li class="list">Import a reference trace (<span class="gui">File <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Import <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Import Reference Trace</span>) </li>
+                                            <li class="list"><a href="ASCMO_Plugins_Signal_Trace_Training.htm#Signal_Trace_StartTraining">Start Signal Trace Training</a> (<span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Start Model Training</span>)
+            </li>
+                                            <li class="list"><a href="ASCMO_Plugins_Signal_Trace_Model_Error.htm#Signal_Trace_Error">Model Error</a> (<span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Model Error <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> *</span>)
+</li>
+                                            <li class="list"><a href="ASCMO_STM_EvaluationList.htm">Model Evaluation</a> (<span class="gui">Model <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Evaluation List <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> *</span>)        </li>
+                                            <li class="list"><a href="ASCMO_Plugins_Signal_Trace_Export.htm#Signal_Trace_Export">Export Data </a>(<span class="gui">File <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Export Data <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> *</span>) </li>
+                                        </ul>
+                                        <p class="gui_title">Requirements for the Measurement Data</p>
+                                        <p class="paragraph">For reading the data in<span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span>, a file with the following characteristics is required:</p>
+                                        <ul>
+                                            <li class="list">File format:<ul><li class="list2">Microsoft Excel (<span class="code">*.xlsx</span>/<span class="code">*.xls</span>) or</li><li class="list2">Text file with Comma Separated Values ​​(<span class="code">*.csv</span>/<span class="code">*.txt</span>)</li></ul></li>
+                                            <li class="list">A line must consist of the inputs and the signal trace.</li>
+                                            <li class="list">The columns of the signal trace must be contiguous.</li>
+                                            <li class="list">Columns with values ​​that do not belong to the signal trace will be used for the modeling within <span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span>. The model can be greatly distorted with incorrectly positioned columns. The trained model then loses its meaningfulness. Check the arrangement of the training data before importing.</li>
+                                            <li class="list">Names (and poss. units) must be located in the first line (or first and second line).</li>
+                                        </ul>
+                                        <p class="paragraph">Blank lines can be processed by <span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span> and do not have to be removed; in addition, individual values of a column can be deleted (it is not necessary to remove the entire line).</p>
+                                        <p class="gui_title"><a name="SetasReferenceTrace"></a>Set Current Trace as Reference</p>
+                                        <p>The <span class="gui">Signal Trace View</span> window enables you to set the current trace as reference. You have to right-click in the curve and select <b>Set Current Trace as Reference</b>. </p>
+                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/WfM_Plugins_STA_SetasReference_RightClick.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="348" data-mc-height="274" src="../Resources/Graphics/WfM_Plugins_STA_SetasReference_RightClick_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p>If you now change the input parameters in the ISP view, you can see the reference trace with the blue color. </p>
+                                        <p>If you want to change the reference trace, at first you have to change the input parameters for the new reference trace and then right-click in the curve and set the current trace as reference again. So the old reference trace will be deleted.</p>
+                                        <p>If you have  more trace outputs  you can set the reference trace for all at once via <span class="gui">View <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Set All Traces as Reference</span>.</p>
+                                        <p class="gui_title">Show Reference Trace</p>
+                                        <table class="TableStyle-note" style="mc-table-style: url('../Resources/TableStyles/note.css');" cellspacing="0">
+                                            <col style="width: 100%;" class="TableStyle-note-Column-Column1" />
+                                            <thead>
+                                                <tr class="TableStyle-note-Head-Header1">
+                                                    <th class="TableStyle-note-HeadD-Column1-Header1">
+                                                        <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="TableStyle-note-Body-Body1">
+                                                    <td class="TableStyle-note-BodyA-Column1-Body1">
+                                                        <p class="note">This function is only available if you have already set a reference trace (see <a href="#SetasReferenceTrace">Set Current Trace as Reference</a>).</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>After setting a trace reference you can visualize or not the trace reference by right-clicking in the curve again and selecting <b>Show Reference Trace</b>.</p>
+                                        <p> You can visualize all available reference traces at once via <span class="gui">View <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Show Reference Traces.</span></p>
+                                        <p class="gui_title"><a name="Import_ReferenceTrace"></a>Import Reference Trace</p>
+                                        <p>Reference trace signals can also be imported (<span class="code">*.xls</span>, <span class="code">*.csv</span>). You have to select <span class="gui">File <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Import Data <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Import Reference Trace</span> or right-click in the curve and select <b>Import Reference Trace</b>. </p>
+                                        <p>After selecting the file, the <span class="gui">Signal - Import Reference Trace</span> window opens.</p>
+                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/WfM_Plugins_STA_ImportReference.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="502" data-mc-height="589" src="../Resources/Graphics/WfM_Plugins_STA_ImportReference_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p>Select the <span class="gui">Start/End column</span> like in the <a href="ASCMO_Plugins_Signal_Trace_Import.htm">Data Import </a>and then choose the row number to identify the desired reference trace.</p>
+                                        <p>If available you can also provide corresponding input values for the trace to be imported by mapping respective table columns to each input of the current project.</p>
+                                        <p class="gui_title">Set Input to Reference Trace</p>
+                                        <table class="TableStyle-note" style="mc-table-style: url('../Resources/TableStyles/note.css');" cellspacing="0">
+                                            <col style="width: 100%;" class="TableStyle-note-Column-Column1" />
+                                            <thead>
+                                                <tr class="TableStyle-note-Head-Header1">
+                                                    <th class="TableStyle-note-HeadD-Column1-Header1">
+                                                        <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="TableStyle-note-Body-Body1">
+                                                    <td class="TableStyle-note-BodyA-Column1-Body1">
+                                                        <p class="note">This function is only available if you have set a reference trace AND its corresponding input values. This is the case if you either have supplied inputs when importing a reference trace or used the <a href="#SetasReferenceTrace">Set Current Trace as Reference</a> function.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p>You can set current input values of the intersection plot in the main window to that of the stored reference trace by right-clicking in the curve and selecting <b>Set Input to Reference Trace</b>.</p>
+                                        <p>Note, to conveniently display current input values in the signal trace main window you can switch on <span class="gui">View <span class="mc-variable ASCMOVar.Arrow_ClickPath variable">&gt;</span> Show Current Input</span>.</p>
+                                        <p class="gui_title"><a name="The"></a>Signal Parameters</p>
+                                        <p>If you want to change the signal parameters, you have to click on the <span class="gui">Trace Signal</span> button on the left side of the <span class="gui">Signal Trace View</span> window. The following window opens: </p>
+                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/WfM_Plugins_STA_Parameters.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="510" data-mc-height="477" src="../Resources/Graphics/WfM_Plugins_STA_Parameters_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p class="h5_like"><a targets="parameters_menu" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="parameters_menu"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />Show the <span class="gui">Parameters</span> window</a>
+                                        </p>
+                                        <ul style="display: none;" data-mc-target-name="parameters_menu">
+                                            <li class="list"><span class="gui">Trace Parameters</span>
+                                                <ul>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">Signal - Name</span>
+                                                        </p>
+                                                        <p class="list">Name of the signal</p>
+                                                    </li>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">Signal - Unit</span>
+                                                        </p>
+                                                        <p class="list">Name of the unit</p>
+                                                    </li>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">x-Axis - Name</span>
+                                                        </p>
+                                                        <p class="list">Name of the x-Axis</p>
+                                                    </li>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">x-Axis - Unit</span>
+                                                        </p>
+                                                        <p class="list">Unit of the x-Axis</p>
+                                                    </li>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">x-Axis - Start Value</span>
+                                                        </p>
+                                                        <p class="list">The starting value on the x-Axis</p>
+                                                    </li>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">x-Axis - Increment</span>
+                                                        </p>
+                                                        <p class="list">The step size of the x-Axis</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="list"><span class="bold">Model Parameters (ASC-SIG)</span>
+                                                <ul>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">Samples for Training ...</span>
+                                                        </p>
+                                                        <p class="list">If you have <a href="ASCMO_Plugins_Signal_Trace_Import.htm#Signal_Trace_Import">imported training data</a>, you can limit the number of the training data here to use the other part of the data as test data.</p>
+                                                    </li>
+                                                    <li class="list2">
+                                                        <p class="list"><span class="bold">Number of Features</span>
+                                                        </p>
+                                                        <p class="list">In the <span class="gui">Number of Features</span> field, you can specify the model quality. A higher value produces a high model accuracy. The model training then takes longer. A low value results in a low quality model. The model training then distinctly claimed less time.</p>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <p><span class="gui">OK</span> starts the signal trace model training. </p>
+                                            <p><span class="gui">Cancel</span> discards the entry and closes the parameters window. The model training is not started.</p>
+                                            <table class="TableStyle-note" style="mc-table-style: url('../Resources/TableStyles/note.css');" cellspacing="0">
+                                                <col style="width: 100%;" class="TableStyle-note-Column-Column1" />
+                                                <thead>
+                                                    <tr class="TableStyle-note-Head-Header1">
+                                                        <th class="TableStyle-note-HeadD-Column1-Header1">
+                                                            <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="TableStyle-note-Body-Body1">
+                                                        <td class="TableStyle-note-BodyA-Column1-Body1">
+                                                            <p class="note">If you want to change the <span class="gui">Start column</span> and <span class="gui">End column</span>, you have to delete and import the signal again and make the changing in the <span href="ASCMO_Plugins_Signal_Trace_Import.htm#Signal_Trace_Import_Mapping" class="gui">Import Signal Trace Data</span> window.</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </ul>
+                                        <p class="gui_title"><a name="Window_STM_SelectOutputs"></a>Select Outputs</p>
+                                        <p>Allows selecting the outputs to be included in the model training and evaluation, etc.</p>
+                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/WfM_Plugins_STA_SelectOutputs.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="520" data-mc-height="342" src="../Resources/Graphics/WfM_Plugins_STA_SelectOutputs_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p class="gui_title"><a name="Window_STM_DeleteOutputs"></a>Delete Outputs</p>
+                                        <p>This is where outputs can be selected for deletion.</p>
+                                        <table class="TableStyle-note" style="mc-table-style: url('../Resources/TableStyles/note.css');" cellspacing="0">
+                                            <col style="width: 100%;" class="TableStyle-note-Column-Column1" />
+                                            <thead>
+                                                <tr class="TableStyle-note-Head-Header1">
+                                                    <th class="TableStyle-note-HeadD-Column1-Header1">
+                                                        <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="TableStyle-note-Body-Body1">
+                                                    <td class="TableStyle-note-BodyA-Column1-Body1">
+                                                        <p class="note">A deleted model cannot be restored.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/WfM_Plugins_STA_DeleteOutputs.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="514" data-mc-height="332" src="../Resources/Graphics/WfM_Plugins_STA_DeleteOutputs_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div class="footer-content"><span class="copyright">© 2025 ETAS GmbH</span>
+            <div class="footer-links"><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of se / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="”_blank”">Data protection policy</a>
+            </div>
+        </div>
+    </footer>
+</html>
