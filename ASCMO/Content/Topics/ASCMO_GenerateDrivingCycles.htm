@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]|Working with [%=ASCMOVar.prod_ascmo_stat%]|Driving Cycle Forecast" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+        <meta name="Product" content="ASCMO-STATIC | ASCMO-DYNAMIC" />
+        <meta name="Version" content="V5.14" />
+        <meta name="Revision" content="R01 EN | 10.2024" />
+        <meta name="Copyright Year" content="2024" />
+        <meta name="Doc Type" content="Help" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" /><title>Generating Driving Cycles</title>
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/foundation.6.2.3.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Fluid/Stylesheets/Print.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/ETAS_flare_EN.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/table21.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/list_note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../Resources/TableStyles/note.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link rel="shortcut icon" href="../../Skins/Favicons/favicon_3.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
+        <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.6.2.3_custom.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+        <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
+        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script>/* <![CDATA[ */
+			document.title = "ASCMO-STATIC | ASCMO-DYNAMIC - "  + document.title;
+		/* ]]> */</script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-left" role="navigation" id="offCanvas" data-off-canvas="" data-position="left" data-mc-ignore="true">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" aria-label="title tab bar" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true"><a class="skip-to-content fluid-skip showOnFocus" href="#">Skip To Main Content</a>
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="menu-icon-container relative clearfix">
+                                    <div class="central-account-wrapper">
+                                        <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                            <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                                <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="menu-icon" aria-label="Show Navigation Panel" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="title-bar-layout outer-row">
+                                <div class="logo-wrapper"><a class="logo" href="../Resources/Manual/LandingPage_ASCMO.htm" alt="Logo"></a>
+                                </div>
+                                <div class="navigation-wrapper nocontent">
+                                    <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                        <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="central-account-wrapper">
+                                    <div class="central-dropdown"><a class="central-account-drop"><span class="central-account-image"></span><span class="central-account-text">Account</span></a>
+                                        <div class="central-dropdown-content"><a class="MCCentralLink central-dropdown-content-settings">Settings</a>
+                                            <hr class="central-separator" /><a class="MCCentralLink central-dropdown-content-logout">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav-search-wrapper">
+                                    <div class="nav-search row">
+                                        <form class="search" action="#">
+                                            <div class="search-bar search-bar-container needs-pie">
+                                                <input class="search-field needs-pie" type="search" aria-label="Search Field" placeholder="Search" />
+                                                <div class="search-filter-wrapper"><span class="invisible-label" id="search-filters-label">Filter: </span>
+                                                    <div class="search-filter" aria-haspopup="true" aria-controls="sf-content" aria-expanded="false" aria-label="Search Filter" title="All Files" role="button" tabindex="0">
+                                                    </div>
+                                                    <div class="search-filter-content" id="sf-content">
+                                                        <ul>
+                                                            <li>
+                                                                <button class="mc-dropdown-item" aria-labelledby="search-filters-label filterSelectorLabel-00001"><span id="filterSelectorLabel-00001">All Files</span>
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="search-submit-wrapper" dir="ltr">
+                                                    <div class="search-submit" title="Search" role="button" tabindex="0"><span class="invisible-label">Submit Search</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="main-section">
+                        <div class="row outer-row sidenav-layout">
+                            <nav class="sidenav-wrapper">
+                                <div class="sidenav-container">
+                                    <ul class="off-canvas-accordion vertical menu sidenav" data-accordion-menu="" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu accordion-menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="False" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True" data-mc-side-nav-menu="True">
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="body-container">
+                                <div data-mc-content-body="True">
+                                    <div class="nocontent">
+                                        <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">ASCMO-STATIC | ASCMO-DYNAMIC &gt;</span>
+                                        </div>
+                                    </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1><a name="GenerateDrivingCycle"></a>Generating Driving Cycles<a name="kanchor307"></a></h1>
+                                        <p class="paragraph">In many cases, the quality of a model (e.g. for emissions) can be validated by testing its performance on a set of various driving cycles.</p>
+                                        <p class="paragraph"><a name="kanchor308"></a>Additionally and especially in the context of the Real Driving Emissions (RDE), it is interesting to evaluate models (e.g. for emissions) on a wide variety of different driving cycles in order to ensure that the whole drivable range is covered as good as possible.</p>
+                                        <p class="paragraph"><span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span> allows the creation of any number of new virtual driving cycles that are based on a set of driving cycles that are already available, e.g. from real measurements from a test bench or the road. The generated driving cycles are similar to the already existing driving cycles and show their typical characteristics.</p>
+                                        <table class="TableStyle-note" style="width: 100%;mc-table-style: url('../Resources/TableStyles/note.css');" cellspacing="0">
+                                            <col class="TableStyle-note-Column-Column1" />
+                                            <thead>
+                                                <tr class="TableStyle-note-Head-Header1">
+                                                    <th class="TableStyle-note-HeadD-Column1-Header1">
+                                                        <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="TableStyle-note-Body-Body1">
+                                                    <td class="TableStyle-note-BodyA-Column1-Body1">
+                                                        <p class="note">The generated driving cycles with <span class="mc-variable ASCMOVar.prod_ascmo_stat variable">ASCMO-STATIC</span> (GUI: Calibration &gt; Driving Cycles) or <span class="mc-variable ASCMOVar.prod_CyGen variable">ASCMO-Cycle Generator</span> are similar to the already existing driving cycles. They do not meet regulations or fulfill the properties of cycles which they are based on. The generation is based on a probability model (Markov chain).</p>
+                                                        <p class="note">Generated cycles are not intended for official purposes like RDE homologation or similar purposes.</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <ol>
+                                            <li class="howto_num" value="1">
+                                                <p class="howto">Select <span class="gui">Calibration <span style="font-family: 'Arial'">→</span> Driving Cycles</span>.</p>
+                                                <p class="howto">The <a href="ASCMO_Window_DrivingCycleManager.htm">driving cycle manager</a> opens.</p>
+                                            </li>
+                                            <li class="howto_num" value="2">
+                                                <p class="howto">In the "Driving Cycle Manager" window, select <span class="gui">Data <span style="font-family: 'Arial'">→</span> Generate Driving Cycle(s)</span>.</p>
+                                                <p class="howto">A dialog window opens that lists all available driving cycles.</p>
+                                            </li>
+                                            <li class="howto_num" value="3">
+                                                <p class="howto">In that window, select all driving cycles you want to use as input for the new driving cycles.</p>
+                                                <table class="TableStyle-list_note" style="mc-table-style: url('../Resources/TableStyles/list_note.css');" cellspacing="0">
+                                                    <col style="width: 100%;" class="TableStyle-list_note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-list_note-Head-Header1">
+                                                            <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-list_note-Body-Body1">
+                                                            <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                                <p class="note">If you select two or more driving cycles as input, make sure that all driving cycles have the same number of operating point axes.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li class="howto_num" value="4">
+                                                <p class="howto"><a name="GenerDC"></a>Click on <span class="gui">OK</span> to continue.</p>
+                                                <p class="howto">The <a targets="generateDC" href="#" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage" data-mc-targets="generateDC"><img class="MCToggler_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" alt="Closed" data-mc-alt2="Open" />"Generate Driving Cycle(s)" window</a> opens.</p>
+                                                <p class="howto" style="display: none;" data-mc-target-name="generateDC">
+                                                    <img src="../Resources/Graphics/Window_DrivingCycle_Generate.png" class="howto" />
+                                                </p>
+                                            </li>
+                                            <li class="howto_num" value="5">
+                                                <p class="howto">In the "Generate Driving Cycle(s)" window, set the following properties:</p>
+                                                <table style="margin-left: 0;margin-right: auto;mc-table-style: url('../Resources/TableStyles/table21.css');" class="TableStyle-table21" cellspacing="2">
+                                                    <col style="width: 138px;" class="TableStyle-table21-Column-Column1" />
+                                                    <col class="TableStyle-table21-Column-Column1" />
+                                                    <tbody>
+                                                        <tr class="TableStyle-table21-Body-Body1">
+                                                            <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                                <p class="table_default"><span class="bold">Weight</span>
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                                <p class="table_default">The weights (integer in <span class="code">[1 inf]</span>) for each driving cycle determine to what extend the respective driving cycle is taken into account when creating new cycles. A higher weight leads to a higher impact.</p>
+                                                                <p class="table_default">If you selected only one driving cycle as base for the new ones, the weight is set to 1 and the field is read-only.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-table21-Body-Body1">
+                                                            <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                                <p class="table_default"><span class="bold">Number of Cycles</span>
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                                <p class="table_default">Determines how many cycles are to be created. </p>
+                                                                <p class="table_default">Note that the driving cycles that serve as basis are seen as one internally, therefore they are seen as connected to each other by using a mean valued gradient.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-table21-Body-Body1">
+                                                            <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                                <p class="table_default"><span class="gui">Use full hull range</span>
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                                <p class="table_default">If activated, the full range of the hull is used for the new driving cycle(s).</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-table21-Body-Body1">
+                                                            <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                                <p class="table_default"><span class="bold">Name Prefix</span>
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                                <p class="table_default">Enter the name prefix for the new driving cycle(s).</p>
+                                                                <p class="table_default">If you create more than one driving cycle, integer numbers are attached to the name.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-table21-Body-Body1">
+                                                            <td class="TableStyle-table21-BodyE-Column1-Body1">
+                                                                <p class="table_default"><span class="bold">Sample Time</span>
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-table21-BodyD-Column1-Body1">
+                                                                <p class="table_default">The generated driving cycles are calculated with a fixed sample time that can be set in the "Sample Time" field.</p>
+                                                                <p class="table_default">Note that all driving cycles that serve as a basis for the new ones are resampled internally to the chosen sample time.</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="TableStyle-table21-Body-Body1">
+                                                            <td class="TableStyle-table21-BodyB-Column1-Body1">
+                                                                <p class="table_default"><span class="bold">Cycle Duration</span>
+                                                                </p>
+                                                            </td>
+                                                            <td class="TableStyle-table21-BodyA-Column1-Body1">
+                                                                <p class="table_default">Here you can set the length of the driving cycles to be generated.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                            <li class="howto_num" value="6">
+                                                <p class="howto">Click on <span class="gui">Generate</span>.</p>
+                                                <p class="howto">The specified number of new driving cycles is created. The new cycles appear on the left side of the "Driving Cycle Manager" window.</p>
+                                                <table class="TableStyle-list_note" style="mc-table-style: url('../Resources/TableStyles/list_note.css');" cellspacing="0">
+                                                    <col style="width: 100%;" class="TableStyle-list_note-Column-Column1" />
+                                                    <thead>
+                                                        <tr class="TableStyle-list_note-Head-Header1">
+                                                            <th class="TableStyle-list_note-HeadD-Column1-Header1">
+                                                                <p class="note_Header" data-mc-autonum="Note "><span class="autonumber"><span>Note </span></span>&#160;</p>
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="TableStyle-list_note-Body-Body1">
+                                                            <td class="TableStyle-list_note-BodyA-Column1-Body1">
+                                                                <p class="note">The new driving cycles contain only two operating point axes, regardless of the number of operating point axes in the input driving cycles. </p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ol>
+                                        <p class="see">See also</p>
+                                        <p><a href="ASCMO_UseDC_AssignOPweights.htm" class="Heading MCXref xref xrefHeading">Using a Driving Cycle to Assign OP Weights</a>
+                                        </p>
+                                        <p><a href="ASCMO_ImportDrivingCycle.htm" class="Heading MCXref xref xrefHeading">Importing Driving Cycle Data</a>
+                                        </p>
+                                        <p><a href="ASCMO_Window_DrivingCycleManager.htm" class="Heading MCXref xref xrefHeading">Driving Cycle Manager</a>
+                                        </p>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><a data-close="true"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer class="footer">
+        <div class="footer-content"><span class="copyright">© 2025 ETAS GmbH</span>
+            <div class="footer-links"><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of se / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="”_blank”">Data protection policy</a>
+            </div>
+        </div>
+    </footer>
+</html>
