@@ -6,60 +6,57 @@ document.addEventListener("DOMContentLoaded", function () {
         "en": "English",
         "de": "Deutsch",
         "fr": "Français"
+        // neue Sprachen hier hinzufügen
     };
 
-    const urlPath = window.location.pathname;
-    const fileName = urlPath.substring(urlPath.lastIndexOf("/") + 1);
-    const versionMatch = urlPath.match(/\/(V\d+\.\d+)(_de|_fr)?\//);
-    const currentVersion = versionMatch ? versionMatch[1] : null;
+    const path = window.location.pathname;
+    const folderMatch = path.match(/\/(V\d+\.\d+)(?:_([a-z]{2}))?\//);
 
-    let currentLanguage = "en";
-    if (urlPath.includes("_de/") || fileName.includes("_DE")) {
-        currentLanguage = "de";
-    } else if (urlPath.includes("_fr/") || fileName.includes("_FR")) {
-        currentLanguage = "fr";
+    let version = "unknown";
+    let lang = "en"; // Standard
+
+    if (folderMatch) {
+        version = folderMatch[1];
+        if (folderMatch[2]) {
+            lang = folderMatch[2];
+        }
     }
 
     currentLanguageSpans.forEach(span => {
-        span.textContent = languages[currentLanguage];
+        span.textContent = languages[lang];
     });
 
-    function checkIfLanguageExists(lang) {
-        if (lang === "en") return Promise.resolve(true);
-        const langFolder = `/${currentVersion}_${lang}/`;
-        const langPath = urlPath.replace(/\/(V\d+\.\d+)(_de|_fr)?\//, langFolder);
-        return fetch(langPath, { method: 'HEAD' }).then(res => res.ok).catch(() => false);
+    function checkIfLanguageFolderExists(languageCode) {
+        if (languageCode === "en") {
+            // EN ist immer vorhanden (ohne Suffix)
+            return Promise.resolve(true);
+        }
+
+        const testUrl = `/${version}_${languageCode}/`;
+        return fetch(testUrl, { method: 'HEAD' })
+            .then(res => res.ok)
+            .catch(() => false);
     }
 
     async function buildLanguageDropdown() {
-        for (const [langCode, langName] of Object.entries(languages)) {
-            const exists = await checkIfLanguageExists(langCode);
+        for (const [code, label] of Object.entries(languages)) {
+            const exists = await checkIfLanguageFolderExists(code);
             if (exists) {
-                const langOption = document.createElement("div");
-                langOption.classList.add("dropdown-item");
-                langOption.textContent = langName;
-                langOption.addEventListener("click", function () {
-                    switchLanguage(langCode);
-                });
-
-                languageDropdowns.forEach(dropdown => {
-                    dropdown.appendChild(langOption.cloneNode(true));
-                });
+                const item = document.createElement("div");
+                item.classList.add("dropdown-item");
+                item.textContent = label;
+                item.addEventListener("click", () => switchLanguage(code));
+                languageDropdowns.forEach(dd => dd.appendChild(item.cloneNode(true)));
             }
         }
     }
 
     function switchLanguage(targetLang) {
-        if (targetLang === currentLanguage) return;
-        let newPath;
-        if (targetLang === "en") {
-            newPath = urlPath.replace(/\/(V\d+\.\d+)(_de|_fr)?\//, `/${currentVersion}/`);
-            newPath = newPath.replace(/_DE|_FR/, "_EN");
-        } else {
-            newPath = urlPath.replace(/\/(V\d+\.\d+)(_de|_fr)?\//, `/${currentVersion}_${targetLang}/`);
-            newPath = newPath.replace(/_EN|_DE|_FR/, `_${targetLang.toUpperCase()}`);
-        }
-        window.location.href = newPath;
+        if (targetLang === lang) return;
+
+        let newFolder = (targetLang === "en") ? `/${version}/` : `/${version}_${targetLang}/`;
+        let file = window.location.pathname.split("/").pop();
+        window.location.href = newFolder + file;
     }
 
     buildLanguageDropdown();
