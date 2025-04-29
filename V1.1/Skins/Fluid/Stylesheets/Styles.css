@@ -279,8 +279,8 @@ nav.title-bar
 	padding: 10px 0;
 	line-height: inherit;
 	display: block;
-	padding-top: 8px;
-	padding-bottom: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	background: transparent url('Images/gradient_large.png') no-repeat center top;
 	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/gradient_large.png') no-repeat center top;
 }
@@ -293,8 +293,8 @@ nav.title-bar .menu-icon
 .off-canvas-wrapper-inner nav.title-bar .outer-row
 {
 	padding: 0 1em;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 2em;
+	padding-right: 1em;
 }
 
 .title-bar-layout
@@ -335,13 +335,13 @@ nav.title-bar .menu-icon
 	border: none;
 	padding: 0;
 	margin: 0;
-	width: 182px;
-	height: 42px;
 	z-index: 1;
 	display: block;
+	width: 112px;
+	height: 28px;
 	align-self: center;
-	background: transparent url('Images/ETAS_Logo_White.svg') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.svg') no-repeat center center;
+	background: transparent url('Images/ETAS_Logo_White.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.png') no-repeat center center;
 }
 
 .title-bar-container
@@ -378,12 +378,12 @@ nav.title-bar .menu-icon
 {
 	/* override .row Foundation css styles */
 	/* supports V11 home page template */
+	margin-left: 0;
+	margin-right: 0;
 	max-width: none;
 	float: right;
 	display: block;
-	width: 300px;
-	margin-left: 16px;
-	margin-right: 0px;
+	width: 400px;
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
@@ -400,21 +400,21 @@ nav.title-bar .menu-icon
 	top: 0;
 	left: 0;
 	position: relative;
-	height: 24px;
+	height: 38px;
 	border-left: none;
 	border-right: none;
 	border-top: none;
 	border-bottom: none;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	color: #333;
-	font-family: Manrope;
-	font-size: 16px;
-	padding-left: 16px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	color: #5a646e;
+	font-family: 'Manrope Light';
+	font-size: 1rem;
+	padding-left: 17px;
 	background-color: #ffffff;
-	padding-right: 89px;
+	padding-right: 99px;
 }
 
 .search-bar .search-field::-webkit-search-cancel-button
@@ -436,7 +436,7 @@ nav.title-bar .menu-icon
 	line-height: 2em;
 	padding-right: 5px;
 	cursor: pointer;
-	height: 24px;
+	height: 38px;
 	border-top: none;
 	border-bottom: none;
 	border-left: none 0px #5a646e;
@@ -466,8 +466,8 @@ nav.title-bar .menu-icon
 	display: none;
 	position: absolute;
 	top: 0;
-	font-size: 16px;
-	right: 36px;
+	font-size: 1rem;
+	right: 46px;
 }
 
 .search-filter-content
@@ -483,7 +483,7 @@ nav.title-bar .menu-icon
 	overflow: auto;
 	z-index: 1;
 	white-space: nowrap;
-	top: 24px;
+	top: 38px;
 	color: #5a646e;
 	font-family: 'Manrope';
 	background-color: #ffffff;
@@ -507,7 +507,7 @@ nav.title-bar .menu-icon
 	position: absolute;
 	top: 0;
 	right: 0;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 /* OffCanvas */
@@ -551,9 +551,8 @@ html[dir='rtl'] .sidenav-layout
 	width: 20%;
 	margin-left: 0px;
 	margin-right: 0px;
-	margin-top: 0px;
 	display: block;
-	background-color: transparent;
+	background-color: #ffffff;
 }
 
 .sidenav-wrapper ul ul.is-accordion-submenu
@@ -572,49 +571,37 @@ html[dir='rtl'] .sidenav-layout
 
 ul.sidenav li a:hover
 {
-	border-left: none 20px transparent;
-	border-right: none 20px transparent;
-	border-top: none 20px transparent;
-	border-bottom: none 20px transparent;
 	color: #164293;
-	font-family: 'Manrope SemiBold';
-	font-size: 16px;
-	background-color: #D0D9E9;
+	font-family: Manrope;
+	font-size: 1.1rem;
+	background-color: #f8f8f8;
 }
 
 ul.sidenav ul > li > a
 {
 	border-bottom: none 0px #303335;
-	font-size: 16px;
-	margin-left: 0px;
-	padding-left: 32px;
-	padding-right: 16px;
-	padding-top: 9px;
-	padding-bottom: 9px;
+	font-size: 1rem;
+	margin-left: 1em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
 }
 
 ul.sidenav ul ul > li > a
 {
-	font-size: 16px;
-	margin-left: 0px;
-	padding-left: 48px;
-	padding-right: 16px;
-	padding-top: 9px;
-	padding-bottom: 9px;
+	font-size: 1rem;
+	margin-left: 2em;
 }
 
 ul.sidenav ul ul ul > li > a
 {
-	font-size: 16px;
-	margin-left: 0em;
-	padding-left: 48px;
+	font-size: 1rem;
+	margin-left: 3em;
 }
 
 ul.sidenav ul ul ul ul > li > a
 {
-	font-size: 16px;
-	margin-left: 0em;
-	padding-left: 48px;
+	font-size: 1rem;
+	margin-left: 4em;
 }
 
 /* Pulse.htm */
@@ -1726,12 +1713,12 @@ div.central-dropdown-content > a:hover
 
 .search-bar .search-submit
 {
-	height: 24px;
+	height: 38px;
 	border-right: none;
 	border-top: none;
 	border-bottom: none;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 
 .search-bar .search-filter:hover
@@ -1772,13 +1759,13 @@ div.central-dropdown-content > a:hover
 
 #resultList .glossary .term a
 {
-	color: #164293;
+	color: #5a646e;
 	font-family: 'Manrope Light';
 }
 
 #resultList .glossary .term a:visited
 {
-	color: #4568A9;
+	color: #89037a;
 }
 
 #resultList .glossary .term a:focus
@@ -1788,7 +1775,7 @@ div.central-dropdown-content > a:hover
 
 #resultList .glossary .term a:hover
 {
-	color: #4568A9;
+	color: #89037a;
 }
 
 #resultList .glossary .term a:active
@@ -1814,22 +1801,22 @@ h1#results-heading
 
 .search-bar .search-field::-webkit-input-placeholder
 {
-	color: #333;
+	color: #5a646e;
 }
 
 .search-bar .search-field::-moz-placeholder
 {
-	color: #333;
+	color: #5a646e;
 }
 
 .search-bar .search-field:-moz-placeholder
 {
-	color: #333;
+	color: #5a646e;
 }
 
 .search-bar .search-field:-ms-input-placeholder
 {
-	color: #333;
+	color: #5a646e;
 }
 
 .featured-snippets-container .micro-content-drop-down-button
@@ -1887,7 +1874,7 @@ h1#results-heading
 .featured-snippets-container .micro-response-title a
 {
 	color: #164293;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .featured-snippets-container .micro-response-title
@@ -1908,7 +1895,7 @@ h1#results-heading
 
 .featured-snippets-container .micro-response-title a:hover
 {
-	color: #4568A9;
+	color: #89037a;
 }
 
 .featured-snippets-container .micro-response-title a:active
@@ -1956,7 +1943,7 @@ h1#results-heading
 
 #pagination a:hover
 {
-	color: #4568A9;
+	color: #89037a;
 	font-family: 'Manrope SemiBold';
 	border-top: none 1px #e2e2e6;
 }
@@ -1985,7 +1972,7 @@ h1#results-heading
 #resultList h3.title a
 {
 	color: #164293;
-	font-family: 'Manrope SemiBold';
+	font-family: Manrope;
 	font-size: 1.1rem;
 }
 
@@ -1997,26 +1984,26 @@ h1#results-heading
 
 #resultList h3.title a:visited
 {
-	color: #4568A9;
-	text-decoration: none;
+	color: #89037a;
+	text-decoration: underline;
 }
 
 #resultList h3.title a:focus
 {
 	color: #164293;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #resultList h3.title a:hover
 {
-	color: #4568A9;
-	text-decoration: none;
+	color: #89037a;
+	text-decoration: underline;
 }
 
 #resultList h3.title a:active
 {
 	color: #164293;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #resultList .url cite
@@ -2040,15 +2027,15 @@ h1#results-heading
 
 .search-bar.search-bar-container .search-submit
 {
-	width: 36px;
-	background: transparent url('Images/magnifying-glass_gray.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_gray.png') no-repeat center center;
+	width: 46px;
+	background: transparent url('Images/ETAS_Search_Gray70.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_Gray70.png') no-repeat center center;
 }
 
 .search-bar.search-bar-container .search-submit:hover
 {
-	background: transparent url('Images/magnifying-glass_blue.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_blue.png') no-repeat center center;
+	background: transparent url('Images/ETAS_Search_blue_2.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_blue_2.png') no-repeat center center;
 }
 
 .phrase-suggest
@@ -2063,38 +2050,32 @@ h1#results-heading
 
 .sidenav-container ul ul
 {
-	background-color: transparent;
+	background-color: #ffffff;
 }
 
 .sidenav-container
 {
-	padding-left: 8px;
-	padding-right: 16px;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
 }
 
 ul.sidenav li a
 {
 	border-bottom: none 0px #303335;
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	padding-left: 16px;
-	padding-right: 16px;
-	padding-top: 9px;
-	padding-bottom: 9px;
-	color: #164293;
-	font-family: 'Manrope SemiBold';
-	font-size: 16px;
-	line-height: 1.4rem;
+	padding-left: 0.67rem;
+	padding-right: 0.67rem;
+	padding-top: 0.67rem;
+	padding-bottom: 0.67rem;
+	color: #5a646e;
+	font-family: Manrope;
+	font-size: 1.1rem;
+	line-height: 1.1em;
 }
 
 ul.sidenav li
 {
-	margin-left: 0px;
-	margin-bottom: 8px;
+	
 }
 
 ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle-container
@@ -2104,7 +2085,7 @@ ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle-container
 
 ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle
 {
-	border-top-color: #164293;
+	border-top-color: #5a646e;
 	border-top-width: 6px;
 	border-right-width: 6px;
 	border-left-width: 6px;
@@ -2112,24 +2093,23 @@ ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle
 
 ul.sidenav ul > li > a:hover
 {
-	font-size: 16px;
-	background-color: #D0D9E9;
+	font-size: 1rem;
+	background-color: #f8f8f8;
 }
 
 ul.sidenav ul ul > li > a:hover
 {
-	font-size: 16px;
-	background-color: #D0D9E9;
+	background-color: #f8f8f8;
 }
 
 ul.sidenav ul ul ul > li > a:hover
 {
-	background-color: #D0D9E9;
+	background-color: #f8f8f8;
 }
 
 ul.sidenav ul ul ul ul > li > a:hover
 {
-	background-color: #D0D9E9;
+	background-color: #f8f8f8;
 }
 
 ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle-container:hover
@@ -2147,35 +2127,29 @@ ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle:hover
 
 ul.sidenav li a.selected
 {
-	border-left: none 0px transparent;
-	border-right: none 0px transparent;
-	border-top: none 0px transparent;
-	border-bottom: none 0px #303335;
 	color: #164293;
 	font-family: 'Manrope SemiBold';
 	font-weight: normal;
-	background-color: #D0D9E9;
 }
 
 ul.sidenav ul > li > a.selected
 {
-	font-size: 16px;
-	background-color: #D0D9E9;
+	font-size: 1rem;
 }
 
 ul.sidenav ul ul > li > a.selected
 {
-	background-color: #D0D9E9;
+	
 }
 
 ul.sidenav ul ul ul > li > a.selected
 {
-	background-color: #D0D9E9;
+	
 }
 
 ul.sidenav ul ul ul ul > li > a.selected
 {
-	background-color: #D0D9E9;
+	
 }
 
 .skip-to-content

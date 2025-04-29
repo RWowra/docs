@@ -4,37 +4,37 @@
 
 @font-face 
 {
-	font-family: 'Manrope Light';
+	font-family: "Manrope Light";
 	src: url(../Fonts/Manrope-Light.ttf);
 }
 
 @font-face 
 {
-	font-family: 'Manrope';
+	font-family: "Manrope";
 	src: url(../Fonts/Manrope-Regular.ttf);
 }
 
 @font-face 
 {
-	font-family: 'Manrope SemiBold';
+	font-family: "Manrope SemiBold";
 	src: url(../Fonts/Manrope-SemiBold.ttf);
 }
 
 @font-face 
 {
-	font-family: 'Manrope ExtraBold';
+	font-family: "Manrope ExtraBold";
 	src: url(../Fonts/Manrope-ExtraBold.ttf);
 }
 
 @font-face 
 {
-	font-family: 'FiraCode Regular';
+	font-family: "Fira Code";
 	src: url(../Fonts/FiraCode-Regular.ttf);
 }
 
 @font-face 
 {
-	font-family: 'FiraCode SemiBold';
+	font-family: "Fira Code SemiBold";
 	src: url(../Fonts/FiraCode-SemiBold.ttf);
 }
 
@@ -50,26 +50,23 @@
 	--ETASgray20: #dee0e2;
 	--ETASgray70: #8b9299;
 	--ETASgray: #5a646e;
-	--ETASgray300: #BDC1C5;
+	--ETASgray300: #bdc1c5;
 	--ETASsurface50: #a7a7a7;
 	--ETASblue50: #e8ecf4;
-	--ETASblue100: #CCE5F3;
-	--ETASblue700: #4568A9;
-	--ETASpurple50: #F3E6F2;
+	--ETASblue100: #cce5f3;
+	--ETASblue700: #4568a9;
+	--ETASpurple50: #f3e6f2;
 	--ETASpurple100: #e7cde4;
+	--ETASmediumblue900: #007bc2;
+	--safety_red: #bd2024;
+	--safety_orange: #ff7900;
+	--safety-yellow: #ffe100;
+	--safety-blue: #004488;
+	--surface-50-color: #fafafa;
 	--Black: #000000;
 	--White: #ffffff;
 	--gray: #333;
-	--product: 'Data Operator V1.2';
-}
-
-html,
-body
-{
-	height: 100%;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
+	--product: "Data Operator V1.2";
 }
 
 body	/*Styles the body which holds the content of a page*/
@@ -78,15 +75,10 @@ body	/*Styles the body which holds the content of a page*/
 	font-style: normal;
 	font-variant: normal;
 	font-weight: normal;
-	font-family: 'Manrope';
+	font-family: "Manrope";
 	mc-hidden: hidden;
 	line-height: 24px;
 	font-size: 16px;
-	flex: 1;
-}
-
-.body-container
-{
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -94,19 +86,9 @@ body	/*Styles the body which holds the content of a page*/
 
 .height-container
 {
-	flex-grow: 1 !important;
+	min-height: auto !important;
+	/* Setze die min-height (vom body) auf auto */
 }
-
-.off-canvas-content
-{
-	display: flex !important;
-	flex-direction: column !important;
-	min-height: 100vh !important;
-}
-
-/*.height-container {
-    min-height: auto !important;  Sets the min-height (of the body) to auto 
-}*/
 
 ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle-container
 {
@@ -117,7 +99,7 @@ ul.sidenav li.is-accordion-submenu-parent > a span.submenu-toggle-container
 div.GlossaryPageDefinition	/* Styles the definition of automatically generated glossary entries*/
 {
 	margin-bottom: 6pt;
-	font-family: 'Manrope Light', Arial;
+	font-family: "Manrope", Arial;
 	margin-left: 10mm;
 	mc-hidden: hidden;
 	font-size: 1rem;
@@ -136,7 +118,7 @@ div.GlossaryPageHeading	/* Styles the headings of the different sections of auto
 	margin-bottom: 6pt;
 	margin-top: 12pt;
 	font-weight: normal;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	mc-hidden: hidden;
 	border-bottom-color: #000000;
 	line-height: 1.4;
@@ -147,7 +129,7 @@ div.GlossaryPageTerm	/* Styles the terms of automatically generated glossary ent
 {
 	margin-bottom: 6pt;
 	font-weight: normal;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	mc-hidden: hidden;
 	line-height: 1.4;
 	font-size: 1rem;
@@ -178,7 +160,7 @@ a.MiniTOC7:hover,
 a.MiniTOC8:hover,
 a.MiniTOC9:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 .TableStyle-table2 tr:hover	/*Styles the hover effect of the table*/
@@ -202,7 +184,7 @@ h1
 	mc-next-tag: p;
 	mc-next-class: paragraph;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	line-height: 40px;
 	font-size: 32px;
 }
@@ -218,7 +200,7 @@ h2
 	mc-next-class: paragraph;
 	margin-right: 0;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	text-align: left;
 	line-height: 36px;
 	font-size: 28px;
@@ -233,7 +215,7 @@ h3
 	margin-bottom: 16px;
 	text-align: left;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 24px;
 	line-height: 32px;
 }
@@ -246,7 +228,7 @@ li
 	text-align: left;
 	list-style-position: outside;
 	text-indent: 0px;
-	list-style-image: url('../Graphics/Symbol/indent.svg');
+	list-style-image: url("../Graphics/Symbol/indent.svg");
 	list-style-type: none;
 	margin-left: 15mm;
 }
@@ -274,14 +256,14 @@ MadCap|tocProxy
 
 MadCap|xref
 {
-	mc-format: '{para}';
+	mc-format: "{para}";
 	text-decoration: none;
 	color: #164293;
 }
 
 MadCap|xref:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p
@@ -307,7 +289,7 @@ h5
 	margin-bottom: 16px;
 	text-align: left;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 20px;
 	line-height: 28px;
 }
@@ -322,7 +304,7 @@ h6
 	mc-next-class: paragraph;
 	text-align: left;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 20px;
 	line-height: 28px;
 }
@@ -332,7 +314,7 @@ p.copyright
 	padding-bottom: 0mm;
 	mc-next-tag: p;
 	mc-next-class: paragraph;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	mc-hidden: hidden;
 	line-height: 1.4;
 	font-size: 1.2rem;
@@ -348,7 +330,7 @@ p.equation_title
 	mc-next-tag: p;
 	mc-next-class: paragraph;
 	mc-auto-number-class: bold;
-	mc-auto-number-format: 'GE:Equ. {n+}: ';
+	mc-auto-number-format: "GE:Equ. {n+}: ";
 	line-height: 1.4;
 }
 
@@ -360,7 +342,7 @@ p.table_title
 	mc-next-tag: p;
 	mc-next-class: paragraph;
 	mc-auto-number-class: bold;
-	mc-auto-number-format: 'GT:Tab. {n+}: ';
+	mc-auto-number-format: "GT:Tab. {n+}: ";
 	line-height: 1.4;
 }
 
@@ -371,7 +353,7 @@ p.document
 
 p.how_to_title
 {
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	text-decoration: underline;
 	margin-top: 3pt;
 }
@@ -398,7 +380,7 @@ h4
 	margin-bottom: 16px;
 	text-align: left;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	line-height: 28px;
 	font-size: 20px;
 }
@@ -407,7 +389,7 @@ p.safety_heading
 {
 	mc-next-class: safety_text;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.table_head
@@ -416,7 +398,7 @@ p.table_head
 	margin-top: 6pt;
 	mc-next-class: table_head;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	font-size: 1rem;
 	line-height: 1.4;
 }
@@ -427,7 +409,7 @@ p.table_default
 	margin-top: 6pt;
 	mc-next-class: table_default;
 	mc-next-tag: p;
-	font-family: 'Manrope ';
+	font-family: "Manrope";
 	line-height: 1.4;
 	font-size: 1rem;
 }
@@ -437,7 +419,7 @@ p.table_head_eng
 	margin-bottom: 0;
 	mc-next-class: table_head;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	line-height: 1.1;
 }
 
@@ -448,7 +430,7 @@ table
 
 p.noteopen
 {
-	background-color: #F3E6F2;
+	background-color: #f3e6f2;
 	border-left: solid 8px #89037a;
 	color: #000000;
 	padding: 8px 16px;
@@ -462,8 +444,8 @@ MadCap|footnote
 	margin-bottom: 5pt;
 	mc-footnote-comment-style: footnoteNumber;
 	mc-footnote-style: footnoteNumber;
-	mc-footnote-format: '{n}) ';
-	mc-footnote-comment-format: '{n}) ';
+	mc-footnote-format: "{n}) ";
+	mc-footnote-comment-format: "{n}) ";
 	font-size: 0.8rem;
 }
 
@@ -526,13 +508,13 @@ p.TOC6
 
 MadCap|xref.Heading
 {
-	mc-format: '{para}';
+	mc-format: "{para}";
 	color: #164293;
 }
 
 MadCap|xref.Heading:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.Heading:visited
@@ -585,13 +567,13 @@ p.safety_text
 
 MadCap|xref.Number_Only
 {
-	mc-format: '{paranumonly}';
+	mc-format: "{paranumonly}";
 	color: #164293;
 }
 
 MadCap|xref.Number_Only:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.Number_Only:visited
@@ -611,7 +593,7 @@ p.table_head_center
 	margin-top: 6pt;
 	mc-next-class: table_head_center;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	line-height: 1.4;
 }
 
@@ -632,7 +614,7 @@ MadCap|xref.Number_Heading_Page
 
 MadCap|xref.Number_Heading_Page:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.Number_Heading_Page:visited
@@ -647,7 +629,7 @@ MadCap|xref.Number_Page
 
 MadCap|xref.Number_Page:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.Number_Page:visited
@@ -662,7 +644,7 @@ MadCap|xref.PageNum_Only
 
 MadCap|xref.PageNum_Only:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.PageNum_Only:visited
@@ -696,17 +678,11 @@ a:visited
 a:focus
 {
 	color: #164293;
-	font-family: 'Manrope';
 }
 
 a:hover
 {
-	color: #4568A9;
-}
-
-.footer a:hover
-{
-	color: #4568A9;
+	color: #4568a9;
 }
 
 .dropdown-content a:hover
@@ -717,7 +693,7 @@ a:hover
 
 a:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 	text-decoration: none;
 }
 
@@ -743,43 +719,43 @@ MadCap|expandingHead
 
 MadCap|expanding
 {
-	mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
-	mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
+	mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
+	mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
 }
 
 MadCap|toggler
 {
 	color: #164293;
-	mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
-	mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
+	mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
+	mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
 }
 
 MadCap|dropDownHotspot
 {
 	color: #000000;
-	font-size: 20px;
-	line-height: 28px;
+	font-size: 1.1rem;
+	line-height: 1.4;
 }
 
 MadCap|dropDownHead
 {
-	margin-bottom: 8px;
+	margin-bottom: 6pt;
 }
 
 MadCap|dropDownBody
 {
-	margin-bottom: 8px;
+	margin-bottom: 6pt;
 }
 
 MadCap|popupHead
 {
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope", Arial;
 	color: #164293;
 }
 
 MadCap|popupBody
 {
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope", Arial;
 	color: #5a646e;
 	border: solid 1px #000000;
 	background-color: #ffffff;
@@ -804,7 +780,7 @@ li.table_list
 	list-style-position: outside;
 	margin-left: 5mm;
 	list-style-type: none;
-	list-style-image: url('../Graphics/Symbol/indent.svg');
+	list-style-image: url("../Graphics/Symbol/indent.svg");
 }
 
 li.table_list2_num
@@ -823,7 +799,7 @@ p.safety_var
 	text-transform: uppercase;
 	margin-left: 0;
 	padding-bottom: 2mm;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	mc-next-class: safety_heading;
 	mc-next-tag: p;
 }
@@ -837,9 +813,9 @@ MadCap|glossaryTerm
 {
 	font-weight: normal;
 	text-decoration: none;
-	mc-closed-image: url('../Graphics/Symbol/icon_info_16px_blue.png');
+	mc-closed-image: url("../Graphics/Symbol/icon_info_16px_blue.png");
 	color: #164293;
-	mc-open-image: url('../Graphics/Symbol/icon_info_16px_purple.png');
+	mc-open-image: url("../Graphics/Symbol/icon_info_16px_purple.png");
 	background-repeat: no-repeat;
 }
 
@@ -865,7 +841,7 @@ p.table_default_right
 
 p.safety_howto
 {
-	background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm.svg');
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm.svg");
 	background-size: 6mm auto;
 	background-repeat: no-repeat;
 	text-indent: 7mm;
@@ -901,17 +877,17 @@ p.MiniTOC1
 	color: #164293;
 	display: block;
 	mc-pagenum-display: none;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-leader-offset: 10pt;
 	list-style-type: none;
 	margin-left: 5mm;
-	font-family: 'Manrope SemiBold', 'Arial', 'Arial Rounded MT Bold';
+	font-family: "Manrope SemiBold", "Arial", "Arial Rounded MT Bold";
 	font-weight: normal;
 }
 
 p.MiniTOC1:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC1:visited
@@ -923,7 +899,7 @@ p.MiniTOC2
 {
 	color: #164293;
 	list-style-position: inside;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-pagenum-display: none;
 	margin-bottom: 6pt;
 	list-style-type: none;
@@ -933,7 +909,7 @@ p.MiniTOC2
 
 p.MiniTOC2:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC2:visited
@@ -946,7 +922,7 @@ p.MiniTOC3
 	text-align: left;
 	mc-pagenum-display: none;
 	list-style-position: inside;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	color: #164293;
 	margin-bottom: 6pt;
 	list-style-type: none;
@@ -956,7 +932,7 @@ p.MiniTOC3
 
 p.MiniTOC3:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC3:visited
@@ -968,7 +944,7 @@ p.MiniTOC4
 {
 	list-style-position: inside;
 	margin-bottom: 6pt;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	color: #164293;
 	mc-pagenum-display: none;
 	list-style-type: none;
@@ -978,7 +954,7 @@ p.MiniTOC4
 
 p.MiniTOC4:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC4:visited
@@ -990,7 +966,7 @@ p.MiniTOC5
 {
 	list-style-position: inside;
 	color: #164293;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-pagenum-display: none;
 	list-style-type: none;
 	display: block;
@@ -999,7 +975,7 @@ p.MiniTOC5
 
 p.MiniTOC5:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC5:visited
@@ -1011,7 +987,7 @@ p.MiniTOC6
 {
 	list-style-position: inside;
 	color: #164293;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-pagenum-display: none;
 	list-style-type: none;
 	display: block;
@@ -1020,7 +996,7 @@ p.MiniTOC6
 
 p.MiniTOC6:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC6:visited
@@ -1032,7 +1008,7 @@ p.MiniTOC7
 {
 	list-style-position: inside;
 	color: #164293;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-pagenum-display: none;
 	list-style-type: none;
 	display: block;
@@ -1041,7 +1017,7 @@ p.MiniTOC7
 
 p.MiniTOC7:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC7:visited
@@ -1053,7 +1029,7 @@ p.MiniTOC8
 {
 	list-style-position: inside;
 	color: #164293;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-pagenum-display: none;
 	list-style-type: none;
 	display: block;
@@ -1062,7 +1038,7 @@ p.MiniTOC8
 
 p.MiniTOC8:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC8:visited
@@ -1074,7 +1050,7 @@ p.MiniTOC9
 {
 	list-style-position: inside;
 	color: #164293;
-	mc-leader-format: 'none';
+	mc-leader-format: "none";
 	mc-pagenum-display: none;
 	margin-bottom: 6pt;
 	list-style-type: none;
@@ -1084,7 +1060,7 @@ p.MiniTOC9
 
 p.MiniTOC9:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 p.MiniTOC9:visited
@@ -1096,11 +1072,11 @@ MadCap|breadcrumbsProxy
 {
 	border-bottom-width: 0;
 	mc-breadcrumbs-count: 10;
-	mc-breadcrumbs-prefix: '[%=etas.Product%] >';
+	mc-breadcrumbs-prefix: "[%=etas.Product%] >";
 	font-size: 14px;
 	line-height: 22px;
-	font-family: 'Manrope', sans-serif;
-	color: #5a646e;
+	font-family: "Manrope SemiBold";
+	padding-left: 24px;
 }
 
 p.equation_titleAVZ
@@ -1116,7 +1092,7 @@ p.table_titleAVZ
 
 p.code2
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 6mm;
 	mc-next-tag: p;
 	mc-next-class: code2;
@@ -1124,7 +1100,7 @@ p.code2
 
 p.code3
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 9mm;
 	mc-next-tag: p;
 	mc-next-class: code3;
@@ -1133,14 +1109,14 @@ p.code3
 p.code4
 {
 	margin-left: 12mm;
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	mc-next-tag: p;
 	mc-next-class: code4;
 }
 
 p.code5
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 15mm;
 	mc-next-tag: p;
 	mc-next-class: code5;
@@ -1148,7 +1124,7 @@ p.code5
 
 p.code6
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 18mm;
 	mc-next-tag: p;
 	mc-next-class: code6;
@@ -1156,7 +1132,7 @@ p.code6
 
 p.code7
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 21mm;
 	mc-next-tag: p;
 	mc-next-class: code7;
@@ -1164,7 +1140,7 @@ p.code7
 
 p.code8
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 24mm;
 	mc-next-tag: p;
 	mc-next-class: code8;
@@ -1172,7 +1148,7 @@ p.code8
 
 p.code9
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 27mm;
 	mc-next-tag: p;
 	mc-next-class: code9;
@@ -1188,13 +1164,13 @@ p.empty
 
 span.code_red_ff0000
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #ff0000;
 }
 
 span.code_blue_000080
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #000080;
 }
 
@@ -1250,7 +1226,7 @@ li.howto_result
 {
 	list-style-position: outside;
 	list-style-type: none;
-	list-style-image: url('../Graphics/Symbol/ArrowFatRight.svg');
+	list-style-image: url("../Graphics/Symbol/ArrowFatRight.svg");
 	margin-left: 15mm;
 }
 
@@ -1319,7 +1295,7 @@ MadCap|slideThumbnail
 b
 {
 	mc-hidden: hidden;
-	font-family: 'Manrope ExtraBold';
+	font-family: "Manrope ExtraBold";
 	font-weight: normal;
 }
 
@@ -1371,16 +1347,16 @@ img
 
 MadCap|toggler:focus
 {
-	mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
-	mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
-	color: #4568A9;
+	mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
+	mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
+	color: #4568a9;
 }
 
 MadCap|toggler:hover
 {
-	color: #4568A9;
-	mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
-	mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
+	color: #4568a9;
+	mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
+	mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
 }
 
 MadCap|dropDown:hover
@@ -1418,15 +1394,15 @@ MadCap|dropDownHead:focus
 MadCap|dropDownHotspot:focus
 {
 	color: #164293;
-	mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
-	mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
+	mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
+	mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
 }
 
 MadCap|dropDownHotspot:hover
 {
 	color: #164293;
-	mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
-	mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
+	mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
+	mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
 }
 
 MadCap|expandingHead:focus
@@ -1436,7 +1412,7 @@ MadCap|expandingHead:focus
 
 MadCap|expandingHead:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|popup:focus
@@ -1446,7 +1422,7 @@ MadCap|popup:focus
 
 MadCap|popup:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 .codeSnippet
@@ -1462,7 +1438,7 @@ MadCap|popup:hover
 .codeSnippetCaption
 {
 	text-decoration: underline;
-	font-family: 'Manrope SemiBold';
+	font-family: "Manrope SemiBold";
 	font-size: 16px;
 }
 
@@ -1471,7 +1447,7 @@ MadCap|popup:hover
 	border: solid 1px #164293;
 	border-radius: 20px;
 	color: #164293;
-	font-family: 'Manrope SemiBold';
+	font-family: "Manrope SemiBold";
 	padding: 8px 16px;
 	line-height: 24px;
 	display: inline-flex;
@@ -1480,8 +1456,8 @@ MadCap|popup:hover
 
 .codeSnippetCopyButton:hover
 {
-	color: #4568A9;
-	border: solid 1px #4568A9;
+	color: #4568a9;
+	border: solid 1px #4568a9;
 }
 
 .codeSnippetBody
@@ -1489,12 +1465,12 @@ MadCap|popup:hover
 	mc-code-border: solid 1px #a7a7a7;
 	padding: 8px 16px;
 	border-radius: 8px;
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 }
 
 MadCap|glossaryTerm:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 	background-repeat: no-repeat;
 }
 
@@ -1530,12 +1506,12 @@ MadCap|xref:focus
 
 MadCap|xref:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|slideThumbnail:hover
 {
-	border: solid 1px #4568A9;
+	border: solid 1px #4568a9;
 }
 
 p.figure_titleAVZ
@@ -1551,7 +1527,7 @@ span.SearchHighlight
 
 span.SearchHighlight2
 {
-	background: rgb( 56, 177, 186, 0.3) !important;
+	background: rgb(56, 177, 186, 0.3) !important;
 }
 
 span.SearchHighlight3
@@ -1561,7 +1537,7 @@ span.SearchHighlight3
 
 span.SearchHighlight4
 {
-	background: rgb( 112, 203, 243, 0.3) !important;
+	background: rgb(112, 203, 243, 0.3) !important;
 }
 
 strong
@@ -1592,7 +1568,7 @@ strong
 		mc-hyphenate-shortest-prefix: 3;
 		mc-hyphenate-shortest-suffix: 3;
 		mc-hyphenate-shortest-word: 6;
-		font-family: 'Manrope ';
+		font-family: "Manrope";
 		font-size: 10pt;
 		line-height: 1.4;
 	}
@@ -1608,7 +1584,7 @@ strong
 		mc-hyphenate-shortest-suffix: 3;
 		mc-hyphenate-shortest-word: 6;
 		mc-hyphenate: always;
-		font-family: 'Manrope ';
+		font-family: "Manrope";
 		font-size: 10pt;
 	}
 
@@ -1624,7 +1600,7 @@ strong
 		font-size: 10pt;
 		margin-bottom: 4pt;
 		margin-left: 20mm;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 		orphans: 3;
 		widows: 3;
 		mc-hyphenate: always;
@@ -1658,9 +1634,9 @@ strong
 		mc-hyphenate-shortest-prefix: 3;
 		mc-hyphenate-shortest-suffix: 3;
 		mc-hyphenate-shortest-word: 6;
-		mc-auto-number-format: 'CH:{chapnum} ';
+		mc-auto-number-format: "CH:{chapnum} ";
 		margin-left: 20mm;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-size: 14pt;
 	}
 
@@ -1668,7 +1644,7 @@ strong
 	{
 		page-break-after: avoid;
 		page-break-inside: avoid;
-		mc-auto-number-format: 'CH:{chapnum}.{n+} ';
+		mc-auto-number-format: "CH:{chapnum}.{n+} ";
 		mc-auto-number-offset: 20mm;
 		mc-auto-number-position: outside-head;
 		mc-hyphenate-maximum-adjacent-line-count: 2;
@@ -1680,7 +1656,7 @@ strong
 		orphans: 3;
 		widows: 3;
 		margin-bottom: 3pt;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		margin-left: 20mm;
 		font-size: 12pt;
 	}
@@ -1689,7 +1665,7 @@ strong
 	{
 		page-break-after: avoid;
 		page-break-inside: avoid;
-		mc-auto-number-format: 'CH:{chapnum}.{n}.{n+} ';
+		mc-auto-number-format: "CH:{chapnum}.{n}.{n+} ";
 		mc-auto-number-offset: 20mm;
 		mc-auto-number-position: outside-head;
 		margin-bottom: 3pt;
@@ -1701,7 +1677,7 @@ strong
 		mc-hyphenate-shortest-suffix: 3;
 		mc-hyphenate-shortest-word: 6;
 		margin-left: 20mm;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-size: 12pt;
 	}
 
@@ -1709,7 +1685,7 @@ strong
 	{
 		page-break-after: avoid;
 		page-break-inside: avoid;
-		mc-auto-number-format: 'CH:{chapnum}.{n}.{n}.{n+} ';
+		mc-auto-number-format: "CH:{chapnum}.{n}.{n}.{n+} ";
 		mc-auto-number-offset: 20mm;
 		mc-auto-number-position: outside-head;
 		orphans: 3;
@@ -1721,7 +1697,7 @@ strong
 		mc-hyphenate-shortest-word: 6;
 		margin-bottom: 3pt;
 		margin-left: 20mm;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-size: 12pt;
 	}
 
@@ -1767,7 +1743,7 @@ strong
 		line-height: 14pt;
 		page-break-after: avoid;
 		margin-bottom: 0;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-weight: normal;
 		padding-top: 6pt;
 		margin-top: 6pt;
@@ -1776,7 +1752,7 @@ strong
 	p.TOC1
 	{
 		margin-top: 10pt;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		mc-auto-number-offset: 12.5mm;
 		page-break-after: avoid;
 		page-break-inside: avoid;
@@ -1785,7 +1761,7 @@ strong
 		margin-bottom: 0;
 		mc-auto-number-position: outside-head;
 		margin-left: 0 mm;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-weight: normal;
 	}
 
@@ -1812,7 +1788,7 @@ strong
 		mc-hyphenate-shortest-word: 6;
 		margin-left: 20mm;
 		mc-heading-level: 0;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-size: 12pt;
 	}
 
@@ -1830,7 +1806,7 @@ strong
 		mc-hyphenate-shortest-word: 6;
 		margin-left: 20mm;
 		mc-heading-level: 0;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-size: 12pt;
 	}
 
@@ -1848,7 +1824,7 @@ strong
 		mc-auto-number-offset: 18mm;
 		margin-bottom: 8pt;
 		margin-left: 20mm;
-		mc-auto-number-format: 'CE:Equ. {chapnum}-{n+}: ';
+		mc-auto-number-format: "CE:Equ. {chapnum}-{n+}: ";
 		line-height: 1.4;
 	}
 
@@ -1860,7 +1836,7 @@ strong
 		margin-bottom: 8pt;
 		margin-left: 20mm;
 		mc-auto-number-offset: 18mm;
-		mc-auto-number-format: 'CF:Fig. {chapnum}-{n+}: ';
+		mc-auto-number-format: "CF:Fig. {chapnum}-{n+}: ";
 	}
 
 	p.table_title
@@ -1870,7 +1846,7 @@ strong
 		mc-auto-number-offset: 18mm;
 		margin-bottom: 8pt;
 		margin-left: 20mm;
-		mc-auto-number-format: 'CT:Tab. {chapnum}-{n+}: ';
+		mc-auto-number-format: "CT:Tab. {chapnum}-{n+}: ";
 		margin-top: -6pt;
 	}
 
@@ -1888,7 +1864,7 @@ strong
 		margin-top: 0pt;
 		margin-bottom: 0pt;
 		color: #ffffff;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		line-height: 1.4;
 	}
 
@@ -1924,7 +1900,7 @@ strong
 	{
 		margin-left: 0;
 		color: #164293;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 		line-height: 31pt;
 		margin-bottom: 0pt;
 		font-size: 25pt;
@@ -1933,7 +1909,7 @@ strong
 	p.safety_heading
 	{
 		margin-left: 0;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 	}
 
 	p.note
@@ -2007,8 +1983,8 @@ strong
 		margin-left: 20mm;
 		font-size: 9.5pt;
 		mc-hyphenate-maximum-adjacent-line-count: 2;
-		mc-footnote-format: '{n}) ';
-		mc-footnote-comment-format: '{n})    ';
+		mc-footnote-format: "{n}) ";
+		mc-footnote-comment-format: "{n})    ";
 	}
 
 	MadCap|footnoteBlock
@@ -2036,7 +2012,7 @@ strong
 		margin-left: 0mm;
 		padding-bottom: 0;
 		line-height: 10mm;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 		margin-bottom: 5pt;
 	}
 
@@ -2044,7 +2020,7 @@ strong
 	{
 		padding-bottom: 1pt;
 		line-height: 10mm;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 		margin-bottom: 5pt;
 	}
 
@@ -2052,9 +2028,9 @@ strong
 	{
 		margin-bottom: 0;
 		mc-multiline-indent: 12.7mm;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		mc-leader-offset: 5pt;
-		mc-reference-separator: ',';
+		mc-reference-separator: ",";
 		margin-left: 0;
 	}
 
@@ -2104,10 +2080,10 @@ strong
 		page-break-before: avoid;
 		orphans: 2;
 		widows: 2;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		mc-leader-offset: 5pt;
 		mc-multiline-indent: 12.7mm;
-		mc-reference-separator: ',';
+		mc-reference-separator: ",";
 	}
 
 	span.italic
@@ -2117,13 +2093,13 @@ strong
 
 	MadCap|xref
 	{
-		mc-format: '{quote}{paratext}{quote} {pageref}';
+		mc-format: "{quote}{paratext}{quote} {pageref}";
 		color: #164293;
 	}
 
 	MadCap|xref.Heading
 	{
-		mc-format: '{quote}{paratext}{quote} {pageref}';
+		mc-format: "{quote}{paratext}{quote} {pageref}";
 	}
 
 	li
@@ -2159,7 +2135,7 @@ strong
 		mc-hyphenate-shortest-suffix: 3;
 		mc-hyphenate-shortest-word: 6;
 		margin-left: 30mm;
-		list-style-image: url('../Graphics/Symbol/indent.svg');
+		list-style-image: url("../Graphics/Symbol/indent.svg");
 	}
 
 	li.howto_num
@@ -2210,12 +2186,12 @@ strong
 
 	MadCap|xref.Number_Page
 	{
-		mc-format: '{paranum} {pageref}';
+		mc-format: "{paranum} {pageref}";
 	}
 
 	MadCap|xref.Number_Heading_Page
 	{
-		mc-format: '{paranum} {quote}{paratext}{quote} {pageref}';
+		mc-format: "{paranum} {quote}{paratext}{quote} {pageref}";
 		color: #164293;
 	}
 
@@ -2226,12 +2202,12 @@ strong
 
 	MadCap|xref.PageNum
 	{
-		mc-format: '{pageref}';
+		mc-format: "{pageref}";
 	}
 
 	MadCap|xref.PageNum_Only
 	{
-		mc-format: '{page}';
+		mc-format: "{page}";
 	}
 
 	MadCap|xref:visited
@@ -2269,7 +2245,7 @@ strong
 
 	a:hover
 	{
-		color: #4568A9;
+		color: #4568a9;
 	}
 
 	a:focus
@@ -2300,7 +2276,7 @@ strong
 
 	MadCap|expandingHead.code_bold
 	{
-		font-family: 'FiraCode SemiBold', 'Courier New';
+		font-family: "Fira Code SemiBold", "Courier New";
 		font-weight: 600;
 	}
 
@@ -2324,7 +2300,7 @@ strong
 	{
 		margin-bottom: 6pt;
 		mc-leader-align: right;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		margin-left: 0;
 		mc-multiline-indent: 18mm;
 		line-height: 1.2;
@@ -2344,7 +2320,7 @@ strong
 		mc-leader-align: right;
 		margin-left: 0;
 		mc-multiline-indent: 18mm;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		line-height: 1.4;
 	}
 
@@ -2352,7 +2328,7 @@ strong
 	{
 		margin-bottom: 6pt;
 		mc-leader-align: right;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		margin-left: 0;
 		mc-multiline-indent: 18mm;
 	}
@@ -2361,15 +2337,15 @@ strong
 	{
 		padding-bottom: 1pt;
 		line-height: 10mm;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 		margin-bottom: 5pt;
-		mc-auto-number-format: '{family Manrope ExtraBold}WARNING{/family}';
+		mc-auto-number-format: "{family Manrope ExtraBold}WARNING{/family}";
 	}
 
 	p.note_Header
 	{
 		line-height: 9mm;
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 	}
 
 	img.left
@@ -2534,17 +2510,22 @@ strong
 
 	span.bold
 	{
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 	}
 
 	p.safety_notice
 	{
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
+	}
+
+	p.safety_attention
+	{
+		font-family: "Manrope ExtraBold";
 	}
 
 	p.safety_var
 	{
-		font-family: 'Manrope ExtraBold';
+		font-family: "Manrope ExtraBold";
 	}
 
 	p.see
@@ -2672,12 +2653,12 @@ strong
 
 	span.code_blue_0000ff
 	{
-		font-family: 'FiraCode Regular', 'Courier New';
+		font-family: "Fira Code", "Courier New";
 	}
 
 	span.code_blue_000080
 	{
-		font-family: 'FiraCode Regular', 'Courier New';
+		font-family: "Fira Code", "Courier New";
 	}
 
 	ul.table
@@ -2695,7 +2676,7 @@ strong
 		margin-left: 12.7mm;
 		mc-multiline-indent: 25.4mm;
 		mc-leader-offset: 5pt;
-		mc-leader-format: '.';
+		mc-leader-format: ".";
 		margin-bottom: 0pt;
 	}
 
@@ -2757,7 +2738,7 @@ strong
 
 	MadCap|xref.PageNum_static
 	{
-		mc-format: 'page {page}';
+		mc-format: "page {page}";
 	}
 
 	li.howto_result
@@ -2874,7 +2855,7 @@ strong
 	p.product_sub
 	{
 		color: #164293;
-		font-family: 'Manrope SemiBold';
+		font-family: "Manrope SemiBold";
 		font-size: 25pt;
 		line-height: 31pt;
 		margin-left: 0mm;
@@ -2930,7 +2911,7 @@ strong
 
 p.code
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	mc-next-tag: p;
 	mc-next-class: code;
 	line-height: 1.4;
@@ -2944,7 +2925,7 @@ p.figure_title
 	mc-next-tag: p;
 	mc-next-class: paragraph;
 	mc-auto-number-class: bold;
-	mc-auto-number-format: 'GF:Fig. {n+}: ';
+	mc-auto-number-format: "GF:Fig. {n+}: ";
 	line-height: 1.4;
 }
 
@@ -2964,7 +2945,7 @@ p.gloss_term
 	mc-next-class: gloss_des;
 	margin-top: 6pt;
 	line-height: 1.4;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.table_default_eng
@@ -3005,16 +2986,16 @@ p.note_Header
 	margin-left: 0;
 	mc-next-class: note;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	font-size: 12pt;
-	mc-auto-number-format: 'Note ';
-	background-size: 7.5mm;
+	mc-auto-number-format: "Note ";
+	background-size: 8mm;
 	line-height: 9mm;
 	padding-left: 10mm;
 	background-position: 0px 1px;
 	padding-top: 1px;
 	mc-hidden: hidden;
-	background-image: url('../Graphics/Symbol/Info_Blue_transparent.png');
+	background-image: url("../Graphics/Symbol/info_phosphor_blue.svg");
 }
 
 p.Safety_caution
@@ -3029,9 +3010,9 @@ p.Safety_caution
 	font-size: 12pt;
 	background-position: left top;
 	line-height: 9mm;
-	mc-auto-number-format: 'CAUTION';
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
-	background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+	mc-auto-number-format: "CAUTION";
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 	mc-hidden: hidden;
 }
 
@@ -3045,12 +3026,12 @@ p.safety_danger
 	text-transform: uppercase;
 	font-size: 12pt;
 	background-position: left top;
-	mc-auto-number-format: 'DANGER';
+	mc-auto-number-format: "DANGER";
 	padding-top: 3mm;
 	padding-left: 15mm;
 	line-height: 9mm;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
-	background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 	mc-hidden: hidden;
 }
 
@@ -3066,10 +3047,10 @@ p.safety_warning
 	font-size: 12pt;
 	text-transform: uppercase;
 	background-position: left top;
-	mc-auto-number-format: 'WARNING';
+	mc-auto-number-format: "WARNING";
 	line-height: 9mm;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
-	background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 	mc-hidden: hidden;
 }
 
@@ -3083,9 +3064,25 @@ p.safety_notice
 	text-transform: uppercase;
 	font-style: italic;
 	font-size: 12pt;
-	mc-auto-number-format: 'NOTICE';
+	mc-auto-number-format: "NOTICE";
 	line-height: 16pt;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+	mc-hidden: hidden;
+}
+
+p.safety_attention
+{
+	mc-auto-number-position: inside-head;
+	margin-left: 0;
+	padding-top: 3mm;
+	mc-next-class: safety_heading;
+	mc-next-tag: p;
+	text-transform: uppercase;
+	font-style: italic;
+	font-size: 12pt;
+	mc-auto-number-format: "ATTENTION";
+	line-height: 16pt;
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	mc-hidden: hidden;
 }
 
@@ -3096,36 +3093,35 @@ span.autoNumTOC
 
 span.bold
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 span.code
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 }
 
 span.code_noHyphenation
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	mc-hyphenate: never;
 }
 
 span.code_bold
 {
-	font-family: 'FiraCode Regular', 'Courier New';
-	font-weight: 600;
+	font-family: "Fira Code SemiBold", "Courier New";
 }
 
 span.gui
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	font-style: inherit;
 }
 
 span.guivar
 {
 	font-style: italic;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	mc-hidden: hidden;
 }
 
@@ -3206,8 +3202,8 @@ span.superscript
 	MadCap|glossaryTerm
 	{
 		text-decoration: none;
-		mc-closed-image: url('../Graphics/Symbol/Plus_16px.svg');
-		mc-open-image: url('../Graphics/Symbol/minus_16px.svg');
+		mc-closed-image: url("../Graphics/Symbol/Plus_16px.svg");
+		mc-open-image: url("../Graphics/Symbol/minus_16px.svg");
 	}
 
 	span.link
@@ -3323,7 +3319,7 @@ span.superscript
 		border-top-color: #164293;
 		mc-next-class: paragraph;
 		mc-next-tag: p;
-		mc-auto-number-format: '{family Arial}{color #164293}See also {/color}{/family}';
+		mc-auto-number-format: "{family Arial}{color #164293}See also {/color}{/family}";
 		mc-auto-number-position: inside-head;
 	}
 
@@ -3348,6 +3344,12 @@ span.superscript
 	}
 
 	p.safety_notice
+	{
+		font-family: Arial;
+		font-weight: bold;
+	}
+
+	p.safety_attention
 	{
 		font-family: Arial;
 		font-weight: bold;
@@ -3401,7 +3403,7 @@ span.superscript
 
 	MadCap|codeSnippetBody
 	{
-		font-family: 'FiraCode Regular', 'Courier New';
+		font-family: "Fira Code", "Courier New";
 	}
 
 	MadCap|codeSnippetCaption
@@ -3520,7 +3522,7 @@ span.superscript
 
 	p.safety_howto
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 	}
 
 	MadCap|toggler.example
@@ -3531,7 +3533,7 @@ span.superscript
 
 	div.example
 	{
-		mc-auto-number-format: '{family Arial}{b}{color #164293}EXAMPLE {/color}{/b}{/family}';
+		mc-auto-number-format: "{family Arial}{b}{color #164293}EXAMPLE {/color}{/b}{/family}";
 	}
 }
 
@@ -3539,17 +3541,17 @@ span.superscript
 {
 	p.Safety_caution
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol.png");
 	}
 
 	p.safety_danger
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol.png");
 	}
 
 	p.safety_warning
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol.png");
 	}
 
 	span.superscript
@@ -3612,17 +3614,17 @@ span.superscript
 
 	MadCap|popupBody
 	{
-		font-family: 'Manrope ', Arial;
+		font-family: "Manrope", Arial;
 	}
 
 	MadCap|popupHead
 	{
-		font-family: 'Manrope ', Arial;
+		font-family: "Manrope", Arial;
 	}
 
 	p.copyright
 	{
-		font-family: 'Manrope ExtraBold', Arial;
+		font-family: "Manrope ExtraBold", Arial;
 	}
 
 	p.gloss_term
@@ -3632,7 +3634,7 @@ span.superscript
 
 	p.how_to_title
 	{
-		font-family: 'Manrope SemiBold', Arial;
+		font-family: "Manrope SemiBold", Arial;
 	}
 
 	p.MiniTOC1
@@ -3642,100 +3644,105 @@ span.superscript
 
 	p.note_Header
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.Safety_caution
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.safety_danger
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.safety_heading
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.safety_notice
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+	}
+
+	p.safety_attention
+	{
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.safety_var
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.safety_warning
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.see
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.see_also
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.table_head
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.table_head_center
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	p.table_head_eng
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	span.bold
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	span.bold_safety
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	span.gui
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	span.guivar
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	}
 
 	div.GlossaryPageDefinition
 	{
-		font-family: 'Manrope ', Arial;
+		font-family: "Manrope", Arial;
 		font-size: 1rem;
 		margin-left: 30px;
 	}
 
 	div.GlossaryPageHeading
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 		margin-left: 0;
 	}
 
 	div.GlossaryPageTerm
 	{
-		font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+		font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 		margin-left: 0;
 	}
 
@@ -3752,7 +3759,7 @@ span.superscript
 
 	a:hover
 	{
-		color: #4568A9;
+		color: #4568a9;
 		text-decoration: none;
 	}
 
@@ -3765,7 +3772,7 @@ span.superscript
 	{
 		font-size: 1rem;
 		line-height: 14pt;
-		font-family: 'Manrope ', Arial;
+		font-family: "Manrope", Arial;
 	}
 
 	p.table_default_center
@@ -3865,7 +3872,7 @@ li.list
 	list-style-position: outside;
 	list-style-type: none;
 	margin-left: 15mm;
-	list-style-image: url('../Graphics/Symbol/indent.svg');
+	list-style-image: url("../Graphics/Symbol/indent.svg");
 }
 
 li.list2
@@ -3903,7 +3910,7 @@ li.howto
 	list-style-position: outside;
 	list-style-type: none;
 	mc-hidden: hidden;
-	list-style-image: url('../Graphics/Symbol/indent.svg');
+	list-style-image: url("../Graphics/Symbol/indent.svg");
 	margin-left: 15mm;
 }
 
@@ -3916,7 +3923,7 @@ p.see
 	border-top-color: #164293;
 	mc-next-class: paragraph;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.see_also
@@ -3928,8 +3935,8 @@ p.see_also
 	border-top-color: #164293;
 	mc-next-class: paragraph;
 	mc-next-tag: p;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
-	mc-auto-number-format: '{family Manrope ExtraBold}{color #164293}See also {/color}{/family}';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+	mc-auto-number-format: "{family Manrope ExtraBold}{color #164293}See also {/color}{/family}";
 	mc-auto-number-position: inside-head;
 }
 
@@ -3965,7 +3972,7 @@ MadCap|xref.PageNum
 
 MadCap|xref.PageNum:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.PageNum:visited
@@ -3976,7 +3983,7 @@ MadCap|xref.PageNum:visited
 MadCap|expandingHead.code_bold
 {
 	font-weight: 600;
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	mc-hidden: hidden;
 }
 
@@ -4017,7 +4024,7 @@ img.safetyVar
 span.bold_safety
 {
 	text-transform: uppercase;
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 img.left
@@ -4056,13 +4063,13 @@ img.wide
 
 MadCap|xref.Heading_only
 {
-	mc-format: '{paratext}';
+	mc-format: "{paratext}";
 	color: #164293;
 }
 
 MadCap|xref.Heading_only:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.Heading_only:visited
@@ -4072,7 +4079,7 @@ MadCap|xref.Heading_only:visited
 
 p.code1
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-left: 3mm;
 	mc-next-tag: p;
 	mc-next-class: code1;
@@ -4080,49 +4087,49 @@ p.code1
 
 span.code_green_008000
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #008000;
 }
 
 span.code_blue_0000ff
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #0000ff;
 }
 
 span.code_green_008080
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #008080;
 }
 
 span.code_brown_804000
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #804000;
 }
 
 span.code_orange_ff8000
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #ff8000;
 }
 
 span.code_purple_8000ff
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #8000ff;
 }
 
 span.code_purple_a020f0
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #a020f0;
 }
 
 span.code_green_228b22
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	color: #228b22;
 }
 
@@ -4149,7 +4156,7 @@ span.noLanguage
 
 p.table_code
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	margin-top: 6pt;
 	margin-bottom: 0;
 	margin-left: 0;
@@ -4165,7 +4172,7 @@ MadCap|xref.PageNum_static
 
 MadCap|xref.PageNum_static:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 MadCap|xref.PageNum_static:visited
@@ -4175,7 +4182,7 @@ MadCap|xref.PageNum_static:visited
 
 span.code_italic
 {
-	font-family: 'FiraCode Regular', 'Courier New';
+	font-family: "Fira Code", "Courier New";
 	font-style: italic;
 }
 
@@ -4243,24 +4250,24 @@ p.header_l
 {
 	p.note_Header
 	{
-		background-image: url('../Graphics/Symbol/Info_Blue_transparent.png');
+		background-image: url("../Graphics/Symbol/Info_Blue_transparent.png");
 	}
 
 	p.safety_warning
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 		background-size: 10mm auto;
 	}
 
 	p.safety_danger
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 		background-size: 10mm auto;
 	}
 
 	p.Safety_caution
 	{
-		background-image: url('../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png');
+		background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_yellow_10mm_300ppi.png");
 		background-size: 10mm auto;
 	}
 }
@@ -4275,7 +4282,7 @@ p.h5_like	/*looks like h5, but is no heading*/
 	margin-bottom: 16px;
 	text-align: left;
 	font-weight: normal;
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 20px;
 	line-height: 1.4;
 }
@@ -4287,7 +4294,7 @@ p.gui_title	/*title for gui explenations*/
 	mc-next-tag: p;
 	mc-next-class: gloss_des;
 	margin-bottom: 4pt;
-	font-family: 'Manrope ExtraBold', Arial;
+	font-family: "Manrope ExtraBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 }
@@ -4308,14 +4315,6 @@ video
 }*/
 
 /*Style only for the footer used in pagelayouts*/
-
-p.footer
-{
-	font-size: 10pt;
-	color: #8b9299;
-	margin-left: 0;
-	mc-hidden: hidden;
-}
 
 p.product_sub
 {
@@ -4348,7 +4347,7 @@ img.MCPopupThumbnail
 	border-radius: 0px;
 	border: none;
 	mc-hidden: hidden;
-	transition: .4s;
+	transition: 0.4s;
 	/*slows down what is defined in img.thumbnail:hover*/
 	mc-hidden: hidden;
 }
@@ -4387,13 +4386,319 @@ p.example
 
 div.example
 {
-	mc-auto-number-format: '{b}{color #164293}EXAMPLE {/color}{/b}';
+	mc-auto-number-format: "{b}{color #164293}EXAMPLE {/color}{/b}";
 	/*Automatically puts the word at the top of the div*/
 	border: solid 1px #a7a7a7;
 	border-radius: 8px;
 	mc-auto-number-position: inside-head;
 	padding: 8px 16px;
 	margin: 16px 8px;
+}
+
+/* Styles für die Safety Messages */
+/* Für den Text in der Box */
+
+div.Danger p:first-of-type,
+div.Warning p:first-of-type,
+div.Caution p:first-of-type,
+div.Note p:first-of-type,
+div.Attention p:first-of-type,
+div.Notice p:first-of-type
+{
+	margin-top: 16px;
+}
+
+div.Danger p,
+div.Warning p,
+div.Caution p,
+div.Attention p,
+div.Note p,
+div.Notice p
+{
+	box-sizing: border-box;
+	/* Padding und Border in die Gesamtgröße einbeziehen */
+	word-wrap: break-word;
+	/* Längere Wörter umbrechen */
+}
+
+/* Für den Heading Text (WARNING, DANGER.. etc.) */
+
+div.Danger::first-line,
+div.Warning::first-line,
+div.Caution::first-line,
+div.Note::first-line
+{
+	font-family: "Manrope", sans-serif;
+	/* Schriftart */
+	font-weight: 600;
+	/* SemiBold */
+	font-size: 24px;
+	/* Schriftgröße */
+	text-transform: uppercase;
+	/* Großbuchstaben */
+}
+
+div.Notice::first-line,
+div.Attention::first-line
+{
+	font-family: "Manrope", sans-serif;
+	/* Schriftart */
+	font-weight: 600;
+	/* SemiBold */
+	font-size: 24px;
+	/* Schriftgröße */
+	text-transform: uppercase;
+	/* Großbuchstaben */
+	font-style: italic;
+	/* Kursiv */
+}
+
+/* Nochmal genaueres Selektieren des Heading Texts um ihn zu verschieben */
+
+div.Warning .autonumber
+{
+	margin-left: 55px;
+	/* 29px Startpunkt */
+}
+
+div.Danger .autonumber
+{
+	margin-left: 55px;
+	/* 35px Startpunkt */
+}
+
+div.Caution .autonumber
+{
+	margin-left: 55px;
+	/* 32px Startpunkt */
+}
+
+div.Note .autonumber
+{
+	margin-left: 47.5px;
+	/* 27.5 Startpunkt */
+}
+
+/* Erstellen der divs und festlegung der Icons und Heading Text */
+
+div.Warning
+{
+	mc-auto-number-format: "WARNING";
+	mc-auto-number-position: inside-head;
+	border-radius: 8px;
+	border: solid 1px #a7a7a7;
+	background-color: white;
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_caution.svg");
+	background-repeat: no-repeat;
+	background-size: 37.8px 37.8px;
+	background-position: 20px 26.1px;
+	/* 10.1px ist Startpunkt von Y-Achse */
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 33.2px 20px 0px 20px;
+	/* 13.2px ist der Startpunkt von Top, p hat von flare aus eine margin-bottom von 12px. */
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
+}
+
+/* Erstellen des Balkens oben in der div mit der gewünschten Farbe */
+
+div.Warning::before
+{
+	content: "";
+	display: block;
+	background-color: #ff7900;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.Danger
+{
+	mc-auto-number-format: "DANGER";
+	mc-auto-number-position: inside-head;
+	border-radius: 8px;
+	border: solid 1px #a7a7a7;
+	background-color: white;
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_caution.svg");
+	background-repeat: no-repeat;
+	background-size: 37.8px 37.8px;
+	background-position: 20px 26.1px;
+	/* 10.1px ist Startpunkt von Y-Achse */
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 33.2px 20px 0px 20px;
+	/* 13.2px ist der Startpunkt von Top, p hat von flare aus eine margin-bottom von 12px. */
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
+}
+
+div.Danger::before
+{
+	content: "";
+	display: block;
+	background-color: #bd2024;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.Caution
+{
+	mc-auto-number-format: "CAUTION";
+	mc-auto-number-position: inside-head;
+	border-radius: 8px;
+	border: solid 1px #a7a7a7;
+	background-color: white;
+	background-image: url("../Graphics/Symbol/SafetySymbol_ISO_ANSI_caution.svg");
+	background-repeat: no-repeat;
+	background-size: 37.8px 37.8px;
+	background-position: 20px 26.1px;
+	/* 10.1px ist Startpunkt von Y-Achse */
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 33.2px 20px 0px 20px;
+	/* 13.2px ist der Startpunkt von Top, p hat von flare aus eine margin-bottom von 12px. */
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
+}
+
+div.Caution::before
+{
+	content: "";
+	display: block;
+	background-color: #ffe100;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.Attention
+{
+	mc-auto-number-format: "ATTENTION";
+	mc-auto-number-position: inside-head;
+	border-radius: 8px;
+	border: solid 1px #a7a7a7;
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 33.2px 20px 0px 20px;
+	/* 13.2px ist der Startpunkt von Top, p hat von flare aus eine margin-bottom von 12px. */
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
+}
+
+div.Attention::before
+{
+	content: "";
+	display: block;
+	background-color: #004488;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.Notice
+{
+	mc-auto-number-format: "NOTICE";
+	mc-auto-number-position: inside-head;
+	border-radius: 8px;
+	border: solid 1px #a7a7a7;
+	background-color: white;
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 33.2px 20px 0px 20px;
+	/* 13.2px ist der Startpunkt von Top, p hat von flare aus eine margin-bottom von 12px. */
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
+}
+
+div.Notice::before
+{
+	content: "";
+	display: block;
+	background-color: #004488;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.Note
+{
+	mc-auto-number-format: "Note";
+	mc-auto-number-position: inside-head;
+	border-radius: 8px;
+	border: solid 1px #a7a7a7;
+	background-color: white;
+	background-image: url("../Graphics/Symbol/info_phosphor_blue.svg");
+	background-repeat: no-repeat;
+	background-size: 38.8px 38.8px;
+	background-position: 28.4px 13px;
+	/* 8.4px Startpunkt für X-Achse, -3px für Y */
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px 20px 0px 33.2px;
+	/* 13.2px ist der Startpunkt von left, p hat von flare aus eine margin-bottom von 12px. */
+	max-width: 1200px;
+	min-width: 100px;
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
+}
+
+div.Note::before
+{
+	content: "";
+	display: block;
+	background-color: #007bc2;
+	width: 12px;
+	/* Breite des Balkens */
+	height: 100%;
+	/* Volle Höhe der Box */
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /* Styles the "to the top button"*/
@@ -4403,7 +4708,7 @@ div.example
 	mc-hidden: hidden;
 	display: none;
 	position: fixed;
-	bottom: 44px;
+	bottom: 57px;
 	right: max(calc((100% - 1330px) / 2 - 70px), 20px);
 	z-index: 99;
 	font-size: 40px;
@@ -4441,7 +4746,7 @@ div.example
 .popupBody
 {
 	mc-hidden: hidden;
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope ", Arial;
 	color: #5a646e;
 	background-color: #ffffff;
 	border-radius: 20px;
@@ -4465,16 +4770,18 @@ div.example
 	position: absolute;
 	left: 20px;
 	white-space: normal;
-	filter: alpha( opacity = 0 );
+	filter: alpha(opacity = 0);
 	display: none;
-	opacity: 0.0;
+	opacity: 0;
 	z-index: 10001;
 	min-width: min-content;
 	line-height: 1.4;
 	color: #5a646e;
 }
 
-#f3e5f1 .search-bar .search-field	/*Styles the input field of the search bar of the HTML_Side skin*/
+/*Styles the input field of the search bar of the HTML_Side skin*/
+
+.search-bar .search-field
 {
 	padding-right: 60px;
 	mc-hidden: hidden;
@@ -4527,7 +4834,7 @@ MadCap|snippetBlock.inTable
 
 MadCap|toggler.example
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 /*Keeps container title bar to max width*/
@@ -4565,8 +4872,8 @@ MadCap|toggler.example
 
 .logo-wrapper::after
 {
-	content: 'Data Operator V1.2';
-	font-family: 'Manrope';
+	content: "Data Operator V1.2";
+	font-family: "Manrope";
 	font-size: 16px;
 	display: flex;
 	align-items: center;
@@ -4585,25 +4892,22 @@ MadCap|toggler.example
 	width: 64px;
 	height: 16px;
 	align-self: center;
-	background: transparent url('../Graphics/Symbol/ETAS_Logo_White.svg') no-repeat center center;
+	background: transparent url("../Graphics/Symbol/ETAS_Logo_White.svg") no-repeat center center;
 	background-size: auto 16px;
 }
 
 /*Padding around the body container*/
 
-.container
+.body-container
 {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
+	padding-top: 12px;
 }
 
 #mc-main-content
 {
-	flex: 1 !important;
-	padding: 12px 24px;
-	overflow: auto !important;
-	flex-grow: 1 !important;
+	padding-bottom: 70px;
+	padding-left: 24px;
+	padding-right: 24px;
 }
 
 /* Footer */
@@ -4612,21 +4916,34 @@ MadCap|toggler.example
 {
 	max-width: 1300px;
 	margin: 0 auto;
-	flex-shrink: 0;
+	padding: 16px;
 	flex-grow: 1;
 }
 
-.footer
+.container-footer-template
 {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0px 16px;
+	flex-grow: 1;
+}
+
+.footer1
+{
+	display: block;
 	font-family: "Manrope SemiBold";
 	font-size: 14px;
-	width: 100%;
-	height: 44px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	line-height: 22px;
 	border-top: 1px solid #dee0e2;
-	margin-top: auto !important;
+	background-color: #fafafa;
+	width: 100%;
+}
+
+.footer1.fixed
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
 
 .footer-content
@@ -4634,8 +4951,8 @@ MadCap|toggler.example
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
-	height: 100%;
+	height: 44px;
+	gap: 16px;
 }
 
 .footer-left,
@@ -4649,16 +4966,35 @@ MadCap|toggler.example
 {
 	font-family: "Manrope";
 	font-size: 14px;
-	line-height: 44px;
 }
 
-.footer a
+.footer1 a,
+.footer2 a
 {
 	color: #5a646e;
 	text-decoration: none;
-	line-height: 44px;
 }
 
+.footer1 a:hover,
+.footer2 a:hover
+{
+	color: #4568a9;
+}
+
+/* Sidebar Footer ist standardmäßig ausgeblendet */
+
+.footer2
+{
+	display: none;
+	font-family: "Manrope SemiBold";
+	font-size: 14px;
+	line-height: 22px;
+	border-top: 1px solid #dee0e2;
+	background-color: #fafafa;
+	width: 100%;
+}
+
+/*Styles the header of the HTML_Side skin*/
 /* Drop-down versioning etas.docs */
 
 .version-dropdown
@@ -4670,14 +5006,10 @@ MadCap|toggler.example
 .current-version
 {
 	cursor: pointer;
-	background-color: #ffffff;
-	/* Hintergrundfarbe beibehalten */
 	font-family: "Manrope SemiBold";
 	/* Schriftart anpassen */
 	font-size: 14px;
 	/* Schriftgröße anpassen */
-	line-height: 44px;
-	/* Zeilenhöhe anpassen */
 	color: #5a646e;
 	/* Textfarbe anpassen */
 }
@@ -4719,7 +5051,7 @@ MadCap|toggler.example
 
 .current-version:hover
 {
-	color: #4568A9 !important;
+	color: #4568a9 !important;
 }
 
 .show-dropdown
@@ -4734,11 +5066,69 @@ MadCap|toggler.example
 	/* Höher als andere Elemente */
 }
 
-/*Styles the header of the HTML_Side skin*/
+/* Ab einer bestimmten Bildschirmbreite */
+
+@media (min-width: 1279px)
+{
+	.footer1
+	{
+		display: none;
+		/* Verstecke den Standard-Footer */
+	}
+
+	.footer2
+	{
+		display: block;
+		/* Zeige den großen Footer */
+	}
+}
+
+@media (max-width: 800px)
+{
+	.footer1,
+	.footer2
+	{
+		height: auto;
+		padding: 8px 0;
+	}
+
+	.copyright
+	{
+		line-height: 44px;
+	}
+
+	.footer-content
+	{
+		flex-direction: column;
+		align-items: center;
+		gap: 2px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.footer-left,
+	.footer-right
+	{
+		line-height: 44px;
+		display: block;
+		text-align: center;
+	}
+
+	.footer1 a
+	{
+		display: block;
+		margin: 2px 0;
+		line-height: 44px;
+	}
+}
 
 nav.title-bar
 {
-	background-image: linear-gradient(to right, #164293, #89037a);
+	background-image: linear-gradient(
+    to right,
+    var(--ETAScolor1),
+    var(--ETAScolor2)
+  );
 	mc-hidden: hidden;
 	height: 56px;
 	padding: 8px 16px;
@@ -4751,61 +5141,6 @@ nav.title-bar
 	min-width: 350px;
 	width: 20%;
 	mc-hidden: hidden;
-}
-
-/*Safety message div*/
-
-div.warning-message
-{
-	border-radius: 8px;
-	border: solid 1px #a7a7a7;
-	background-color: white;
-	/* Hintergrundfarbe */
-	overflow: hidden;
-	/* Damit der border-radius auch für den roten Streifen gilt */
-}
-
-div.warning-header
-{
-	display: flex;
-	align-items: center;
-	background-color: #bd2024;
-	/* Roter Streifen */
-	height: 32px;
-	padding: 0 8px;
-	/* Padding für den Streifen */
-}
-
-.warning-icon
-{
-	width: 24px;
-	/* Größe des Icons */
-	height: 24px;
-	/* Größe des Icons */
-	margin-right: 8px;
-	/* Abstand zwischen Icon und Text */
-}
-
-.warning-text
-{
-	color: white;
-	/* Textfarbe */
-	font-family: 'Manrope', sans-serif;
-	/* Schriftart */
-	font-weight: 600;
-	/* SemiBold */
-	font-size: 24px;
-	/* Schriftgröße */
-	line-height: 32px;
-	/* Zeilenhöhe */
-	text-transform: uppercase;
-	/* Großbuchstaben */
-}
-
-.warning-content
-{
-	padding: 16px;
-	/* Padding für den Inhalt */
 }
 
 /*Indents the logo by 50px so the burger menu can be displayed on the left*/
@@ -4825,7 +5160,11 @@ div.warning-header
 
 	nav.title-bar
 	{
-		background-image: linear-gradient(to right, #164293, #89037a);
+		background-image: linear-gradient(
+      to right,
+      var(--ETAScolor1),
+      var(--ETAScolor2)
+    );
 		mc-hidden: hidden;
 		height: auto;
 	}
@@ -4834,57 +5173,32 @@ div.warning-header
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #D0D9E9;
+		background-color: #d0d9e9;
 		border-radius: 20px;
 	}
 
 	ul.off-canvas-list li a:hover
 	{
 		color: #164293;
-		font-family: 'Manrope SemiBold';
-		background-color: #D0D9E9;
+		font-family: "Manrope SemiBold";
+		background-color: #d0d9e9;
 		border-radius: 20px;
-	}
-}
-
-/* Footer-Anpassungen bei Bildschirmgrößen kleiner als 667px */
-
-@media (max-width: 667px)
-{
-	.footer-content
-	{
-		flex-direction: column;
-		align-items: center;
-		gap: 5px;
-	}
-
-	.footer-left,
-	.footer-right
-	{
-		display: block;
-		text-align: center;
-	}
-
-	.footer a
-	{
-		display: block;
-		margin: 4px 0;
 	}
 }
 
 p.Safety_caution
 {
-	background-image: url('../Graphics/Symbol/SafetySymbol.png');
+	background-image: url("../Graphics/Symbol/SafetySymbol.png");
 }
 
 p.safety_danger
 {
-	background-image: url('../Graphics/Symbol/SafetySymbol.png');
+	background-image: url("../Graphics/Symbol/SafetySymbol.png");
 }
 
 p.safety_warning
 {
-	background-image: url('../Graphics/Symbol/SafetySymbol.png');
+	background-image: url("../Graphics/Symbol/SafetySymbol.png");
 }
 
 span.superscript
@@ -4947,17 +5261,17 @@ img.howto2
 
 MadCap|popupBody
 {
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope", Arial;
 }
 
 MadCap|popupHead
 {
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope", Arial;
 }
 
 p.copyright
 {
-	font-family: 'Manrope ExtraBold', Arial;
+	font-family: "Manrope ExtraBold", Arial;
 }
 
 p.gloss_term
@@ -4967,7 +5281,7 @@ p.gloss_term
 
 p.how_to_title
 {
-	font-family: 'Manrope SemiBold', Arial;
+	font-family: "Manrope SemiBold", Arial;
 }
 
 p.MiniTOC1
@@ -4977,100 +5291,105 @@ p.MiniTOC1
 
 p.note_Header
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.Safety_caution
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.safety_danger
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.safety_heading
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.safety_notice
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
+}
+
+p.safety_attention
+{
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.safety_var
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.safety_warning
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.see
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.see_also
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.table_head
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.table_head_center
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 p.table_head_eng
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 span.bold
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 span.bold_safety
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 span.gui
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 span.guivar
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 }
 
 div.GlossaryPageDefinition
 {
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope", Arial;
 	font-size: 1rem;
 	margin-left: 30px;
 }
 
 div.GlossaryPageHeading
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	margin-left: 0;
 }
 
 div.GlossaryPageTerm
 {
-	font-family: 'Manrope ExtraBold', 'Arial Rounded MT Bold';
+	font-family: "Manrope ExtraBold", "Arial Rounded MT Bold";
 	margin-left: 0;
 }
 
@@ -5083,7 +5402,7 @@ p.table_default
 {
 	font-size: 1rem;
 	line-height: 14pt;
-	font-family: 'Manrope ', Arial;
+	font-family: "Manrope", Arial;
 }
 
 p.table_default_center

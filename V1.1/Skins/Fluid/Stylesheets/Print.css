@@ -31,7 +31,7 @@
 	.sidenav-wrapper
 	{
 		display: none;
-		background-color: transparent;
+		background-color: #ffffff;
 	}
 
 	.sidenav-wrapper ul.menu
@@ -213,27 +213,27 @@
 
 	ul.sidenav li a:hover
 	{
-		background-color: #D0D9E9;
+		background-color: #f8f8f8;
 	}
 
 	ul.sidenav ul > li > a:hover
 	{
-		background-color: #D0D9E9;
+		background-color: #f8f8f8;
 	}
 
 	ul.sidenav ul ul > li > a:hover
 	{
-		background-color: #D0D9E9;
+		background-color: #f8f8f8;
 	}
 
 	ul.sidenav ul ul ul > li > a:hover
 	{
-		background-color: #D0D9E9;
+		background-color: #f8f8f8;
 	}
 
 	ul.sidenav ul ul ul ul > li > a:hover
 	{
-		background-color: #D0D9E9;
+		background-color: #f8f8f8;
 	}
 
 	ul.navigation li > a:hover
@@ -410,8 +410,8 @@
 
 	.title-bar-layout a.logo
 	{
-		background: transparent url('Images/ETAS_Logo_White.svg') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.svg') no-repeat center center;
+		background: transparent url('Images/ETAS_Logo_White.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.png') no-repeat center center;
 	}
 
 	.main-section > .outer-row
@@ -1104,14 +1104,14 @@
 
 	.search-bar.search-bar-container .search-submit
 	{
-		background: transparent url('Images/magnifying-glass_gray.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_gray.png') no-repeat center center;
+		background: transparent url('Images/ETAS_Search_Gray70.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_Gray70.png') no-repeat center center;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
-		background: transparent url('Images/magnifying-glass_blue.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_blue.png') no-repeat center center;
+		background: transparent url('Images/ETAS_Search_blue_2.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_blue_2.png') no-repeat center center;
 	}
 
 	.phrase-suggest
@@ -1126,7 +1126,7 @@
 
 	.sidenav-container ul ul
 	{
-		background-color: transparent;
+		background-color: #ffffff;
 	}
 
 	.sidenav-container
@@ -1166,27 +1166,27 @@
 
 	ul.sidenav li a.selected
 	{
-		background-color: #D0D9E9;
+		
 	}
 
 	ul.sidenav ul > li > a.selected
 	{
-		background-color: #D0D9E9;
+		
 	}
 
 	ul.sidenav ul ul > li > a.selected
 	{
-		background-color: #D0D9E9;
+		
 	}
 
 	ul.sidenav ul ul ul > li > a.selected
 	{
-		background-color: #D0D9E9;
+		
 	}
 
 	ul.sidenav ul ul ul ul > li > a.selected
 	{
-		background-color: #D0D9E9;
+		
 	}
 
 	.skip-to-content

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="DataOperator_V1.1_EN.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Data Operator_V1.1_User Guide_EN.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,10 +44,13 @@
         </script>
         <script type="text/javascript" src="../Resources/Scripts/google_tm.js">
         </script>
+        <script type="text/javascript" src="../Resources/Scripts/privacy_Settings.js">
+        </script>
         <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
         </script>
-        <script type="text/javascript" src="../Resources/Scripts/Cookies.js">
-        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script type="text/javascript" src="../Resources/Scripts/Footer-fixed.js"> </script>
+        <script type="text/javascript" src="../Resources/Scripts/Footer2-Scroll.js"> </script>
         <script>/* <![CDATA[ */
 			document.title = "Data Operator - "  + document.title;
 		/* ]]> */</script>
@@ -76,7 +79,7 @@
                                 </div>
                             </div>
                             <div class="title-bar-layout outer-row">
-                                <div class="logo-wrapper"><a class="logo" href="../Resources/Manual/LandingPage_DataOperator.htm" alt="Logo"></a>
+                                <div class="logo-wrapper"><a class="logo" href="_about_dataOP.htm" alt="Logo"></a>
                                 </div>
                                 <div class="navigation-wrapper nocontent">
                                     <ul class="navigation clearfix" role="navigation" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
@@ -137,38 +140,54 @@
                                         <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Data Operator &gt;</span>
                                         </div>
                                     </div>
-                                    <div class="container">
-                                        <div role="main" id="mc-main-content">
-                                            <h1>Destination</h1>
-                                            <p class="paragraph"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/ui_destination.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1038" data-mc-height="731" src="../Resources/Graphics/ui_destination_thumb_0_150.png" tabindex="" /></a>
-                                            </p>
-                                            <p class="gui_title">Format family </p>
-                                            <p class="gloss_des">To select the destination file format family, use the drop-down list.</p>
-                                            <p class="gui_title">Format</p>
-                                            <p class="gloss_des">To select the destination file format based on the selected format family, use the drop-down list.</p>
-                                            <p class="gui_title">Destination folder</p>
-                                            <p class="gui_title">
-                                                <img src="../Resources/Graphics/button_select_folder.svg" class="buttons" title="Select folder" alt="Select folder" />
-                                            </p>
-                                            <p class="gloss_des">Opens a folder selection dialog where you can select the destination folder to save the destination file to. Alternatively, you can type the path in the input field.</p>
-                                            <p class="gloss_des">Select an option to handle naming conflicts in the destination folder:</p>
-                                            <p class="gloss_des"><span class="gui">Keep both/Resolve conflicts</span>: Keeps all files and adds a suffix to the name of the new file.</p>
-                                            <p class="gloss_des"><span class="gui">Overwrite existing</span>: Overwrites existing files with the same name.</p>
-                                            <p class="gui_title">Output file prefix/suffix</p>
-                                            <p class="gloss_des">In the input fields, enter a prefix/suffix you want to add to the  file names.</p>
-                                            <p class="gui_title">Other options</p>
-                                            <p class="gloss_des"><span class="gui">Copy MDF4 events</span>: Only relevant if both the source and destination file formats are MDF4. Copies the events from the source to the target MDF4 file.</p>
-                                            <p class="gloss_des"><span class="gui">Detect duplicates</span>: Detects duplicate signals in measurement files. The results of this operation can be found in the job log. Can have significant performance impact.</p>
-                                            <p class="gui_title">
-                                                <img src="../Resources/Graphics/button_back.svg" class="buttons" title="Next" alt="Next" />
-                                            </p>
-                                            <p class="gloss_des">Returns to the last step and saves your entries.</p>
-                                            <p class="gui_title">
-                                                <img src="../Resources/Graphics/button_start_job.svg" class="buttons" />
-                                            </p>
-                                            <p class="gloss_des">Starts the job with all the settings you made and opens the <span class="gui">Jobs progress </span>step, where you can see the status of the job's progress.</p>
-                                        </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Destination</h1>
+                                        <p class="paragraph"><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../Resources/Graphics/ui_destination.png"><img class="MCPopupThumbnail img imgthumbnail" data-mc-width="1038" data-mc-height="731" src="../Resources/Graphics/ui_destination_thumb_0_150.png" tabindex="" /></a>
+                                        </p>
+                                        <p class="gui_title">Format family </p>
+                                        <p class="gloss_des">To select the destination file format family, use the drop-down list.</p>
+                                        <p class="gui_title">Format</p>
+                                        <p class="gloss_des">To select the destination file format based on the selected format family, use the drop-down list.</p>
+                                        <p class="gui_title">Destination folder</p>
+                                        <p class="gui_title">
+                                            <img src="../Resources/Graphics/button_select_folder.svg" class="buttons" title="Select folder" alt="Select folder" />
+                                        </p>
+                                        <p class="gloss_des">Opens a folder selection dialog where you can select the destination folder to save the destination file to. Alternatively, you can type the path in the input field.</p>
+                                        <p class="gloss_des">Select an option to handle naming conflicts in the destination folder:</p>
+                                        <p class="gloss_des"><span class="gui">Keep both/Resolve conflicts</span>: Keeps all files and adds a suffix to the name of the new file.</p>
+                                        <p class="gloss_des"><span class="gui">Overwrite existing</span>: Overwrites existing files with the same name.</p>
+                                        <p class="gui_title">Output file prefix/suffix</p>
+                                        <p class="gloss_des">In the input fields, enter a prefix/suffix you want to add to the  file names.</p>
+                                        <p class="gui_title">Other options</p>
+                                        <p class="gloss_des"><span class="gui">Copy MDF4 events</span>: Only relevant if both the source and destination file formats are MDF4. Copies the events from the source to the target MDF4 file.</p>
+                                        <p class="gloss_des"><span class="gui">Detect duplicates</span>: Detects duplicate signals in measurement files. The results of this operation can be found in the job log. Can have significant performance impact.</p>
+                                        <p class="gui_title">
+                                            <img src="../Resources/Graphics/button_back.svg" class="buttons" title="Next" alt="Next" />
+                                        </p>
+                                        <p class="gloss_des">Returns to the last step and saves your entries.</p>
+                                        <p class="gui_title">
+                                            <img src="../Resources/Graphics/button_start_job.svg" class="buttons" />
+                                        </p>
+                                        <p class="gloss_des">Starts the job with all the settings you made and opens the <span class="gui">Jobs progress </span>step, where you can see the status of the job's progress.</p>
                                     </div>
+                                    <footer class="footer1">
+                                        <div class="container-footer-template">
+                                            <div class="footer-content">
+                                                <div class="footer-left">
+                                                    <div class="version-dropdown"><span class="current-version" id="currentVersion">Current version</span>
+                                                        <div class="dropdown-content" id="versionDropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div><span class="current-version" id="currentLanguage">Language</span>
+                                                    </div>
+                                                    <div class="dropdown-content" id="languageDropdown">
+                                                    </div>
+                                                </div>
+                                                <div class="footer-right"><span class="copyright">© 2025 ETAS GmbH</span><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of use / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="_blank">Privacy policy</a><a href="#" onclick="showDockPrivacySettings(); return false;">Privacy Settings</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
                                 </div>
                             </div>
                         </div>
@@ -177,20 +196,26 @@
             </div>
         </div>
     </body>
-    <footer class="footer">
-        <div class="container-footer">
+    <footer class="footer2">
+        <div class="container-footer-template">
             <div class="footer-content">
                 <div class="footer-left">
                     <div class="version-dropdown"><span class="current-version" id="currentVersion">Current version</span>
                         <div class="dropdown-content" id="versionDropdown">
                         </div>
                     </div>
+                    <div><span class="current-version" id="currentLanguage">Language</span>
+                    </div>
+                    <div class="dropdown-content" id="languageDropdown">
+                    </div>
                 </div>
-                <div class="footer-right"><span class="copyright">© 2025 ETAS GmbH</span><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of use / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="_blank">Privacy policy</a>
+                <div class="footer-right"><span class="copyright">© 2025 ETAS GmbH</span><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of use / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="_blank">Privacy policy</a><a href="#" onclick="showDockPrivacySettings(); return false;">Privacy Settings</a>
                 </div>
             </div>
         </div>
     </footer>
     <script type="text/javascript" defer="defer" src="../../../versions.js">
+    </script>
+    <script type="text/javascript" defer="defer" src="../../../languages.js">
     </script>
 </html>

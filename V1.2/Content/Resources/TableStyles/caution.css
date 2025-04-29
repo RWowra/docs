@@ -65,7 +65,7 @@
 mcTableStyle
 {
 	name: caution;
-	border-collapse: collapse;
+	border-collapse: separate;
 	border-left-style: solid;
 	border-left-width: 1px;
 	border-left-color: #000000;
@@ -87,6 +87,11 @@ mcTableStyle
 	cell-padding-bottom: 2px;
 	background-image: none;
 	page-break-inside: avoid;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	overflow: hidden;
 }
 
 mcTableColumnStyle
@@ -383,7 +388,8 @@ mcTableBodyStyle
 
 .TableStyle-caution
 {
-	border-collapse: collapse;
+	border-collapse: separate;
+	overflow: hidden;
 	background-image: none;
 	border-left-style: solid;
 	border-left-color: #000000;
@@ -397,6 +403,10 @@ mcTableBodyStyle
 	border-bottom-style: solid;
 	border-bottom-color: #000000;
 	border-bottom-width: 1px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 	margin-top: 6px;
 	margin-bottom: 6px;
 	page-break-inside: avoid;
