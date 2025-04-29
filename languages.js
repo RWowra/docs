@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const languageDropdowns = document.querySelectorAll("#languageDropdown");
-    const currentLanguageSpans = document.querySelectorAll("#currentLanguage");
+    const languageDropdown = document.getElementById("languageDropdown");
+    const currentLanguageSpan = document.getElementById("currentLanguage");
 
     const languages = {
         "en": "English",
@@ -10,11 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const path = window.location.pathname;
 
-    // Sucht z.B. V1.1 oder V1.1_de oder V1.2_fr an beliebiger Stelle
+    // Pfad analysieren: z. B. /V1.2_de/ → version = V1.2, lang = de
     const folderMatch = path.match(/\/(V\d+\.\d+)(?:_([a-z]{2}))?\//);
 
     let version = "unknown";
-    let lang = "en"; // Default
+    let lang = "en"; // Standard: Englisch
 
     if (folderMatch) {
         version = folderMatch[1];
@@ -23,23 +23,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    currentLanguageSpans.forEach(span => {
-        span.textContent = languages[lang] || "Unknown";
-    });
+    // Aktuelle Sprache anzeigen
+    currentLanguageSpan.textContent = languages[lang] || "Unknown";
 
+    // Dropdown befüllen
     Object.entries(languages).forEach(([code, label]) => {
         const item = document.createElement("div");
         item.classList.add("dropdown-item");
         item.textContent = label;
-        item.addEventListener("click", () => switchLanguage(code));
-        languageDropdowns.forEach(dd => dd.appendChild(item.cloneNode(true)));
+
+        item.addEventListener("click", () => {
+            let newPath;
+
+            if (code === "en") {
+                newPath = path.replace(/\/V\d+\.\d+(_[a-z]{2})?\//, `/${version}/`);
+            } else {
+                newPath = path.replace(/\/V\d+\.\d+(_[a-z]{2})?\//, `/${version}_${code}/`);
+            }
+
+            // Navigation zur Sprachversion
+            window.location.pathname = newPath;
+        });
+
+        languageDropdown.appendChild(item);
     });
 
-    function switchLanguage(targetLang) {
-        if (targetLang === lang) return;
+    // Dropdown öffnen/schließen
+    currentLanguageSpan.addEventListener("click", () => {
+        languageDropdown.classList.toggle("show");
+    });
 
-        const newFolder = (targetLang === "en") ? version : `${version}_${targetLang}`;
-        const newPath = path.replace(/\/V\d+\.\d+(?:_[a-z]{2})?\//, `/${newFolder}/`);
-        window.location.href = newPath;
-    }
+    // Klick außerhalb schließt Dropdown
+    document.addEventListener("click", function (e) {
+        if (!languageDropdown.contains(e.target) && e.target !== currentLanguageSpan) {
+            languageDropdown.classList.remove("show");
+        }
+    });
 });
