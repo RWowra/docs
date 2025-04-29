@@ -105,7 +105,7 @@ h1
 	font-size: 40px;
 	line-height: 1.4;
 	color: #164293;
-	font-family: "Manrope", Arial;
+	font-family: "Manrope Light", Arial;
 	text-align: center;
 	margin-top: 2rem;
 }
@@ -120,7 +120,7 @@ span.h1
 p.searchbar
 {
 	color: #ffffff;
-	font-family: "Manrope", Arial;
+	font-family: "Manrope Light", Arial;
 	font-size: 2.5rem;
 	text-align: right;
 	line-height: 110%;
@@ -134,7 +134,7 @@ span.searchbar
 span.searchbar1
 {
 	color: #ffffff;
-	font-family: "Manrope", Arial;
+	font-family: "Manrope Light", Arial;
 	text-align: right;
 	line-height: 110%;
 }
@@ -155,7 +155,7 @@ div.searchbar
 	width: 100%;
 	margin: auto;
 	text-align: center;
-	border: 1px solid #164293;
+	border: 2px solid #164293;
 	border-radius: 20px;
 	height: 40px;
 }
@@ -322,7 +322,7 @@ div.tile-link a
 
 div.tile-link a:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 div.tile-subtitle

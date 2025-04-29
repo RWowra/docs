@@ -65,7 +65,7 @@
 mcTableStyle
 {
 	name: notice;
-	border-collapse: collapse;
+	border-collapse: separate;
 	border-left-style: solid;
 	border-left-width: 1px;
 	border-left-color: #000000;
@@ -88,6 +88,11 @@ mcTableStyle
 	background-image: none;
 	page-break-inside: avoid;
 	mc-hide-bottom-ruling: false;
+	overflow: hidden;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 }
 
 mcTableColumnStyle
@@ -384,8 +389,9 @@ mcTableBodyStyle
 
 .TableStyle-notice
 {
-	border-collapse: collapse;
+	border-collapse: separate;
 	mc-hide-bottom-ruling: false;
+	overflow: hidden;
 	background-image: none;
 	border-left-style: solid;
 	border-left-color: #000000;
@@ -399,6 +405,10 @@ mcTableBodyStyle
 	border-bottom-style: solid;
 	border-bottom-color: #000000;
 	border-bottom-width: 1px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 	margin-top: 6px;
 	margin-bottom: 6px;
 	page-break-inside: avoid;

@@ -456,7 +456,7 @@ p.MiniTOC1_0
 	color: var(--ETAScolor1);
 	list-style-type: none;
 	margin-left: 5mm;
-	font-family: 'Manrope SemiBold', 'Arial', 'Arial Rounded MT Bold';
+	font-family: "Manrope SemiBold", "Arial", "Arial Rounded MT Bold";
 	font-weight: normal;
 }
 
@@ -494,7 +494,7 @@ a.MiniTOC1:link
 	text-align: inherit;
 	mc-leader-format: 'none';
 	color: var(--ETAScolor1);
-	font-family: 'Manrope SemiBold', 'Arial', 'Arial Rounded MT Bold';
+	font-family: "Manrope SemiBold", "Arial", "Arial Rounded MT Bold";
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -555,8 +555,8 @@ div.MCBreadcrumbsBox_0
 	border-bottom-width: 0;
 	font-size: 14px;
 	line-height: 22px;
-	font-family: 'Manrope', sans-serif;
-	color: #5a646e;
+	font-family: 'Manrope SemiBold';
+	padding-left: 24px;
 	border-bottom-style: solid;
 	border-bottom-color: black;
 	padding-bottom: 10px;
@@ -581,7 +581,7 @@ div.MCBreadcrumbsBox_0
 
 .xref:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 .xref:focus
@@ -596,7 +596,7 @@ div.MCBreadcrumbsBox_0
 
 .xref.xrefHeading_only:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 .img
@@ -816,16 +816,16 @@ a.MiniTOC6:link
 .dropDownHotspot
 {
 	color: #000000;
-	font-size: 20px;
-	line-height: 28px;
+	font-size: 1.1rem;
+	line-height: 1.4;
 	text-decoration: none;
 }
 
 .dropDownHotspot:link
 {
 	color: #000000;
-	font-size: 20px;
-	line-height: 28px;
+	font-size: 1.1rem;
+	line-height: 1.4;
 	text-decoration: none;
 }
 
@@ -839,25 +839,9 @@ a.MiniTOC6:link
 	color: #164293;
 }
 
-.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('CaretDown_blue.svg');
-	padding-left: 5px;
-	padding-right: 0;
-}
-
-.MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
-{
-	background-position: left;
-	background-image: url('CaretRight.svg');
-	padding-left: 5px;
-	padding-right: 0;
-}
-
 .dropDownHead
 {
-	margin-bottom: 8px;
+	margin-bottom: 6pt;
 	text-decoration: none;
 }
 
@@ -873,7 +857,7 @@ a.MiniTOC6:link
 
 .dropDownBody
 {
-	margin-bottom: 8px;
+	margin-bottom: 6pt;
 }
 
 .xref.xrefHeading
@@ -888,7 +872,7 @@ a.MiniTOC6:link
 
 .xref.xrefHeading:hover
 {
-	color: #4568A9;
+	color: #4568a9;
 }
 
 .MCWebHelpFramesetLink a

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="DataOperator_V1.5_EN.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5_Side" data-mc-search-type="Stem" data-mc-help-system-file-name="Data Operator_V1.1_User Guide_DE.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-toc-path="[%=System.LinkedTitle%]" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="HTML5">
     <!-- saved from url=(0016)http://localhost -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,10 +44,13 @@
         </script>
         <script type="text/javascript" src="../Resources/Scripts/google_tm.js">
         </script>
+        <script type="text/javascript" src="../Resources/Scripts/privacy_Settings.js">
+        </script>
         <script type="text/javascript" defer="defer" src="../Resources/Scripts/Scroll-Button.js">
         </script>
-        <script type="text/javascript" src="../Resources/Scripts/Cookies.js">
-        </script>
+        <script type="text/javascript" src="../Resources/Scripts/Cookies.js"> </script>
+        <script type="text/javascript" src="../Resources/Scripts/Footer-fixed.js"> </script>
+        <script type="text/javascript" src="../Resources/Scripts/Footer2-Scroll.js"> </script>
         <script>/* <![CDATA[ */
 			document.title = "Data Operator - "  + document.title;
 		/* ]]> */</script>
@@ -137,61 +140,77 @@
                                         <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="10" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">Data Operator &gt;</span>
                                         </div>
                                     </div>
-                                    <div class="container">
-                                        <div role="main" id="mc-main-content">
-                                            <h1>Start the job</h1>
-                                            <p>When you are satisfied with all the settings made in the <span class="gui">Operations</span> steps, you can start the job.</p>
-                                            <ol>
-                                                <li class="howto_num" value="1">
-                                                    <p class="paragraph">In the <span class="gui">Destination</span> step, select a <span class="gui">Format family</span> from the drop-down.</p>
-                                                </li>
-                                                <li class="howto_num" value="2">
-                                                    <p>Select a <span class="gui">Format</span> from the drop-down. </p>
-                                                    <p class="paragraph">The available formats depend on the format family.</p>
-                                                </li>
-                                                <li class="howto_num" value="3">
-                                                    <p>To select the destination folder, click <img src="../Resources/Graphics/button_select_folder.svg" class="buttons"></img>.</p>
-                                                </li>
-                                                <li class="howto_num" value="4">
-                                                    <p>In the file selection dialog, select the destination folder.</p>
-                                                </li>
-                                                <li class="howto_num" value="5">
-                                                    <p>Click <span class="gui">Select Folder</span>.</p>
-                                                </li>
-                                                <li class="howto_num" value="6">
-                                                    <p>Select an option to handle naming conflicts in the destination folder:</p>
-                                                    <ol>
-                                                        <li class="list2" value="1">
-                                                            <p><span class="gui">Keep both/Resolve conflicts</span>: Keeps all files and adds a suffix to the name of the new file.</p>
-                                                        </li>
-                                                        <li class="list2" value="2">
-                                                            <p><span class="gui">Overwrite existing</span>: Overwrites existing files with the same name.</p>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li class="howto_num" value="7">
-                                                    <p>In the <span class="gui">Output file prefix/sufix</span> input fields, enter a prefix/suffix you want to add to the  file names.</p>
-                                                </li>
-                                                <li class="howto_num" value="8">
-                                                    <p>Activate the checkboxes to apply the following optional settings:</p>
-                                                    <ol>
-                                                        <li class="list2" value="1">
-                                                            <p><span class="gui">Copy MDF4 events</span>: Only relevant if both the source and destination file formats are MDF4. Copies the events from the source to the target MDF4 file.</p>
-                                                        </li>
-                                                        <li class="list2" value="2">
-                                                            <p><span class="gui">Detect duplicates</span>: Detects duplicate signals in measurement files. The results of this operation can be found in the job log. Can have significant performance impact.</p>
-                                                        </li>
-                                                    </ol>
-                                                </li>
-                                                <li class="howto_num" value="9">
-                                                    <p>Click <img src="../Resources/Graphics/button_start_job.svg" class="buttons"></img>.</p>
-                                                </li>
-                                                <li class="howto_result" value="10">
-                                                    <p>The job starts. You can view the status of the job in the <a href="ui_jobs_progress.htm" class="Heading_only MCXref xref xrefHeading_only">Jobs progress</a> step.</p>
-                                                </li>
-                                            </ol>
-                                        </div>
+                                    <div role="main" id="mc-main-content">
+                                        <h1>Start the job</h1>
+                                        <p>When you are satisfied with all the settings made in the <span class="gui">Operations</span> steps, you can start the job.</p>
+                                        <ol>
+                                            <li class="howto_num" value="1">
+                                                <p class="paragraph">In the <span class="gui">Destination</span> step, select a <span class="gui">Format family</span> from the drop-down.</p>
+                                            </li>
+                                            <li class="howto_num" value="2">
+                                                <p>Select a <span class="gui">Format</span> from the drop-down. </p>
+                                                <p class="paragraph">The available formats depend on the format family.</p>
+                                            </li>
+                                            <li class="howto_num" value="3">
+                                                <p>To select the destination folder, click <img src="../Resources/Graphics/button_select_folder.svg" class="buttons"></img>.</p>
+                                            </li>
+                                            <li class="howto_num" value="4">
+                                                <p>In the file selection dialog, select the destination folder.</p>
+                                            </li>
+                                            <li class="howto_num" value="5">
+                                                <p>Click <span class="gui">Select Folder</span>.</p>
+                                            </li>
+                                            <li class="howto_num" value="6">
+                                                <p>Select an option to handle naming conflicts in the destination folder:</p>
+                                                <ol>
+                                                    <li class="list2" value="1">
+                                                        <p><span class="gui">Keep both/Resolve conflicts</span>: Keeps all files and adds a suffix to the name of the new file.</p>
+                                                    </li>
+                                                    <li class="list2" value="2">
+                                                        <p><span class="gui">Overwrite existing</span>: Overwrites existing files with the same name.</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li class="howto_num" value="7">
+                                                <p>In the <span class="gui">Output file prefix/sufix</span> input fields, enter a prefix/suffix you want to add to the  file names.</p>
+                                            </li>
+                                            <li class="howto_num" value="8">
+                                                <p>Activate the checkboxes to apply the following optional settings:</p>
+                                                <ol>
+                                                    <li class="list2" value="1">
+                                                        <p><span class="gui">Copy MDF4 events</span>: Only relevant if both the source and destination file formats are MDF4. Copies the events from the source to the target MDF4 file.</p>
+                                                    </li>
+                                                    <li class="list2" value="2">
+                                                        <p><span class="gui">Detect duplicates</span>: Detects duplicate signals in measurement files. The results of this operation can be found in the job log. Can have significant performance impact.</p>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li class="howto_num" value="9">
+                                                <p>Click <img src="../Resources/Graphics/button_start_job.svg" class="buttons"></img>.</p>
+                                            </li>
+                                            <li class="howto_result" value="10">
+                                                <p>The job starts. You can view the status of the job in the <a href="ui_jobs_progress.htm" class="Heading_only MCXref xref xrefHeading_only">Jobs progress</a> step.</p>
+                                            </li>
+                                        </ol>
                                     </div>
+                                    <footer class="footer1">
+                                        <div class="container-footer-template">
+                                            <div class="footer-content">
+                                                <div class="footer-left">
+                                                    <div class="version-dropdown"><span class="current-version" id="currentVersion">Current version</span>
+                                                        <div class="dropdown-content" id="versionDropdown">
+                                                        </div>
+                                                    </div>
+                                                    <div><span class="current-version" id="currentLanguage">Language</span>
+                                                    </div>
+                                                    <div class="dropdown-content" id="languageDropdown">
+                                                    </div>
+                                                </div>
+                                                <div class="footer-right"><span class="copyright">© 2025 ETAS GmbH</span><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of use / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="_blank">Privacy policy</a><a href="#" onclick="showDockPrivacySettings(); return false;">Privacy Settings</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </footer>
                                 </div>
                             </div>
                         </div>
@@ -200,20 +219,26 @@
             </div>
         </div>
     </body>
-    <footer class="footer">
-        <div class="container-footer">
+    <footer class="footer2">
+        <div class="container-footer-template">
             <div class="footer-content">
                 <div class="footer-left">
                     <div class="version-dropdown"><span class="current-version" id="currentVersion">Current version</span>
                         <div class="dropdown-content" id="versionDropdown">
                         </div>
                     </div>
+                    <div><span class="current-version" id="currentLanguage">Language</span>
+                    </div>
+                    <div class="dropdown-content" id="languageDropdown">
+                    </div>
                 </div>
-                <div class="footer-right"><span class="copyright">© 2025 ETAS GmbH</span><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of use / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="_blank">Privacy policy</a>
+                <div class="footer-right"><span class="copyright">© 2025 ETAS GmbH</span><a href="https://www.etas.com/ww/en/terms-of-use-legal-notice/" target="_blank">Terms of use / Legal notice</a><a href="https://www.etas.com/ww/en/data-protection-policy/" target="_blank">Privacy policy</a><a href="#" onclick="showDockPrivacySettings(); return false;">Privacy Settings</a>
                 </div>
             </div>
         </div>
     </footer>
     <script type="text/javascript" defer="defer" src="../../../versions.js">
+    </script>
+    <script type="text/javascript" defer="defer" src="../../../languages.js">
     </script>
 </html>
