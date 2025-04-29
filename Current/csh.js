@@ -77,7 +77,7 @@ $.noConflict(true);
 
 })();
 
-var helpSystemName = "Data Operator_V1.5_User Guide_EN.htm";
+var helpSystemName = "Data Operator_V1.5_EN.htm";
 
 //    Syntax:
 //    function MadCap.OpenHelp(id, skinName, searchQuery, firstPick)
@@ -128,7 +128,7 @@ var helpSystemName = "Data Operator_V1.5_User Guide_EN.htm";
 
 (function ()
 {
-var helpSystemName = "Data Operator_V1.5_User Guide_EN.htm";
+var helpSystemName = "Data Operator_V1.5_EN.htm";
 
     MadCap.OpenHelp = function (id, skinName, searchQuery, firstPick, pathToHelpSystem)
     {
