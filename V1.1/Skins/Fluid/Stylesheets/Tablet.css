@@ -84,10 +84,8 @@
 	{
 		top: 0;
 		margin: 0;
-		width: 112px;
-		height: 28px;
-		background: transparent url('Images/ETAS_Logo_White.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.png') no-repeat center center;
+		background: transparent url('Images/ETAS_Logo_White.svg') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.svg') no-repeat center center;
 	}
 
 	.title-bar .menu-icon span
@@ -95,8 +93,8 @@
 		height: 48px;
 		width: 48px;
 		display: block;
-		background: transparent url('Images/icons8-burger-bar-32_1.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/icons8-burger-bar-32_1.png') no-repeat center center;
+		background: transparent url('Images/List.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/List.png') no-repeat center center;
 	}
 
 	.search-bar .search-submit
@@ -156,10 +154,15 @@
 
 	ul.off-canvas-list li a
 	{
-		font-size: 1em;
-		line-height: inherit;
 		border-bottom: none 1px #262626;
 		color: #164293;
+		font-family: 'Manrope SemiBold';
+		font-size: 16px;
+		line-height: 1.4em;
+		margin-left: 16px;
+		margin-right: 16px;
+		margin-top: 9px;
+		margin-bottom: 9px;
 	}
 
 	ul.off-canvas-accordion ul > li > a
@@ -852,22 +855,25 @@
 
 	ul.off-canvas-list ul > li > a
 	{
-		margin-left: 1em;
+		margin-left: 32px;
+		margin-right: 16px;
+		margin-top: 9px;
+		margin-bottom: 9px;
 	}
 
 	ul.off-canvas-list ul ul > li > a
 	{
-		margin-left: 2em;
+		margin-left: 48px;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a
 	{
-		margin-left: 3em;
+		margin-left: 48px;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a
 	{
-		margin-left: 4em;
+		margin-left: 48px;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a
@@ -877,39 +883,39 @@
 
 	ul.off-canvas-list li.is-accordion-submenu-parent > a span.submenu-toggle
 	{
-		border-top-color: #5a646e;
+		border-top-color: #164293;
 	}
 
 	ul.off-canvas-list li a:hover
 	{
 		color: #164293;
 		font-family: 'Manrope SemiBold';
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list li.is-accordion-submenu-parent > a span.submenu-toggle:hover
@@ -1081,12 +1087,12 @@
 	.search-bar .search-field
 	{
 		background-color: #ffffff;
-		padding-right: 99px;
+		padding-right: 89px;
 	}
 
 	.search-filter-content
 	{
-		top: 38px;
+		top: 24px;
 		background-color: #ffffff;
 	}
 
@@ -1377,19 +1383,19 @@
 
 	.search-bar.search-bar-container .search-submit
 	{
-		background: transparent url('Images/ETAS_Search_Gray70.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_Gray70.png') no-repeat center center;
+		background: transparent url('Images/magnifying-glass_gray.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_gray.png') no-repeat center center;
 	}
 
 	.search-bar .search-filter-wrapper
 	{
-		right: 46px;
+		right: 36px;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
-		background: transparent url('Images/ETAS_Search_blue_2.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_blue_2.png') no-repeat center center;
+		background: transparent url('Images/magnifying-glass_blue.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_blue.png') no-repeat center center;
 	}
 
 	.phrase-suggest

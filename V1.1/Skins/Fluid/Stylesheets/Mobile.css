@@ -10,10 +10,8 @@
 
 	.title-bar-layout a.logo
 	{
-		width: 112px;
-		height: 28px;
-		background: transparent url('Images/ETAS_Logo_White.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.png') no-repeat center center;
+		background: transparent url('Images/ETAS_Logo_White.svg') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Logo_White.svg') no-repeat center center;
 	}
 
 	.search-bar .search-submit
@@ -200,32 +198,32 @@
 
 	ul.off-canvas-list li a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #ffffff;
+		background-color: #D0D9E9;
 	}
 
 	#resultList .glossary .term a:hover
@@ -825,8 +823,8 @@
 
 	.title-bar .menu-icon span
 	{
-		background: transparent url('Images/icons8-burger-bar-32.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/icons8-burger-bar-32.png') no-repeat center center;
+		background: transparent url('Images/List.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/List.png') no-repeat center center;
 	}
 
 	nav.title-bar .menu-icon
@@ -972,12 +970,12 @@
 	.search-bar .search-field
 	{
 		background-color: #ffffff;
-		padding-right: 99px;
+		padding-right: 89px;
 	}
 
 	.search-filter-content
 	{
-		top: 38px;
+		top: 24px;
 		background-color: #ffffff;
 	}
 
@@ -1203,19 +1201,19 @@
 
 	.search-bar.search-bar-container .search-submit
 	{
-		background: transparent url('Images/ETAS_Search_Gray70.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_Gray70.png') no-repeat center center;
+		background: transparent url('Images/magnifying-glass_gray.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_gray.png') no-repeat center center;
 	}
 
 	.search-bar .search-filter-wrapper
 	{
-		right: 46px;
+		right: 36px;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
-		background: transparent url('Images/ETAS_Search_blue_2.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/ETAS_Search_blue_2.png') no-repeat center center;
+		background: transparent url('Images/magnifying-glass_blue.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/magnifying-glass_blue.png') no-repeat center center;
 	}
 
 	.phrase-suggest
