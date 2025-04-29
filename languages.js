@@ -6,14 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
         "en": "English",
         "de": "Deutsch",
         "fr": "Français"
-        // neue Sprachen hier hinzufügen
+        // weitere Sprachen hier ergänzen
     };
 
     const path = window.location.pathname;
-    const folderMatch = path.match(/\/(V\d+\.\d+)(?:_([a-z]{2}))?\//);
+
+    // Neuer, robuster Regex – findet V1.5, V1.5_de, V1.5_fr usw.
+    const folderMatch = path.match(/(V\d+\.\d+)(?:_([a-z]{2}))?(?=\/)/);
 
     let version = "unknown";
-    let lang = "en"; // Standard
+    let lang = "en"; // Defaultsprache
 
     if (folderMatch) {
         version = folderMatch[1];
@@ -22,42 +24,26 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Setze aktuelle Sprache im UI
     currentLanguageSpans.forEach(span => {
         span.textContent = languages[lang];
     });
 
-    function checkIfLanguageFolderExists(languageCode) {
-        if (languageCode === "en") {
-            // EN ist immer vorhanden (ohne Suffix)
-            return Promise.resolve(true);
-        }
-
-        const testUrl = `/${version}_${languageCode}/`;
-        return fetch(testUrl, { method: 'HEAD' })
-            .then(res => res.ok)
-            .catch(() => false);
-    }
-
-    async function buildLanguageDropdown() {
-        for (const [code, label] of Object.entries(languages)) {
-            const exists = await checkIfLanguageFolderExists(code);
-            if (exists) {
-                const item = document.createElement("div");
-                item.classList.add("dropdown-item");
-                item.textContent = label;
-                item.addEventListener("click", () => switchLanguage(code));
-                languageDropdowns.forEach(dd => dd.appendChild(item.cloneNode(true)));
-            }
-        }
-    }
+    // Vereinfachte Variante: Keine fetch-Prüfung – alles anzeigen
+    Object.entries(languages).forEach(([code, label]) => {
+        const item = document.createElement("div");
+        item.classList.add("dropdown-item");
+        item.textContent = label;
+        item.addEventListener("click", () => switchLanguage(code));
+        languageDropdowns.forEach(dd => dd.appendChild(item.cloneNode(true)));
+    });
 
     function switchLanguage(targetLang) {
         if (targetLang === lang) return;
 
-        let newFolder = (targetLang === "en") ? `/${version}/` : `/${version}_${targetLang}/`;
-        let file = window.location.pathname.split("/").pop();
-        window.location.href = newFolder + file;
+        // Pfad neu zusammensetzen
+        const newFolder = (targetLang === "en") ? `${version}` : `${version}_${targetLang}`;
+        const newPath = path.replace(/(V\d+\.\d+)(_[a-z]{2})?(?=\/)/, newFolder);
+        window.location.href = newPath;
     }
-
-    buildLanguageDropdown();
 });
