@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const versions = ["V1.1", "V1.2", "V1.3", "V1.4", "V1.5"]; // hier pflegen
+    const versions = ["V1.1", "V1.2", "V1.3", "V1.4", "V1.5"];
     const versionDropdowns = document.querySelectorAll("#versionDropdown");
     const currentVersionSpans = document.querySelectorAll("#currentVersion");
 
     const path = window.location.pathname;
-    const folderMatch = path.match(/(V\d+\.\d+)(?:_([a-z]{2}))?(?=\/)/);
+    const folderMatch = path.match(/\/(V\d+\.\d+)(?:_([a-z]{2}))?\//);
 
     let currentVersion = "unknown";
     let currentLang = "en";
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     function switchVersion(targetVersion) {
-        const newFolder = (currentLang === "en") ? `${targetVersion}` : `${targetVersion}_${currentLang}`;
-        const newPath = path.replace(/(V\d+\.\d+)(_[a-z]{2})?(?=\/)/, newFolder);
+        const newFolder = (currentLang === "en") ? targetVersion : `${targetVersion}_${currentLang}`;
+        const newPath = path.replace(/\/V\d+\.\d+(?:_[a-z]{2})?\//, `/${newFolder}/`);
         window.location.href = newPath;
     }
 });
