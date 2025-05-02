@@ -5019,8 +5019,8 @@ MadCap|toggler.example
 	display: none;
 	visibility: hidden;
 	position: absolute;
-	bottom: 100%;
-	/* Statt "top: 100%;" */
+	bottom: auto;
+	transform: translateY(-100%);
 	left: 0;
 	background-color: #ffffff;
 	min-width: 160px;
