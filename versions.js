@@ -53,19 +53,18 @@ function formatLatestVersion(version) {
 
 // drop-down
 document.addEventListener("DOMContentLoaded", function () {
-    const versionDropdown = document.getElementById("versionDropdown");
-    const currentVersion = document.getElementById("currentVersion");
+    const versionDropdowns = Array.from(document.querySelectorAll("#versionDropdown"));
+    const currentVersions = Array.from(document.querySelectorAll("#currentVersion"));
 
-    if (currentVersion) {
+    for (var versionDropdown in versionDropdowns) {
         currentVersion.textContent = getCurrentVersion();
-        
         
         currentVersion.addEventListener("click", function () {
             versionDropdown.classList.toggle("show-dropdown");
         });
     }
 
-    if (versionDropdown) {
+    for (var versionDropdown in versionDropdowns) {
         versions.forEach(version => {
             const link = document.createElement("a");
             link.href = version.path.replace("..", "/docs");
@@ -80,6 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
             versionDropdown.appendChild(link);
         });
     }
+
 
     // close the dropdown when clicking outside of it
     document.addEventListener("click", function (event) {
