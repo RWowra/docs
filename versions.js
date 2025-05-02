@@ -1,10 +1,10 @@
 // versions array
 const versions = [
-    { version: 'V1.1', path: '../V1.1/DataOperator_V1.1_EN.htm' },
-    { version: 'V1.2', path: '../V1.2/DataOperator_V1.2_EN.htm' },
-    { version: 'V1.3', path: '../V1.3/DataOperator_V1.3_EN.htm' },
-    { version: 'V1.4', path: '../V1.4/DataOperator_V1.4_EN.htm' },
-    { version: 'Latest version', path: '../Current/DataOperator_V1.5_EN.htm' }
+    { version: 'V1.1', path: '../V1.1//Content/Resources/Manual/LandingPage_DataOperator.htm' },
+    { version: 'V1.2', path: '../V1.2/Content/Resources/Manual/LandingPage_DataOperator.htm' },
+    { version: 'V1.3', path: '../V1.3/Content/Resources/Manual/LandingPage_DataOperator.htm' },
+    { version: 'V1.4', path: '../V1.4/Content/Resources/Manual/LandingPage_DataOperator.htm' },
+    { version: 'Latest version', path: '../Current/Content/Resources/Manual/LandingPage_DataOperator.htm' }
 ];
 
 //function to get current version
