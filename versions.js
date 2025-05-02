@@ -53,18 +53,28 @@ function formatLatestVersion(version) {
 
 // drop-down
 document.addEventListener("DOMContentLoaded", function () {
-    const versionDropdowns = Array.from(document.querySelectorAll("#versionDropdown"));
-    const currentVersions = Array.from(document.querySelectorAll("#currentVersion"));
+    const versionDropdown1 = document.getElementById("versionDropdown1");
+    const currentVersion1 = document.getElementById("currentVersion1");
+    initDropdown(currentVersion1, versionDropdown1)
 
-    for (var versionDropdown in versionDropdowns) {
+
+    const versionDropdown2 = document.getElementById("versionDropdown2");
+    const currentVersion2 = document.getElementById("currentVersion2");
+
+    initDropdown(currentVersion2, versionDropdown2);
+});
+
+function initDropdown(currentVersion, versionDropdown){
+    if (currentVersion) {
         currentVersion.textContent = getCurrentVersion();
+        
         
         currentVersion.addEventListener("click", function () {
             versionDropdown.classList.toggle("show-dropdown");
         });
     }
 
-    for (var versionDropdown in versionDropdowns) {
+    if (versionDropdown) {
         versions.forEach(version => {
             const link = document.createElement("a");
             link.href = version.path.replace("..", "/docs");
@@ -80,11 +90,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-
     // close the dropdown when clicking outside of it
     document.addEventListener("click", function (event) {
         if (!currentVersion.contains(event.target) && !versionDropdown.contains(event.target)) {
             versionDropdown.classList.remove("show-dropdown");
         }
     });
-});
+}
