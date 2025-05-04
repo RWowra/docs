@@ -5020,7 +5020,6 @@ MadCap|toggler.example
 	visibility: hidden;
 	position: absolute;
 	bottom: auto;
-	transform: translateY(-100%);
 	left: 0;
 	background-color: #ffffff;
 	min-width: 160px;
@@ -5060,7 +5059,7 @@ MadCap|toggler.example
 	visibility: visible !important;
 	position: absolute !important;
 	/* Falls position geändert wurde */
-	bottom: 100% !important;
+	/*bottom: 44px; !important*/
 	left: 0 !important;
 	z-index: 1000 !important;
 	/* Höher als andere Elemente */
