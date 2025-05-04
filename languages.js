@@ -1,71 +1,63 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const currentLangEl = document.getElementById('currentLanguage');
-    const languageDropdown = document.getElementById('languageDropdown');
-    const availableLanguages = ['en', 'de', 'fr'];
-    const languageLabels = { en: 'English', de: 'Deutsch', fr: 'Français' };
-  
-    const path = window.location.pathname;
-    const filename = path.split('/').pop();
-    const pathParts = path.split('/').filter(Boolean);
-  
-    // Aktueller Versionsordner: z.B. V1.2, V1.2_de, Current, etc.
-    let folderName = pathParts[pathParts.length - 2] || '';
-    let baseVersion = folderName.replace(/_de|_fr/, '');
-    let isCurrent = folderName.toLowerCase() === 'current';
-  
-    // Sprache aus Ordner oder Dateiname ableiten
-    let currentLang = 'en';
-    if (folderName.endsWith('_de') || filename.includes('_DE')) currentLang = 'de';
-    else if (folderName.endsWith('_fr') || filename.includes('_FR')) currentLang = 'fr';
-  
-    currentLangEl.textContent = languageLabels[currentLang];
-  
-    currentLangEl.addEventListener('click', function () {
-      languageDropdown.classList.toggle('show-dropdown');
-    });
-  
-    document.addEventListener('click', function (event) {
-      if (!languageDropdown.contains(event.target) && !currentLangEl.contains(event.target)) {
-        languageDropdown.classList.remove('show-dropdown');
+
+// Supported languages
+const languages = [
+  { code: 'en', label: 'English' },
+  { code: 'de', label: 'Deutsch' },
+  { code: 'fr', label: 'Français' }
+];
+
+// Get current path and parse version and language
+function getCurrentContext() {
+  const path = window.location.pathname;
+
+  const match = path.match(/\/(V[\d.]+|current)(_([a-z]{2}))?/i);
+  if (!match) return { version: 'current', lang: 'en', rest: path };
+
+  const version = match[1];
+  const lang = match[3] || 'en';
+  const rest = path.split(match[0])[1] || '';
+  return { version, lang, rest };
+}
+
+// Construct new path for selected language
+function buildPath(version, lang, rest) {
+  const langSuffix = lang === 'en' ? '' : `_${lang}`;
+  return `/${version}${langSuffix}/${rest}`;
+}
+
+// Add the language dropdown to the footer
+function createLanguageDropdown() {
+  const { version, lang: currentLang, rest } = getCurrentContext();
+
+  const select = document.createElement('select');
+  select.id = 'languageSwitcher';
+  select.style.marginLeft = '1rem';
+
+  languages.forEach(({ code, label }) => {
+    const option = document.createElement('option');
+    option.value = code;
+    option.text = label;
+    if (code === currentLang) option.selected = true;
+    select.appendChild(option);
+  });
+
+  select.addEventListener('change', () => {
+    const selectedLang = select.value;
+    const newPath = buildPath(version, selectedLang, rest);
+
+    // Check if the new path exists, else fallback to English
+    fetch(newPath, { method: 'HEAD' }).then((res) => {
+      if (res.ok) {
+        window.location.pathname = newPath;
+      } else {
+        window.location.pathname = buildPath(version, 'en', rest);
       }
     });
-  
-    function getLanguageUrl(lang) {
-      const targetLang = lang;
-      const targetFolder = isCurrent
-        ? 'Current'
-        : (targetLang === 'en' ? baseVersion : `${baseVersion}_${targetLang}`);
-      
-      // Dateiname transformieren
-      const langCode = targetLang.toUpperCase();
-      const targetFilename = filename
-        .replace(/_EN|_DE|_FR/, `_${langCode}`)
-        .replace(/(_[A-Z]{2})?\.htm/, `_${langCode}.htm`);
-  
-      const newPath = `/${pathParts.slice(0, -2).concat([targetFolder, targetFilename]).join('/')}`;
-      return newPath;
-    }
-  
-    function addLangOption(lang) {
-      const langUrl = getLanguageUrl(lang);
-      fetch(langUrl, { method: 'HEAD' })
-        .then(res => {
-          if (res.ok) {
-            const a = document.createElement('a');
-            a.textContent = languageLabels[lang];
-            a.href = langUrl;
-            if (lang === currentLang) a.classList.add('active');
-            a.addEventListener('click', function (e) {
-              e.preventDefault();
-              window.location.href = a.href;
-            });
-            languageDropdown.appendChild(a);
-          }
-        })
-        .catch(() => {
-          // Datei nicht vorhanden -> Sprache nicht anzeigen
-        });
-    }
-  
-    availableLanguages.forEach(addLangOption);
   });
+
+  const footer = document.querySelector('footer') || document.body;
+  footer.appendChild(select);
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', createLanguageDropdown);
