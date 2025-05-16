@@ -118,15 +118,25 @@ function initDropdown(currentVersion, versionDropdown) {
                     parts[docsIndex + 1] = targetVersionFolder;
                     newPath = parts.join("/");
                 } else {
-                    newPath = version.path;
+                    window.location.pathname = version.path;
+                    return;
                 }
-
-                window.location.pathname = newPath;
+               
+                fetch(newPath, { method: 'HEAD' }).then(res => {
+                    if (res.ok) {
+                        window.location.pathname = newPath;
+                    } else {
+                        window.location.pathname = version.path;
+                    }
+                }).catch(() => {
+                    window.location.pathname = version.path;
+                });
             };
 
             versionDropdown.appendChild(link);
         });
     }
+
 
 
     // close the dropdown when clicking outside of it
