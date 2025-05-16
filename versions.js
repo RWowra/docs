@@ -6,11 +6,9 @@
 // ================================================================================
 
 const versions = [
+    { version: 'V1.0', path: '/data-operator/docs/V1.0//Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
     { version: 'V1.1', path: '/data-operator/docs/V1.1//Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
-    { version: 'V1.2', path: '/data-operator/docs/V1.2/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
-    { version: 'V1.3', path: '/data-operator/docs/V1.3/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
-    { version: 'V1.4', path: '/data-operator/docs/V1.4/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
-    { version: 'V1.5', path: '/data-operator/docs/V1.5/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: true } // Latest version (isLatest: true)
+    { version: 'V1.2', path: '/data-operator/docs/V1.2/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: true }, // Latest version (isLatest: true)
 ];
 
 // ============================
