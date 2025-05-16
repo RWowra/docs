@@ -4,12 +4,6 @@
 
 @font-face 
 {
-	font-family: "Manrope Light";
-	src: url(../Fonts/Manrope-Light.ttf);
-}
-
-@font-face 
-{
 	font-family: "Manrope";
 	src: url(../Fonts/Manrope-Regular.ttf);
 }
@@ -192,7 +186,6 @@ h1
 h2
 {
 	margin-left: 0;
-	padding-bottom: 1mm;
 	color: #000000;
 	margin-top: 32px;
 	margin-bottom: 16px;
@@ -435,6 +428,12 @@ p.noteopen
 	color: #000000;
 	padding: 8px 16px;
 	border-radius: 8px;
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
 	mc-next-tag: p;
 	mc-next-class: paragraph;
 }
@@ -732,7 +731,8 @@ MadCap|toggler
 
 MadCap|dropDownHotspot
 {
-	color: #000000;
+	color: #164293;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 }
@@ -855,6 +855,12 @@ p.safety_howto
 img.Icon
 {
 	vertical-align: baseline;
+}
+
+img.buttons
+{
+	height: 40px;
+	width: auto;
 }
 
 MadCap|miniTocProxy
@@ -1888,6 +1894,7 @@ strong
 	p.gui_title	/*title for gui explenations*/
 	{
 		page-break-after: avoid;
+		font-size: 12pt;
 	}
 
 	p.how_to_title
@@ -2890,6 +2897,7 @@ strong
 		mc-auto-number-position: outside-head;
 		mc-auto-number-offset: -20mm;
 		padding-left: -17mm;
+		margin-left: 20mm;
 	}
 
 	p.noteopen
@@ -2906,6 +2914,12 @@ strong
 	MadCap|toggler.example
 	{
 		color: #164293;
+	}
+
+	img.buttons
+	{
+		height: 30px;
+		width: auto;
 	}
 }
 
@@ -4294,7 +4308,7 @@ p.gui_title	/*title for gui explenations*/
 	mc-next-tag: p;
 	mc-next-class: gloss_des;
 	margin-bottom: 4pt;
-	font-family: "Manrope ExtraBold", Arial;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 }
@@ -4328,7 +4342,9 @@ img.thumbnail
 	mc-thumbnail: popup;
 	/*defines the way the thumbnail opens*/
 	mc-thumbnail-max-width: auto;
+	mc-thumbnail-width: 100%;
 	mc-thumbnail-max-height: 150px;
+	mc-thumbnail-height: auto;
 }
 
 /*Defines the hover effect for the thumbnail images*/
@@ -4350,6 +4366,7 @@ img.MCPopupThumbnail
 	transition: 0.4s;
 	/*slows down what is defined in img.thumbnail:hover*/
 	mc-hidden: hidden;
+	max-height: 150px;
 }
 
 /*Styles the full image of all images that open as popup*/
@@ -4393,6 +4410,12 @@ div.example
 	mc-auto-number-position: inside-head;
 	padding: 8px 16px;
 	margin: 16px 8px;
+	max-width: 1200px;
+	/* Maximale Breite */
+	min-width: 100px;
+	/* Minimale Breite */
+	width: fit-content;
+	/* Passt sich dem Inhalt an */
 }
 
 /* Styles für die Safety Messages */
@@ -4779,6 +4802,11 @@ div.Note::before
 	color: #5a646e;
 }
 
+div.indent
+{
+	margin-left: 10mm;
+}
+
 /*Styles the input field of the search bar of the HTML_Side skin*/
 
 .search-bar .search-field
@@ -4807,7 +4835,7 @@ input[type="search"]:focus
 
 .dropDownHotspot:focus
 {
-	color: #000000;
+	color: #4568a9;
 	mc-hidden: hidden;
 }
 
@@ -4878,6 +4906,7 @@ MadCap|toggler.example
 	display: flex;
 	align-items: center;
 	margin-left: 16px;
+	color: white;
 }
 
 /*Logo as SVG in header*/
@@ -4900,7 +4929,7 @@ MadCap|toggler.example
 
 .body-container
 {
-	padding-top: 12px;
+	padding: 12px;
 }
 
 #mc-main-content
@@ -5019,14 +5048,14 @@ MadCap|toggler.example
 	display: none;
 	visibility: hidden;
 	position: absolute;
-	bottom: 100%;
-	/* Statt "top: 100%;" */
 	left: 0;
 	background-color: #ffffff;
 	min-width: 160px;
 	border-radius: 4px;
 	border: 1px solid #eeeff0;
 	z-index: 1000;
+	bottom: 100%;
+	margin-bottom: 11px;
 }
 
 .dropdown-content a
@@ -5060,7 +5089,7 @@ MadCap|toggler.example
 	visibility: visible !important;
 	position: absolute !important;
 	/* Falls position geändert wurde */
-	bottom: 100% !important;
+	/*bottom: 44px; !important*/
 	left: 0 !important;
 	z-index: 1000 !important;
 	/* Höher als andere Elemente */
@@ -5122,6 +5151,8 @@ MadCap|toggler.example
 	}
 }
 
+/*Styles the header*/
+
 nav.title-bar
 {
 	background-image: linear-gradient(
@@ -5138,7 +5169,7 @@ nav.title-bar
 
 .sidenav-wrapper
 {
-	min-width: 350px;
+	min-width: 400px;
 	width: 20%;
 	mc-hidden: hidden;
 }

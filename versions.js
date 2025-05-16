@@ -1,74 +1,97 @@
-// versions array
+// ================================================================================
+// versions array 
+// set the version and path of your documentation 
+// version and folder name have to be identical (V1.3.4 → Array: version: 'V1.3.4')
+// latest version must have tag "isLatest: true"
+// ================================================================================
+
 const versions = [
-    { version: 'V1.1', path: '../V1.1//Content/Resources/Manual/LandingPage_DataOperator.htm' },
-    { version: 'V1.2', path: '../V1.2/Content/Resources/Manual/LandingPage_DataOperator.htm' },
-    { version: 'V1.3', path: '../V1.3/Content/Resources/Manual/LandingPage_DataOperator.htm' },
-    { version: 'V1.4', path: '../V1.4/Content/Resources/Manual/LandingPage_DataOperator.htm' },
-    { version: 'Latest version', path: '../Current/Content/Resources/Manual/LandingPage_DataOperator.htm' }
+    { version: 'V1.1', path: '/data-operator/docs/V1.1//Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
+    { version: 'V1.2', path: '/data-operator/docs/V1.2/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
+    { version: 'V1.3', path: '/data-operator/docs/V1.3/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
+    { version: 'V1.4', path: '/data-operator/docs/V1.4/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: false },
+    { version: 'V1.5', path: '/data-operator/docs/V1.5/Content/Resources/Manual/LandingPage_DataOperator.htm', isLatest: true } // Latest version (isLatest: true)
 ];
 
-//function to get current version
-function getCurrentVersion() {
-    const currentPath = window.location.pathname;
-    console.log("DEBUG: Current Path =", currentPath);
+// ============================
+// NO EDITING ABOVE THIS POINT!
+//=============================
 
-    // checks if current path contains one of the safed versions
+// ===============================
+// function to get current version
+// ===============================
+
+function getCurrentVersion() {
+    const currentPath = window.location.pathname; // gets current path (url)
+    console.log("DEBUG: Current Path =", currentPath); // for testing in the console
+
+    // 1. try: match with version.path
     for (const version of versions) {
-        const normalizedPath = version.path.replace("..", "/docs");
-        console.log("Checking against:", normalizedPath);
-        if (currentPath.includes(normalizedPath)) {
-            console.log("MATCH FOUND:", version.version);
+        if (currentPath.includes(version.path)) {
+            console.log("MATCH FOUND (exact path):", version.version);
             return version.version;
         }
     }
 
-    // if redirected, check according to general pattern
-    for (const version of versions) {
-        const versionFolder = version.path.replace("../", "").split("/")[0]; 
-        const folderMatch = `/docs/${versionFolder}/`;
-        console.log("Checking folder match:", folderMatch);
-        if (currentPath.includes(folderMatch)) {
-            console.log("MATCH FOUND:", version.version);
-            return formatLatestVersion(version.version);
+    // 2. try: gets version number after /docs/
+    const parts = currentPath.split("/");
+    const docsIndex = parts.indexOf("docs");
+    const versionFolder = docsIndex !== -1 ? parts[docsIndex + 1] : null;
+
+    if (versionFolder) {
+        console.log("Detected version folder:", versionFolder);
+
+        if (versionFolder === "Current") {
+            const latest = versions.find(v => v.isLatest);
+            if (latest) {
+                console.log("MATCH FOUND (Current alias):", latest.version);
+                return formatLatestVersion(latest.version);
+            }
+        }
+        
+        for (const version of versions) {
+            if (version.path.includes(`/docs/${versionFolder}/`)) {
+                console.log("MATCH FOUND (folder only):", version.version);
+                return formatLatestVersion(version.version);
+            }
         }
     }
 
+    // not match found
     console.log("No match found, returning 'Unknown version'");
     return "Unknown version";
 }
 
-function formatLatestVersion(version) {
-    if (version === "Latest version") {
-        const latest = versions.find(v => v.version.includes("Latest"));
-        if (latest) {
-            const match = latest.path.match(/V\d+\.\d+/); // gets the version number from the file name
-            if (match) {
-                return `Latest version (${match[0]})`; // output: "Latest version (Vx.x)"
-            }
-        }
+// ============================================
+// funtion to display version number + (Latest)
+// ============================================
+
+function formatLatestVersion(versionName) {
+    const version = versions.find(v => v.version === versionName);
+    if (version && version.isLatest) {
+        return `${versionName} (Latest)`;
     }
-    return version;
+    return versionName;
 }
 
-
+// =========
 // drop-down
+// =========
+
 document.addEventListener("DOMContentLoaded", function () {
     const versionDropdown1 = document.getElementById("versionDropdown1");
     const currentVersion1 = document.getElementById("currentVersion1");
-    initDropdown(currentVersion1, versionDropdown1)
-
+    initDropdown(currentVersion1, versionDropdown1);
 
     const versionDropdown2 = document.getElementById("versionDropdown2");
     const currentVersion2 = document.getElementById("currentVersion2");
-
     initDropdown(currentVersion2, versionDropdown2);
 });
 
-function initDropdown(currentVersion, versionDropdown){
+function initDropdown(currentVersion, versionDropdown) {
     if (currentVersion) {
         currentVersion.textContent = getCurrentVersion();
-        
-        
+
         currentVersion.addEventListener("click", function () {
             versionDropdown.classList.toggle("show-dropdown");
         });
@@ -77,18 +100,36 @@ function initDropdown(currentVersion, versionDropdown){
     if (versionDropdown) {
         versions.forEach(version => {
             const link = document.createElement("a");
-            link.href = version.path.replace("..", "/docs");
-            link.textContent = version.version;
+            link.href = "#";
+            link.textContent = version.isLatest ? `${version.version} (Latest)` : version.version;
 
-            link.onclick = function () {
-                if (currentVersion) {
-                    currentVersion.textContent = version.version;
+            link.onclick = function (e) {
+                e.preventDefault();
+
+                const currentPath = window.location.pathname;
+                const parts = currentPath.split("/");
+                const docsIndex = parts.indexOf("docs");
+                const currentVersionFolder = docsIndex !== -1 ? parts[docsIndex + 1] : null;
+
+                const targetParts = version.path.split("/");
+                const targetDocsIndex = targetParts.indexOf("docs");
+                const targetVersionFolder = targetDocsIndex !== -1 ? targetParts[targetDocsIndex + 1] : null;
+
+                let newPath;
+                if (currentVersionFolder && targetVersionFolder) {
+                    parts[docsIndex + 1] = targetVersionFolder;
+                    newPath = parts.join("/");
+                } else {
+                    newPath = version.path;
                 }
+
+                window.location.pathname = newPath;
             };
 
             versionDropdown.appendChild(link);
         });
     }
+
 
     // close the dropdown when clicking outside of it
     document.addEventListener("click", function (event) {

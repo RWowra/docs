@@ -1,1 +1,1 @@
-define({numchunks:1,prefix:'Index_Chunk',terms:[{t:'Contact Information',c:0,$:1},{t:'ETAS',c:0,$:0}]});
+define({numchunks:1,prefix:'Index_Chunk',terms:[]});

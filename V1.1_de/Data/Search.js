@@ -1,1 +1,0 @@
-define({r:0.5,st:'Stem',n:1,t:[0],m:[],u:['../Content/Resources/Manual/Classification_SafetyMessages.htm'],s:['+49'],p:[['+49',35],['optional',20]]});

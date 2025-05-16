@@ -599,6 +599,21 @@ div.MCBreadcrumbsBox_0
 	color: #4568a9;
 }
 
+.xref.xrefHeading
+{
+	color: #164293;
+}
+
+.xref.xrefHeading:visited
+{
+	color: #164293;
+}
+
+.xref.xrefHeading:hover
+{
+	color: #4568a9;
+}
+
 .img
 {
 	max-width: 100%;
@@ -815,7 +830,8 @@ a.MiniTOC6:link
 
 .dropDownHotspot
 {
-	color: #000000;
+	color: #164293;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 	text-decoration: none;
@@ -823,7 +839,8 @@ a.MiniTOC6:link
 
 .dropDownHotspot:link
 {
-	color: #000000;
+	color: #164293;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 	text-decoration: none;
@@ -860,19 +877,40 @@ a.MiniTOC6:link
 	margin-bottom: 6pt;
 }
 
-.xref.xrefHeading
+.toggler
 {
 	color: #164293;
 }
 
-.xref.xrefHeading:visited
+.toggler:link
 {
 	color: #164293;
 }
 
-.xref.xrefHeading:hover
+.toggler:hover
 {
 	color: #4568a9;
+}
+
+.toggler:focus
+{
+	color: #4568a9;
+}
+
+.MCToggler_Open.MCTogglerHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('minus_16px.svg');
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+.MCToggler_Closed.MCTogglerHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('Plus_16px.svg');
+	padding-left: 5px;
+	padding-right: 0;
 }
 
 .MCWebHelpFramesetLink a

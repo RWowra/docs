@@ -599,6 +599,21 @@
 	color: #4568a9;
 }
 
+.micro-response-455667945 .xref.xrefHeading
+{
+	color: #164293;
+}
+
+.micro-response-455667945 .xref.xrefHeading:visited
+{
+	color: #164293;
+}
+
+.micro-response-455667945 .xref.xrefHeading:hover
+{
+	color: #4568a9;
+}
+
 .micro-response-455667945 .img
 {
 	max-width: 100%;
@@ -815,7 +830,8 @@
 
 .micro-response-455667945 .dropDownHotspot
 {
-	color: #000000;
+	color: #164293;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 	text-decoration: none;
@@ -823,7 +839,8 @@
 
 .micro-response-455667945 .dropDownHotspot:link
 {
-	color: #000000;
+	color: #164293;
+	font-family: "Manrope SemiBold", Arial;
 	font-size: 1.1rem;
 	line-height: 1.4;
 	text-decoration: none;
@@ -860,19 +877,40 @@
 	margin-bottom: 6pt;
 }
 
-.micro-response-455667945 .xref.xrefHeading
+.micro-response-455667945 .toggler
 {
 	color: #164293;
 }
 
-.micro-response-455667945 .xref.xrefHeading:visited
+.micro-response-455667945 .toggler:link
 {
 	color: #164293;
 }
 
-.micro-response-455667945 .xref.xrefHeading:hover
+.micro-response-455667945 .toggler:hover
 {
 	color: #4568a9;
+}
+
+.micro-response-455667945 .toggler:focus
+{
+	color: #4568a9;
+}
+
+.micro-response-455667945 .MCToggler_Open.MCTogglerHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('minus_16px.svg');
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+.micro-response-455667945 .MCToggler_Closed.MCTogglerHotSpot_.MCHotSpotImage
+{
+	background-position: left;
+	background-image: url('Plus_16px.svg');
+	padding-left: 5px;
+	padding-right: 0;
 }
 
 .micro-response-455667945 .MCWebHelpFramesetLink a
