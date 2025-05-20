@@ -170,7 +170,7 @@ var requirejs,require,define;!function(global,setTimeout){var req,s,head,baseEle
 
 (function ()
 {
-var helpSystemName = "Data Operator_V1.0_EN.htm";
+var helpSystemName = "Data Operator_V1.2_EN.htm";
 
     MadCap.OpenHelp = function (id, skinName, searchQuery, firstPick, pathToHelpSystem)
     {
