@@ -60,7 +60,7 @@
 	--Black: #000000;
 	--White: #ffffff;
 	--gray: #333;
-	--product: "Data Operator V1.0 en";
+	--product: "Data Operator V1.0";
 }
 
 body	/*Styles the body which holds the content of a page*/
@@ -4900,7 +4900,7 @@ MadCap|toggler.example
 
 .logo-wrapper::after
 {
-	content: "Data Operator V1.2 jp";
+	content: "Data Operator V1.2";
 	font-family: "Manrope";
 	font-size: 16px;
 	display: flex;
