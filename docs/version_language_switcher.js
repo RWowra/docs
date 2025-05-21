@@ -16,7 +16,7 @@ const versions = [
   {
     version: 'V1.1',
     path: '/docs/docs/V1.1/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
-    isLatest: true
+    isLatest: false
   },
   {
     version: 'V1.2',
