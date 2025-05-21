@@ -211,7 +211,10 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">/*<![CDATA[*/      const dockPrivacySettings = document.createElement("dock-privacy-settings");
+    <script type="text/javascript">/*<![CDATA[*/      
+		document.addEventListener("DOMContentLoaded", function () {
+		const dockPrivacySettings = document.createElement("dock-privacy-settings");
+
 		Object.assign(dockPrivacySettings, {
 		linkUrlMarketing: "/ww/en/data-protection-policy/",
 		linkUrlComfort: "/ww/en/data-protection-policy/",
@@ -219,16 +222,17 @@
 		linkUrlPolicy: "/ww/en/data-protection-policy/",
 		consentCategories: "marketing,analysis"
 		});
-		document.body.appendChild(dockPrivacySettings);
-    
 
-		async function showDockPrivacySettings() {
+		document.body.appendChild(dockPrivacySettings);
+
+		// Funktion global machen, damit sie im Link onclick funktioniert
+		window.showDockPrivacySettings = async function () {
 		await customElements.whenDefined("dock-privacy-settings");
 		dockPrivacySettings.setAttribute("visible", "true");
-		}
-    
+		};
 
-		function BoschPrivacyCallback_OnUpdate(a) {
+		// Callback-Funktion
+		window.BoschPrivacyCallback_OnUpdate = function (a) {
 		if (a.marketing && a.analysis) {
 		console.log("[callback] marketing and analysis are on");
 		dataLayer.push({ event: "bosch_privacy_update_marketing_on" });
@@ -242,7 +246,8 @@
 		} else {
 		console.log("[callback] marketing and analysis are off");
 		}
-		}
+		};
+		});	
 	/*]]>*/</script>
     <script type="text/javascript" defer="defer" src="../../../../version_language_switcher.js">
     </script>

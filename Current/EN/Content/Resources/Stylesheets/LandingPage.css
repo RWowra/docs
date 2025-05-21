@@ -92,6 +92,7 @@ div.home-container	/*wraps the content on the home page*/
 .topic-hero img
 {
 	width: 160px;
+	margin: 16px;
 }
 
 .guide-image img
