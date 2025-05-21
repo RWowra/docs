@@ -42,7 +42,9 @@
         </script>
         <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
         </script>
-        <script type="text/javascript">/*<![CDATA[*/(function (w, d, s, l, i) {
+        <script type="text/javascript">
+			/*<![CDATA[*/
+			(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
 			var f = d.getElementsByTagName(s)[0],
@@ -52,7 +54,8 @@
 			j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
 			f.parentNode.insertBefore(j, f);
 			})(window, document, "script", "dataLayer", "GTM-KLN3456");
-		/*]]>*/</script>
+			/*]]>*/
+		</script>
         <script type="text/javascript" defer="defer" src="../Scripts/Scroll-Button.js">
         </script>
         <script type="text/javascript" src="../Scripts/Cookies.js"> </script>
@@ -200,44 +203,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">/*<![CDATA[*/      
-		document.addEventListener("DOMContentLoaded", function () {
-		const dockPrivacySettings = document.createElement("dock-privacy-settings");
-
-		Object.assign(dockPrivacySettings, {
-		linkUrlMarketing: "/ww/en/data-protection-policy/",
-		linkUrlComfort: "/ww/en/data-protection-policy/",
-		linkUrlImprint: "/ww/en/corporate-information/",
-		linkUrlPolicy: "/ww/en/data-protection-policy/",
-		consentCategories: "marketing,analysis"
-		});
-
-		document.body.appendChild(dockPrivacySettings);
-
-		// Funktion global machen, damit sie im Link onclick funktioniert
-		window.showDockPrivacySettings = async function () {
-		await customElements.whenDefined("dock-privacy-settings");
-		dockPrivacySettings.setAttribute("visible", "true");
-		};
-
-		// Callback-Funktion
-		window.BoschPrivacyCallback_OnUpdate = function (a) {
-		if (a.marketing && a.analysis) {
-		console.log("[callback] marketing and analysis are on");
-		dataLayer.push({ event: "bosch_privacy_update_marketing_on" });
-		dataLayer.push({ event: "bosch_privacy_update_analysis_on" });
-		} else if (a.marketing) {
-		console.log("[callback] marketing is on");
-		dataLayer.push({ event: "bosch_privacy_update_marketing_on" });
-		} else if (a.analysis) {
-		console.log("[callback] analysis is on");
-		dataLayer.push({ event: "bosch_privacy_update_analysis_on" });
-		} else {
-		console.log("[callback] marketing and analysis are off");
-		}
-		};
-		});	
-	/*]]>*/</script>
     <script type="text/javascript" defer="defer" src="../../../../../version_language_switcher.js">
     </script>
 </html>
