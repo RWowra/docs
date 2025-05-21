@@ -167,10 +167,18 @@ function initDropdown(currentEl, dropdownEl, isVersion) {
 
         // Try loading the target page, or fall back to the language's landing page
         fetch(basePath, { method: 'HEAD' }).then(res => {
-          window.location.pathname = res.ok ? basePath : fallback;
+          if (res.ok) {
+            window.location.pathname = basePath;
+          } else {
+            // Fallback to default language landing page if target language not available
+            const finalFallback = `/docs/${targetVersion}/${defaultLanguage}/Content/Resources/Manual/LandingPage_DataOperator.htm`;
+            window.location.pathname = finalFallback;
+          }
         }).catch(() => {
-          window.location.pathname = fallback;
+          const finalFallback = `/docs/${targetVersion}/${defaultLanguage}/Content/Resources/Manual/LandingPage_DataOperator.htm`;
+          window.location.pathname = finalFallback;
         });
+
       };
 
       dropdownEl.appendChild(link);
