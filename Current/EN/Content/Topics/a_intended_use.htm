@@ -11,6 +11,9 @@
         <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_2.ico" />
         <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon_1.ico" />
         <link rel="icon" sizes="16x16" href="../../Skins/Favicons/favicon.ico" /><title>Intended use </title>
+        <!-- Override Flare's restrictive Content-Security-Policy -->
+        <!-- Google Tag Manager Loader -->
+        <!-- Inject <noscript> fallback into body -->
         <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
         <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
@@ -44,6 +47,17 @@
         </script>
         <script type="text/javascript">
 			/*<![CDATA[*/
+			window.addEventListener("DOMContentLoaded", function () {
+			const oldMeta = document.querySelector("meta[http-equiv='Content-Security-Policy']");
+			if (oldMeta) {
+			oldMeta.setAttribute("content",
+			"default-src 'self'; script-src 'self' https://www.googletagmanager.com; img-src 'self' https://www.googletagmanager.com; frame-src https://www.googletagmanager.com;");
+			}
+			});
+			/*]]>*/
+		</script>
+        <script type="text/javascript">
+			/*<![CDATA[*/
 			(function (w, d, s, l, i) {
 			w[l] = w[l] || [];
 			w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -58,10 +72,12 @@
 		</script>
         <script type="text/javascript">
 			/*<![CDATA[*/
-			window.addEventListener("DOMContentLoaded", function () {
+			window.addEventListener("load", function () {
+			if (!document.querySelector("noscript iframe[src*='googletagmanager.com']")) {
 			var ns = document.createElement('noscript');
 			ns.innerHTML = '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLN3456" height="0" width="0" style="display:none;visibility:hidden"></iframe>';
 			document.body.insertBefore(ns, document.body.firstChild);
+			}
 			});
 			/*]]>*/
 		</script>
