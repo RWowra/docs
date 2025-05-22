@@ -10,17 +10,17 @@
 const versions = [
   {
     version: 'V1.0',
-    path: '/docs/docs/V1.0/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
+    path: '/docs/V1.0/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
     isLatest: false
   },
   {
     version: 'V1.1',
-    path: '/docs/docs/V1.1/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
+    path: '/docs/V1.1/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
     isLatest: false
   },
   {
     version: 'V1.2',
-    path: '/docs/docs/V1.2/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
+    path: '/docs/V1.2/EN/Content/Resources/Manual/LandingPage_DataOperator.htm',
     isLatest: true
   }
 ];
